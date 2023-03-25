@@ -1,5 +1,62 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: "name-card";
+    src: url("../fonts/Yu-Gi-Oh! Matrix Regular Small Caps 2.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "effect-card";
+    src: url("../fonts/Yu-Gi-Oh! Matrix Book.otf") format("opentype"), url("../fonts/Yu-Gi-Oh! Matrix Book.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "normal-card";
+    src: url("../fonts/Yu-Gi-Oh! ITC Stone Serif LT Italic.otf") format("opentype"), url("../fonts/Yu-Gi-Oh! ITC Stone Serif LT Italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "type-card";
+    src: url("../fonts/Yu-Gi-Oh! ITC Stone Serif Small Caps Bold.otf") format("opentype"), url("../fonts/Yu-Gi-Oh! ITC Stone Serif Small Caps Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "edition-card";
+    src: url("../fonts/Stone Serif Semibold.otf") format("opentype"), url("../fonts/Stone Serif Semibold.ttf") format("truetype");
+}
+
 body {
     background-color: rgb(184, 177, 177);
+}
+
+h1 {
+    font: bold 80px "name-card" , serif;
+}
+
+li {
+    font: bold 15px "type-card" , serif;
+}
+
+.nome {
+    font: normal 40px "name-card" , serif;
+}
+
+.tipo {
+    font: normal 15px "type-card" , serif;
+}
+
+.efeito {
+    font: normal 15px "effect-card" , serif;
+}
+
+.atkdef {
+    font: normal 15px "type-card" , serif;
+}
+
+.edicao {
+    font: normal 15px "edition-card" , serif;
+}
+
+.normal {
+    font: normal 15px "normal-card" , serif;
 }
