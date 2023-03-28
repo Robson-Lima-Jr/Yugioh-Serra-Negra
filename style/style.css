@@ -35,13 +35,11 @@ header {
 
 h1 {
     font: normal 4em "name-card";
-    background-color: blueviolet;
     text-align: center;
     margin: 10px;
 }
 
-header > nav {
-    background-color: rgba(165, 42, 42, 0.301);
+header>nav {
     text-align: center;
     margin: 10px;
     padding: 5px
@@ -52,4 +50,8 @@ a {
     text-decoration: none;
     padding-right: 45px;
     font: normal 1.5em "edition-card";
+}
+
+header>h2 {
+    font: normal 3em "name-card";
 }
