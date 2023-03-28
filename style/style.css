@@ -36,27 +36,3 @@ h1 {
 li {
     font: bold 15px "type-card" , serif;
 }
-
-.nome {
-    font: normal 40px "name-card" , serif;
-}
-
-.tipo {
-    font: normal 15px "type-card" , serif;
-}
-
-.efeito {
-    font: normal 15px "effect-card" , serif;
-}
-
-.atkdef {
-    font: normal 15px "type-card" , serif;
-}
-
-.edicao {
-    font: normal 15px "edition-card" , serif;
-}
-
-.normal {
-    font: normal 15px "normal-card" , serif;
-}
