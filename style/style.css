@@ -37,7 +37,7 @@
     --fonte-rodape: "edition-card", serif;
     --fonte-obs: "normal-card", serif;
 
-    --cor0: #BF9039;
+    --cor0: #bb9d66;
     --cor1: #A65729; 
     --cor2: #941e1e;
     --cor3: #400601; 
@@ -53,34 +53,47 @@ body {
     background-color:var(--cor0);
 }
 
-header {}
+header {
+    height: 70px;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor4));
+    padding-top: 20px;
+}
 
 header>h1 {
-    font: normal 4em var(--fonte-titulos);
+    font: normal 3em var(--fonte-titulos);
     text-align: center;
-    background-color:var(--cor3);
     color: var(--cor0);
 }
 
-header>nav {
+nav {
     text-align: center;
     background-color:var(--cor4);
+    padding: 10px;
 }
 
 a {
-    font: normal 1.5em var(--fonte-menus);
+    font: normal 1.1em var(--fonte-menus);
     color: var(--cor0);
     text-decoration: none;
-    padding-right: 15px;
+    padding: 10px;
 }
 
 main {
-    font-family: var(--fonte-obs);
-    margin: 50px;
-    color: var(--cor2)
+    background-color: white;
+
+    margin: auto;
+    padding: 20px;
+    min-width: 300px;
+    max-width: 1000px;
 }
 
 main>h1 {
     font: normal 3.5em var(--fonte-titulos);
     color: var(--cor4);
+}
+
+#principal {
+    font-family: var(--fonte-obs);
+    color: var(--cor2);
+    text-align: justify;
 }
