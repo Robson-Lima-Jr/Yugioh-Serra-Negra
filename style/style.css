@@ -53,9 +53,14 @@ body {
     background-color:var(--cor0);
 }
 
+p {
+    padding: 10px 0px;
+    line-height: 1.2em;
+}
+
 header {
     height: 70px;
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor4));
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3) ,var(--cor4));
     padding-top: 20px;
 }
 
@@ -82,7 +87,8 @@ main {
     background-color: white;
 
     margin: auto;
-    padding: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
     min-width: 300px;
     max-width: 1000px;
 }
@@ -92,8 +98,27 @@ main>h1 {
     color: var(--cor4);
 }
 
-#principal {
-    font-family: var(--fonte-obs);
-    color: var(--cor2);
+.h2class{
+    padding: 10px 0px;
+}
+
+main li {
+    padding: 5px 0px;
+    line-height: 1.2em;
     text-align: justify;
 }
+
+footer {
+    text-align: center;
+    font-family: var(--fonte-rodape);
+    font-weight: normal;
+    background-color: var(--cor4);
+    color: white;
+
+/* .footer-status {
+    color: var(--cor2);
+}
+
+#criado {
+    color: var(--cor3);
+} */
