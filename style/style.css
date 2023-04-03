@@ -109,7 +109,11 @@ main {
     color: var(--cor2);
 }
 
-main li {
+article ul {
+    list-style-position: inside;
+}
+
+article li {
     padding: 5px 0px;
     line-height: 1.2em;
     text-align: justify;
@@ -129,6 +133,7 @@ footer {
     text-align: center;
     font-family: var(--fonte-rodape);
     font-weight: normal;
+    font-size: 0.8em;
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
     color: white;
 }
