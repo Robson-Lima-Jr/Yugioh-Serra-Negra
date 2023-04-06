@@ -22,6 +22,60 @@
     <main>
         <article>
             <h2 class="h2class">Decks</h2>
+            <section id="deckNav">
+                <h3>Selecione um Jogador Abaixo:</h3>
+                <input type="radio" name="players" id="jao">
+                <label for="jao">Jão</label>
+                <input type="radio" name="players" id="tila">
+                <label for="tila">Tila</label>
+                <input type="radio" name="players" id="rob">
+                <label for="rob">Rob</label>
+                <input type="radio" name="players" id="vi">
+                <label for="vi">Vi</label>
+                <input type="radio" name="players" id="fah">
+                <label for="fah">Fah</label>
+                <input type="radio" name="players" id="feh">
+                <label for="feh">Feh</label>
+                <p><input type="button" value="Checar Decks" id="btn" onclick="btnClick()"></p>
+            </section>
+            <section id="deckIcons">
+                <aside id="jao-decks">
+                    <picture id="dino">
+                        <source media="(max-width: 400px)" srcset="images/jao-decks/dino-base-125.jpg" type="image/jpg">
+                        <img src="images/jao-decks/dino-base-250.jpg" alt="dinos" type="image/jpg">
+                    </picture>
+                    <picture id="gouki">
+                        <source media="(max-width: 400px)" srcset="images/jao-decks/gouki-base-125.jpg" type="image/jpg">
+                        <img src="images/jao-decks/gouki-base-250.jpg" alt="gouki" type="image/jpg">
+                    </picture>
+                    <picture id="abc">
+                        <source media="(max-width: 400px)" srcset="images/jao-decks/abc-base-125.jpg" type="image/jpg">
+                        <img src="images/jao-decks/abc-base-250.jpg" alt="abc" type="image/jpg">
+                    </picture>
+                    <picture id="rei">
+                        <source media="(max-width: 400px)" srcset="images/jao-decks/rei-base-125.jpg" type="image/jpg">
+                        <img src="images/jao-decks/rei-base-250.jpg" alt="abc" type="image/jpg">
+                    </picture>
+                    <picture id="pescador">
+                        <source media="(max-width: 400px)" srcset="images/jao-decks/pescador-base-125.jpg" type="image/jpg">
+                        <img src="images/jao-decks/pescador-base-250.jpg" alt="abc" type="image/jpg">
+                    </picture>
+                </aside>
+                <aside id="tila-decks">
+                    <picture id="buster">
+                        <source media="(max-width: 400px)" srcset="images/flo-decks/blader-base-125.jpg" type="image/jpg">
+                        <img src="images/flo-decks/blader-base-250.jpg" alt="buster" type="image/jpg">
+                    </picture>
+                    <picture id="blue">
+                        <source media="(max-width: 400px)" srcset="images/flo-decks/blue-base-125.jpg" type="image/jpg">
+                        <img src="images/flo-decks/blue-base-250.jpg" alt="Blue-eyes" type="image/jpg">
+                    </picture>
+                    <picture id="dark">
+                        <source media="(max-width: 400px)" srcset="images/flo-decks/dark-base-125.jpg" alt="Dark Magician" type="image/jpg">
+                        <img src="images/flo-decks/dark-base-250.jpg" alt="Dark Magician" type="image/jpg">
+                    </picture>
+                </aside>
+            </section>
         </article>
     </main>
     <footer>
@@ -32,6 +86,7 @@
         <p><span id="criado">Site criado e desenvolvido por Robson Lima Junior</span></p>
         <p>Site sem fins lucrativos, apenas para informação do torneio e organização do mesmo.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
