@@ -196,6 +196,19 @@ footer span {
     color: var(--cor3);
 }
 
+picture {
+    padding-right: 5px;
+}
+
+img {
+    border-radius: 20px;
+}
+
+#deckIcons {
+    margin-top: 10px;
+    background-color: var(--cor3);
+}
+
 #jao-decks{
     padding: 20px;
     display: none;
