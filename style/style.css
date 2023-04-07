@@ -121,7 +121,6 @@ article ul {
 article li {
     padding: 5px 0px;
     line-height: 1.2em;
-    text-align: justify;
     font-family: var(--fonte-texto);
     font-size: 1.07em;
 }
