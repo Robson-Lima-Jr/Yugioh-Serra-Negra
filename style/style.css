@@ -42,6 +42,11 @@
     --cor2: #941e1e;
     --cor3: #400601;
     --cor4: #130200;
+
+    --widthPq: 125px;
+    --widthGr: 250px;
+    --heightPq: 125px;
+    --heightGr: 250px;
 }
 
 * {
@@ -116,7 +121,6 @@ article ul {
 article li {
     padding: 5px 0px;
     line-height: 1.2em;
-    text-align: justify;
     font-family: var(--fonte-texto);
     font-size: 1.07em;
 }
@@ -138,9 +142,9 @@ footer {
     color: white;
 }
 
-footer > p {
-        padding: 5px 0px;
-        line-height: 1.1em;
+footer>p {
+    padding: 5px 0px;
+    line-height: 1.1em;
 }
 
 footer span {
@@ -156,4 +160,88 @@ footer span {
 #criado:hover {
     background-color: var(--cor0);
     color: black
+}
+
+/*CSS Exclusivos pagina Decks*/
+
+#deckNav>h3 {
+    font-family: var(--fonte-rodape);
+    padding-bottom: 20px;
+}
+
+#deckNav label {
+    font-family: var(--fonte-texto);
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin: auto;
+    margin-right: 8px;
+}
+
+#deckNav p {
+    text-align: center;
+}
+
+#btn {
+    margin-top: 15px;
+    font-family: var(--fonte-titulos);
+    font-size: 2em;
+    padding: 3px;
+    background-color: var(--cor0);
+    color: var(--cor2);
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.349);
+}
+
+#btn:hover {
+    background-color: var(--cor1);
+    color: var(--cor3);
+}
+
+picture {
+    padding-right: 5px;
+}
+
+img {
+    border-radius: 20px;
+}
+
+#deckIcons {
+    margin-top: 10px;
+}
+
+#jao-decks{
+    padding: 20px;
+    display: none;
+    text-align: center;
+}
+
+#tila-decks{
+    padding: 20px;
+    display: none;
+    text-align: center;
+}
+
+#rob-decks {
+    padding: 20px;
+    display: none;
+    text-align: center;
+}
+
+#vi-decks {
+    padding: 20px;
+    display: none;
+    text-align: center;
+}
+
+#fah-decks {
+    padding: 20px;
+    display: none;
+    text-align: center;
+}
+
+#feh-decks {
+    padding: 20px;
+    display: none;
+    text-align: center;
 }

@@ -22,6 +22,133 @@
     <main>
         <article>
             <h2 class="h2class">Decks</h2>
+            <section id="deckNav">
+                <h3>Selecione um Jogador Abaixo:</h3>
+                <input type="radio" name="players" id="jao">
+                <label for="jao">Jão</label>
+                <input type="radio" name="players" id="tila">
+                <label for="tila">Tila</label>
+                <input type="radio" name="players" id="rob">
+                <label for="rob">Rob</label>
+                <input type="radio" name="players" id="vi">
+                <label for="vi">Vi</label>
+                <input type="radio" name="players" id="fah">
+                <label for="fah">Fah</label>
+                <input type="radio" name="players" id="feh">
+                <label for="feh">Feh</label>
+                <p><input type="button" value="Checar Decks" id="btn" onclick="btnClick()"></p>
+            </section>
+            <section id="deckIcons">
+                <aside id="jao-decks">
+                    <picture id="dino">
+                        <source media="(max-width: 400px)" srcset="images/jao-decks/dino-base-125.jpg" type="image/jpg">
+                        <img src="images/jao-decks/dino-base-250.jpg" alt="dinos" type="image/jpg">
+                    </picture>
+                    <picture id="gouki">
+                        <source media="(max-width: 400px)" srcset="images/jao-decks/gouki-hover-125.jpg" type="image/jpg">
+                        <img src="images/jao-decks/gouki-hover-250.jpg" alt="gouki" type="image/jpg">
+                    </picture>
+                    <picture id="abc">
+                        <source media="(max-width: 400px)" srcset="images/jao-decks/abc-base-125.jpg" type="image/jpg">
+                        <img src="images/jao-decks/abc-base-250.jpg" alt="abc" type="image/jpg">
+                    </picture>
+                    <picture id="rei">
+                        <source media="(max-width: 400px)" srcset="images/jao-decks/rei-base-125.jpg" type="image/jpg">
+                        <img src="images/jao-decks/rei-base-250.jpg" alt="abc" type="image/jpg">
+                    </picture>
+                    <picture id="pescador">
+                        <source media="(max-width: 400px)" srcset="images/jao-decks/pescador-base-125.jpg" type="image/jpg">
+                        <img src="images/jao-decks/pescador-base-250.jpg" alt="abc" type="image/jpg">
+                    </picture>
+                </aside>
+                <aside id="tila-decks">
+                    <picture id="buster">
+                        <source media="(max-width: 400px)" srcset="images/flo-decks/blader-base-125.jpg" type="image/jpg">
+                        <img src="images/flo-decks/blader-base-250.jpg" alt="buster" type="image/jpg">
+                    </picture>
+                    <picture id="blue">
+                        <source media="(max-width: 400px)" srcset="images/flo-decks/blue-base-125.jpg" type="image/jpg">
+                        <img src="images/flo-decks/blue-base-250.jpg" alt="Blue-eyes" type="image/jpg">
+                    </picture>
+                    <picture id="dark">
+                        <source media="(max-width: 400px)" srcset="images/flo-decks/dark-base-125.jpg" alt="Dark Magician" type="image/jpg">
+                        <img src="images/flo-decks/dark-base-250.jpg" alt="Dark Magician" type="image/jpg">
+                    </picture>
+                </aside>
+                <aside id="rob-decks">
+                    <picture id="cyber">
+                        <source media="(max-width: 400px)" srcset="images/rob-decks/cyber-base-125.jpg" type="image/jpg">
+                        <img src="images/rob-decks/cyber-base-250.jpg" alt="cyber" type="image/jpg">
+                    </picture>
+                    <picture id="cyberdark">
+                        <source media="(max-width: 400px)" srcset="images/rob-decks/cyberdark-hover-125.jpg" type="image/jpg">
+                        <img src="images/rob-decks/cyberdark-hover-250.jpg" alt="cyberdark" type="image/jpg">
+                    </picture>
+                    <picture id="uria">
+                        <source media="(max-width: 400px)" srcset="images/rob-decks/uria-base-125.jpg" type="image/jpg">
+                        <img src="images/rob-decks/uria-base-250.jpg" alt="uria" type="image/jpg">
+                    </picture>
+                    <picture id="dinomist">
+                        <source media="(max-width: 400px)" srcset="images/rob-decks/dinomist-hover-125.jpg" type="image/jpg">
+                        <img src="images/rob-decks/dinomist-hover-250.jpg" alt="dinomist" type="image/jpg">
+                    </picture>
+                    <picture id="malefic">
+                        <source media="(max-width: 400px)" srcset="images/rob-decks/malefic-hover-125.jpg" type="image/jpg">
+                        <img src="images/rob-decks/malefic-hover-250.jpg" alt="malefic" type="image/jpg">
+                    </picture>
+                </aside>
+                <aside id="vi-decks">
+                    <picture id="caveira">
+                        <source media="(max-width: 400px)" srcset="images/vi-decks/caveira-hover-125.jpg" type="image/jpg">
+                        <img src="images/vi-decks/caveira-hover-250.jpg" alt="caveira" type="image/jpg">
+                    </picture>
+                    <picture id="eldlich">
+                        <source media="(max-width: 400px)" srcset="images/vi-decks/eldlich-base-125.jpg" type= "image/jpg">
+                        <img src="images/vi-decks/eldlich-base-250.jpg" alt="eldlich" type="image/jpg">
+                    </picture>
+                    <picture id="ed">
+                        <source media="(max-width: 400px)" srcset="images/vi-decks/ed-base-125.jpg" type="image/jpg">
+                        <img src="images/vi-decks/ed-base-250.jpg" alt="ed" type="image/jpg">
+                    </picture>
+                    <picture id="maju">
+                        <source media="(max-width: 400px)" srcset="images/vi-decks/maju-base-125.jpg" type="image/jpg">
+                        <img src="images/vi-decks/maju-base-250.jpg" alt="maju" type="image/jpg">
+                    </picture>
+                    <picture id="exodia">
+                        <source media="(max-width: 400px)" srcset="images/vi-decks/exodia-base-125.jpeg" type="image/jpg">
+                        <img src="images/vi-decks/exodia-base-250.jpeg" alt="exodia" type="image/jpg">
+                    </picture>
+                </aside>
+                <aside id="fah-decks">
+                    <picture id="zircon">
+                        <source media="(max-width: 400px)" srcset="images/fah-decks/zircon-base-125.jpg" type="image/jpg">
+                        <img src="images/fah-decks/zircon-base-250.jpg" alt="zircon" type="image/jpg">
+                    </picture>
+                    <picture id="magnet">
+                        <source media="(max-width: 400px)" srcset="images/fah-decks/valkyrion-125.jpg" type= "image/jpg">
+                        <img src="images/fah-decks/valkyrion-250.jpg" alt="magnet" type="image/jpg">
+                    </picture>
+                </aside>
+            </aside>
+            <aside id="feh-decks">
+                <picture id="sapo">
+                    <source media="(max-width: 400px)" srcset="images/feh-decks/sapo-hover-125.jpg" type="image/jpg">
+                    <img src="images/feh-decks/sapo-hover-250.jpg" alt="sapo" type="image/jpg">
+                </picture>
+                <picture id="burn">
+                    <source media="(max-width: 400px)" srcset="images/feh-decks/burn-base-125.jpg" type= "image/jpg">
+                    <img src="images/feh-decks/burn-base-250.jpg" alt="burn" type="image/jpg">
+                </picture>
+                <picture id="amazoness">
+                    <source media="(max-width: 400px)" srcset="images/feh-decks/amazoness-base-125.jpg" type="image/jpg">
+                    <img src="images/feh-decks/amazoness-base-250.jpg" alt="amazoness" type="image/jpg">
+                </picture>
+                <picture id="timelord">
+                    <source media="(max-width: 400px)" srcset="images/feh-decks/timelord-base-125.jpg" type="image/jpg">
+                    <img src="images/feh-decks/timelord-base-250.jpg" alt="timelord" type="image/jpg">
+                </picture>
+            </aside>
+            </section>
         </article>
     </main>
     <footer>
@@ -32,6 +159,7 @@
         <p><span id="criado">Site criado e desenvolvido por Robson Lima Junior</span></p>
         <p>Site sem fins lucrativos, apenas para informação do torneio e organização do mesmo.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
