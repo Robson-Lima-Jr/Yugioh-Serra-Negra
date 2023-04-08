@@ -170,11 +170,12 @@ footer span {
 }
 
 #deckNav label {
-    font-family: var(--fonte-rodape);
-    margin-right: 5px;
+    font-family: var(--fonte-texto);
+    font-weight: bold;
     font-size: 20px;
     padding-bottom: 10px;
     margin: auto;
+    margin-right: 8px;
 }
 
 #deckNav p {
@@ -216,6 +217,30 @@ img {
 }
 
 #tila-decks{
+    padding: 20px;
+    display: none;
+    text-align: center;
+}
+
+#rob-decks {
+    padding: 20px;
+    display: none;
+    text-align: center;
+}
+
+#vi-decks {
+    padding: 20px;
+    display: none;
+    text-align: center;
+}
+
+#fah-decks {
+    padding: 20px;
+    display: none;
+    text-align: center;
+}
+
+#feh-decks {
     padding: 20px;
     display: none;
     text-align: center;

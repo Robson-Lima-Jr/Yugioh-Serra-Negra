@@ -22,6 +22,33 @@ function btnClick() {
         viDecks.style.display = "none";
         fahDecks.style.display = "none";
         fehDecks.style.display = "none";
-
+    } else if (playerList[2].checked) {
+        robDecks.style.display = "block";
+        jaoDecks.style.display = "none";
+        tilaDecks.style.display = "none";
+        viDecks.style.display = "none";
+        fahDecks.style.display = "none";
+        fehDecks.style.display = "none";
+    } else if (playerList[3].checked) {
+        viDecks.style.display = "block";
+        jaoDecks.style.display = "none";
+        tilaDecks.style.display = "none";
+        robDecks.style.display = "none";
+        fahDecks.style.display = "none";
+        fehDecks.style.display = "none";
+    } else if (playerList[4].checked) {
+        fahDecks.style.display = "block";
+        jaoDecks.style.display = "none";
+        tilaDecks.style.display = "none";
+        robDecks.style.display = "none";
+        viDecks.style.display = "none";
+        fehDecks.style.display = "none";
+    } else if (playerList[5].checked) {
+        fehDecks.style.display = "block";
+        jaoDecks.style.display = "none";
+        tilaDecks.style.display = "none";
+        robDecks.style.display = "none";
+        viDecks.style.display = "none";
+        fahDecks.style.display = "none";
     }
 }
