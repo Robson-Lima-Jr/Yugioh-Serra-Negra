@@ -24,6 +24,8 @@
             <h2 class="h2class">Decks</h2>
             <section id="deckNav">
                 <h3>Selecione um Jogador Abaixo:</h3>
+                <h4>Para detalhes do deck, clique na imagem</h4>
+
                 <input type="radio" name="players" id="jao">
                 <label for="jao">Jão</label>
                 <input type="radio" name="players" id="tila">
@@ -40,12 +42,13 @@
             </section>
             <section id="deckIcons">
                 <aside id="jao-decks">
-                    <picture id="dino">
+                    <picture id="dino" onclick="dino_click()">
                         <source media="(max-width: 400px)" srcset="images/jao-decks/dino-base-125.jpg" type="image/jpg">
                         <img src="images/jao-decks/dino-base-250.jpg" alt="dinos" type="image/jpg">
                     </picture>
                     <picture id="gouki">
-                        <source media="(max-width: 400px)" srcset="images/jao-decks/gouki-hover-125.jpg" type="image/jpg">
+                        <source media="(max-width: 400px)" srcset="images/jao-decks/gouki-hover-125.jpg"
+                            type="image/jpg">
                         <img src="images/jao-decks/gouki-hover-250.jpg" alt="gouki" type="image/jpg">
                     </picture>
                     <picture id="abc">
@@ -57,13 +60,21 @@
                         <img src="images/jao-decks/rei-base-250.jpg" alt="abc" type="image/jpg">
                     </picture>
                     <picture id="pescador">
-                        <source media="(max-width: 400px)" srcset="images/jao-decks/pescador-base-125.jpg" type="image/jpg">
+                        <source media="(max-width: 400px)" srcset="images/jao-decks/pescador-base-125.jpg"
+                            type="image/jpg">
                         <img src="images/jao-decks/pescador-base-250.jpg" alt="abc" type="image/jpg">
                     </picture>
+                    <aside class="titulos">
+                        <h3 class="fundoTitulo">Títulos:</h3>
+                        <p></p>
+                        <p class="champ">Yu-Gi-Oh da Roça! (2021)</p>
+                        <p class="champ">Yu-Gi-Oh da Roça! (2022)</p>
+                    </aside>
                 </aside>
                 <aside id="tila-decks">
                     <picture id="buster">
-                        <source media="(max-width: 400px)" srcset="images/flo-decks/blader-base-125.jpg" type="image/jpg">
+                        <source media="(max-width: 400px)" srcset="images/flo-decks/blader-base-125.jpg"
+                            type="image/jpg">
                         <img src="images/flo-decks/blader-base-250.jpg" alt="buster" type="image/jpg">
                     </picture>
                     <picture id="blue">
@@ -71,17 +82,20 @@
                         <img src="images/flo-decks/blue-base-250.jpg" alt="Blue-eyes" type="image/jpg">
                     </picture>
                     <picture id="dark">
-                        <source media="(max-width: 400px)" srcset="images/flo-decks/dark-base-125.jpg" alt="Dark Magician" type="image/jpg">
+                        <source media="(max-width: 400px)" srcset="images/flo-decks/dark-base-125.jpg"
+                            alt="Dark Magician" type="image/jpg">
                         <img src="images/flo-decks/dark-base-250.jpg" alt="Dark Magician" type="image/jpg">
                     </picture>
                 </aside>
                 <aside id="rob-decks">
                     <picture id="cyber">
-                        <source media="(max-width: 400px)" srcset="images/rob-decks/cyber-base-125.jpg" type="image/jpg">
+                        <source media="(max-width: 400px)" srcset="images/rob-decks/cyber-base-125.jpg"
+                            type="image/jpg">
                         <img src="images/rob-decks/cyber-base-250.jpg" alt="cyber" type="image/jpg">
                     </picture>
                     <picture id="cyberdark">
-                        <source media="(max-width: 400px)" srcset="images/rob-decks/cyberdark-hover-125.jpg" type="image/jpg">
+                        <source media="(max-width: 400px)" srcset="images/rob-decks/cyberdark-hover-125.jpg"
+                            type="image/jpg">
                         <img src="images/rob-decks/cyberdark-hover-250.jpg" alt="cyberdark" type="image/jpg">
                     </picture>
                     <picture id="uria">
@@ -89,21 +103,31 @@
                         <img src="images/rob-decks/uria-base-250.jpg" alt="uria" type="image/jpg">
                     </picture>
                     <picture id="dinomist">
-                        <source media="(max-width: 400px)" srcset="images/rob-decks/dinomist-hover-125.jpg" type="image/jpg">
+                        <source media="(max-width: 400px)" srcset="images/rob-decks/dinomist-hover-125.jpg"
+                            type="image/jpg">
                         <img src="images/rob-decks/dinomist-hover-250.jpg" alt="dinomist" type="image/jpg">
                     </picture>
                     <picture id="malefic">
-                        <source media="(max-width: 400px)" srcset="images/rob-decks/malefic-hover-125.jpg" type="image/jpg">
+                        <source media="(max-width: 400px)" srcset="images/rob-decks/malefic-hover-125.jpg"
+                            type="image/jpg">
                         <img src="images/rob-decks/malefic-hover-250.jpg" alt="malefic" type="image/jpg">
                     </picture>
+                    <aside class="titulos">
+                        <h3 class="fundoTitulo">Títulos:</h3>
+                        <p></p>
+                        <p class="copinha">Copinha (2022)</p>
+                        <p class="copinha">Copinha (2023)</p>
+                    </aside>
                 </aside>
                 <aside id="vi-decks">
                     <picture id="caveira">
-                        <source media="(max-width: 400px)" srcset="images/vi-decks/caveira-hover-125.jpg" type="image/jpg">
+                        <source media="(max-width: 400px)" srcset="images/vi-decks/caveira-hover-125.jpg"
+                            type="image/jpg">
                         <img src="images/vi-decks/caveira-hover-250.jpg" alt="caveira" type="image/jpg">
                     </picture>
                     <picture id="eldlich">
-                        <source media="(max-width: 400px)" srcset="images/vi-decks/eldlich-base-125.jpg" type= "image/jpg">
+                        <source media="(max-width: 400px)" srcset="images/vi-decks/eldlich-base-125.jpg"
+                            type="image/jpg">
                         <img src="images/vi-decks/eldlich-base-250.jpg" alt="eldlich" type="image/jpg">
                     </picture>
                     <picture id="ed">
@@ -115,39 +139,95 @@
                         <img src="images/vi-decks/maju-base-250.jpg" alt="maju" type="image/jpg">
                     </picture>
                     <picture id="exodia">
-                        <source media="(max-width: 400px)" srcset="images/vi-decks/exodia-base-125.jpeg" type="image/jpg">
+                        <source media="(max-width: 400px)" srcset="images/vi-decks/exodia-base-125.jpeg"
+                            type="image/jpg">
                         <img src="images/vi-decks/exodia-base-250.jpeg" alt="exodia" type="image/jpg">
                     </picture>
                 </aside>
                 <aside id="fah-decks">
                     <picture id="zircon">
-                        <source media="(max-width: 400px)" srcset="images/fah-decks/zircon-base-125.jpg" type="image/jpg">
+                        <source media="(max-width: 400px)" srcset="images/fah-decks/zircon-base-125.jpg"
+                            type="image/jpg">
                         <img src="images/fah-decks/zircon-base-250.jpg" alt="zircon" type="image/jpg">
                     </picture>
                     <picture id="magnet">
-                        <source media="(max-width: 400px)" srcset="images/fah-decks/valkyrion-125.jpg" type= "image/jpg">
+                        <source media="(max-width: 400px)" srcset="images/fah-decks/valkyrion-125.jpg" type="image/jpg">
                         <img src="images/fah-decks/valkyrion-250.jpg" alt="magnet" type="image/jpg">
                     </picture>
                 </aside>
-            </aside>
-            <aside id="feh-decks">
-                <picture id="sapo">
-                    <source media="(max-width: 400px)" srcset="images/feh-decks/sapo-hover-125.jpg" type="image/jpg">
-                    <img src="images/feh-decks/sapo-hover-250.jpg" alt="sapo" type="image/jpg">
-                </picture>
-                <picture id="burn">
-                    <source media="(max-width: 400px)" srcset="images/feh-decks/burn-base-125.jpg" type= "image/jpg">
-                    <img src="images/feh-decks/burn-base-250.jpg" alt="burn" type="image/jpg">
-                </picture>
-                <picture id="amazoness">
-                    <source media="(max-width: 400px)" srcset="images/feh-decks/amazoness-base-125.jpg" type="image/jpg">
-                    <img src="images/feh-decks/amazoness-base-250.jpg" alt="amazoness" type="image/jpg">
-                </picture>
-                <picture id="timelord">
-                    <source media="(max-width: 400px)" srcset="images/feh-decks/timelord-base-125.jpg" type="image/jpg">
-                    <img src="images/feh-decks/timelord-base-250.jpg" alt="timelord" type="image/jpg">
-                </picture>
-            </aside>
+                </aside>
+                <aside id="feh-decks">
+                    <picture id="sapo">
+                        <source media="(max-width: 400px)" srcset="images/feh-decks/sapo-hover-125.jpg"
+                            type="image/jpg">
+                        <img src="images/feh-decks/sapo-hover-250.jpg" alt="sapo" type="image/jpg">
+                    </picture>
+                    <picture id="burn">
+                        <source media="(max-width: 400px)" srcset="images/feh-decks/burn-base-125.jpg" type="image/jpg">
+                        <img src="images/feh-decks/burn-base-250.jpg" alt="burn" type="image/jpg">
+                    </picture>
+                    <picture id="amazoness">
+                        <source media="(max-width: 400px)" srcset="images/feh-decks/amazoness-base-125.jpg"
+                            type="image/jpg">
+                        <img src="images/feh-decks/amazoness-base-250.jpg" alt="amazoness" type="image/jpg">
+                    </picture>
+                    <picture id="timelord">
+                        <source media="(max-width: 400px)" srcset="images/feh-decks/timelord-base-125.jpg"
+                            type="image/jpg">
+                        <img src="images/feh-decks/timelord-base-250.jpg" alt="timelord" type="image/jpg">
+                    </picture>
+                </aside>
+            </section>
+        </article>
+        <article id="deckArea">
+            <section id="dino-deck">
+                <aside class="description">
+                    <h2>Dinossauro</h2>
+                    <p><strong>Títulos:</strong> 1 YuGiOh da Roça! (2022)</p>
+                    <p><strong>Participações:</strong> 2022/2023</p>
+                </aside>
+                <h2>Deck-torneio 2023</h2>
+                <aside class="deckImage">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="images/jao-decks/dino-deck-p.png">
+                        <img src="images/jao-decks/dino-deck-g.png" alt="dino-deck">
+                    </picture>
+                </aside>
+                <aside class="deckText">
+                    <h3>Main:</h3>
+                    <p>3x Blue-Eyes White Dragon</p>
+                    <p>3x Gogiga Gagagigo</p>
+                    <p>3x Phantasm Spiral Dragon</p>
+                    <p>3x Spiral Serpent</p>
+                    <p>3x Cosmo Queen</p>
+                    <p>3x Tri-Horned Dragon</p>
+                    <p>3x Suppression Collider</p>
+                    <p>3x Dragon Core Hexer</p>
+                    <p>3x Dark Magician</p>
+                    <p>3x Elemental HERO Neos</p>
+                    <p>3x Gem-Knight Crystal</p>
+                    <p>3x Red-Eyes Black Dragon</p>
+                    <p>1x Serpent Night Dragon</p>
+                    <p>3x Gaia The Fierce Knight</p>
+
+                    <h3>Extra:</h3>
+                    <p>3x Dragon Master Knight</p>
+                    <p>3x Five-Headed Dragon</p>
+                    <p>3x Cyberdark End Dragon</p>
+                    <p>1x Quintet Magician</p>
+                    <p>2x Barbaroid, the Ultimate Battle Machine</p>
+                    <p>1x The First Darklord</p>
+                    <p>1x Rainbow Overdragon</p>
+                    <p>1x Armityle the Chaos Phantasm</p>
+
+                    <h3>Side:</h3>
+                    <p>3x Ryu-Ran</p>
+                    <p>3x Launcher Spider</p>
+                    <p>3x Slot Machine</p>
+                    <p>2x Stone Dragon</p>
+                    <p>3x Summoned Skull</p>
+                    <p>1x Wattaildragon</p>
+                </aside>
             </section>
         </article>
     </main>

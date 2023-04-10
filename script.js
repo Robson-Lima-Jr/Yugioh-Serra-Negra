@@ -7,6 +7,7 @@ function btnClick() {
     let fehDecks = document.querySelector("aside#feh-decks");
 
     let playerList = document.getElementsByName("players");
+    let areaDeck = document.querySelector("article#deckArea");
 
     if (playerList[0].checked) {
         jaoDecks.style.display = "block";
@@ -15,6 +16,7 @@ function btnClick() {
         viDecks.style.display = "none";
         fahDecks.style.display = "none";
         fehDecks.style.display = "none";
+        areaDeck.style.display = "none";
     } else if (playerList[1].checked) {
         tilaDecks.style.display = "block";
         jaoDecks.style.display = "none";
@@ -22,6 +24,7 @@ function btnClick() {
         viDecks.style.display = "none";
         fahDecks.style.display = "none";
         fehDecks.style.display = "none";
+        areaDeck.style.display = "none";
     } else if (playerList[2].checked) {
         robDecks.style.display = "block";
         jaoDecks.style.display = "none";
@@ -29,6 +32,7 @@ function btnClick() {
         viDecks.style.display = "none";
         fahDecks.style.display = "none";
         fehDecks.style.display = "none";
+        areaDeck.style.display = "none";
     } else if (playerList[3].checked) {
         viDecks.style.display = "block";
         jaoDecks.style.display = "none";
@@ -36,6 +40,7 @@ function btnClick() {
         robDecks.style.display = "none";
         fahDecks.style.display = "none";
         fehDecks.style.display = "none";
+        areaDeck.style.display = "none";
     } else if (playerList[4].checked) {
         fahDecks.style.display = "block";
         jaoDecks.style.display = "none";
@@ -43,6 +48,7 @@ function btnClick() {
         robDecks.style.display = "none";
         viDecks.style.display = "none";
         fehDecks.style.display = "none";
+        areaDeck.style.display = "none";
     } else if (playerList[5].checked) {
         fehDecks.style.display = "block";
         jaoDecks.style.display = "none";
@@ -50,5 +56,14 @@ function btnClick() {
         robDecks.style.display = "none";
         viDecks.style.display = "none";
         fahDecks.style.display = "none";
+        areaDeck.style.display = "none";
     }
+}
+
+function dino_click() {
+    let areaDeck = document.querySelector("article#deckArea");
+    let imgClick = document.querySelector("section#dino-deck");
+
+    areaDeck.style.display = "block";
+    imgClick.style.display = "block";
 }
