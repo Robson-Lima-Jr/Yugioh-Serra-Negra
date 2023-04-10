@@ -110,8 +110,9 @@ main {
 .h2class {
     font-family: var(--fonte-titulos);
     font-weight: normal;
-    font-size: 3em;
+    font-size: 4em;
     color: var(--cor2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.397);
 }
 
 article ul {
@@ -166,7 +167,13 @@ footer span {
 
 #deckNav>h3 {
     font-family: var(--fonte-rodape);
-    padding-bottom: 20px;
+    padding-bottom: 1px;
+}
+
+#deckNav>h4 {
+    font-weight: normal;
+    font-family: var(--fonte-obs);
+    margin-bottom: 15px;
 }
 
 #deckNav label {
@@ -188,21 +195,21 @@ footer span {
     font-size: 2em;
     padding: 3px;
     background-color: var(--cor0);
-    color: var(--cor2);
+    color: var(--cor3);
     border-radius: 5px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.349);
 }
 
 #btn:hover {
-    background-color: var(--cor1);
-    color: var(--cor3);
+    background-color: var(--cor3);
+    color: var(--cor0);
 }
 
 picture {
     padding-right: 5px;
 }
 
-img {
+#deckIcons img {
     border-radius: 20px;
 }
 
@@ -210,38 +217,119 @@ img {
     margin-top: 10px;
 }
 
-#jao-decks{
-    padding: 20px;
+#jao-decks {
+    padding: 10px;
     display: none;
     text-align: center;
 }
 
-#tila-decks{
-    padding: 20px;
+#tila-decks {
+    padding: 10px;
     display: none;
     text-align: center;
 }
 
 #rob-decks {
-    padding: 20px;
+    padding: 10px;
     display: none;
     text-align: center;
 }
 
 #vi-decks {
-    padding: 20px;
+    padding: 10px;
     display: none;
     text-align: center;
 }
 
 #fah-decks {
-    padding: 20px;
+    padding: 10px;
     display: none;
     text-align: center;
 }
 
 #feh-decks {
-    padding: 20px;
+    padding: 10px;
     display: none;
     text-align: center;
+}
+
+.titulos {
+    background-color: var(--cor0);
+    font-family: var(--fonte-rodape);
+    color: black;
+    padding: 5px;
+    width: 240px;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 1.1em;
+    border: 2px solid black;
+}
+
+.fundoTitulo {
+    background-color: var(--cor4);
+    margin: -5px -5px 0px -5px;
+    color: var(--cor0)
+}
+
+.champ {
+    background-color: var(--cor0);
+    margin: -0px -5px 0px -5px;
+    background-color: var(--cor0);
+}
+
+.copinha {
+    background-color: var(--cor2);
+    margin: 0px -5px -5px -5px;
+    color: white;
+    padding-bottom: 5px;
+}
+
+/* Area de configurações do Historico e decklist */
+#deckArea {
+    font-family: var(--fonte-texto);
+    margin-top: 30px;
+    display: none;
+    text-align: center;
+}
+
+.description {
+    margin: 40px 0px;
+    font-size: 1.4em;
+    font-family: var(--fonte-texto);
+    font-weight: normal;
+}
+
+.description h2 {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 2em;
+    color: var(--cor2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.397);
+}
+
+.deckImage {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.deckText {
+    width: 300px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.deckText>h3 {
+    padding-bottom: 5px;
+    font-family: var(--fonte-titulos);
+    font-weight: normal;
+    font-size: 1.8em
+}
+
+.deckText>p {
+    padding-bottom: 5px;
+    line-height: 1.2em;
+    font-size: 1.05em;
 }
