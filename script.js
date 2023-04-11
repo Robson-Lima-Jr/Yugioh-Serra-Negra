@@ -21,6 +21,7 @@ function btnClick() {
         robDeckList.style.display = "none";
         viDeckList.style.display = "none";
         fahDeckList.style.display = "none";
+        fehDeckList.style.display = "none";
     } else if (playerList[1].checked) {
         tilaDecks.style.display = "block";
         jaoDecks.style.display = "none";
@@ -34,6 +35,7 @@ function btnClick() {
         robDeckList.style.display = "none";
         viDeckList.style.display = "none";
         fahDeckList.style.display = "none";
+        fehDeckList.style.display = "none";
     } else if (playerList[2].checked) {
         robDecks.style.display = "block";
         jaoDecks.style.display = "none";
@@ -47,6 +49,7 @@ function btnClick() {
         robDeckList.style.display = "none";
         viDeckList.style.display = "none";
         fahDeckList.style.display = "none";
+        fehDeckList.style.display = "none";
     } else if (playerList[3].checked) {
         viDecks.style.display = "block";
         jaoDecks.style.display = "none";
@@ -60,6 +63,7 @@ function btnClick() {
         robDeckList.style.display = "none";
         viDeckList.style.display = "none";
         fahDeckList.style.display = "none";
+        fehDeckList.style.display = "none";
     } else if (playerList[4].checked) {
         fahDecks.style.display = "block";
         jaoDecks.style.display = "none";
@@ -73,6 +77,7 @@ function btnClick() {
         robDeckList.style.display = "none";
         viDeckList.style.display = "none";
         fahDeckList.style.display = "none";
+        fehDeckList.style.display = "none";
     } else if (playerList[5].checked) {
         fehDecks.style.display = "block";
         jaoDecks.style.display = "none";
@@ -86,6 +91,7 @@ function btnClick() {
         robDeckList.style.display = "none";
         viDeckList.style.display = "none";
         fahDeckList.style.display = "none";
+        fehDeckList.style.display = "none";
     }
 }
 //Area de cliques nas imagens para abrir os arquivos
@@ -119,6 +125,12 @@ let exodia = document.querySelector("section#exodia-deck");
 let fahDeckList = document.querySelector("article#player5");
 let zircon = document.querySelector("section#zircon-deck");
 let magnet = document.querySelector("section#magnet-deck");
+//feh
+let fehDeckList = document.querySelector("article#player6");
+let sapo = document.querySelector("section#sapo-deck");
+let burn = document.querySelector("section#burn-deck");
+let amazoness = document.querySelector("section#amazoness-deck");
+let timelord = document.querySelector("section#timelord-deck");
 
 function dino_click() {
     jaoDeckList.style.display = "block";
@@ -287,3 +299,36 @@ function magnet_click() {
     magnet.style.display = "block";
     zircon.style.display = "none";
 }
+
+function sapo_click() {
+    fehDeckList.style.display = "block";
+    sapo.style.display = "block";
+    burn.style.display = "none";
+    amazoness.style.display = "none";
+    timelord.style.display = "none";
+}
+
+function burn_click() {
+    fehDeckList.style.display = "block";
+    burn.style.display = "block";
+    sapo.style.display = "none";
+    amazoness.style.display = "none";
+    timelord.style.display = "none";
+}
+
+function amazoness_click() {
+    fehDeckList.style.display = "block";
+    amazoness.style.display = "block";
+    sapo.style.display = "none";
+    burn.style.display = "none";
+    timelord.style.display = "none";
+}
+
+function timelord_click() {
+    fehDeckList.style.display = "block";
+    timelord.style.display = "block";
+    sapo.style.display = "none";
+    burn.style.display = "none";
+    amazoness.style.display = "none";
+}
+

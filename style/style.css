@@ -281,6 +281,10 @@ picture {
     display: none;
 }
 
+#player6 {
+    display: none;
+}
+
 .description {
     margin: 40px 0px;
     font-size: 1.4em;
