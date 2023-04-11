@@ -42,11 +42,6 @@
     --cor2: #941e1e;
     --cor3: #400601;
     --cor4: #130200;
-
-    --widthPq: 125px;
-    --widthGr: 250px;
-    --heightPq: 125px;
-    --heightGr: 250px;
 }
 
 * {
@@ -275,6 +270,14 @@ picture {
 }
 
 #player3 {
+    display: none;
+}
+
+#player4 {
+    display: none;
+}
+
+#player5 {
     display: none;
 }
 
