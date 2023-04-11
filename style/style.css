@@ -42,11 +42,6 @@
     --cor2: #941e1e;
     --cor3: #400601;
     --cor4: #130200;
-
-    --widthPq: 125px;
-    --widthGr: 250px;
-    --heightPq: 125px;
-    --heightGr: 250px;
 }
 
 * {
@@ -97,7 +92,6 @@ main {
     background-color: white;
 
     margin: auto;
-    margin-bottom: 20px;
     padding: 10px;
     min-width: 300px;
     max-width: 1000px;
@@ -110,7 +104,7 @@ main {
 .h2class {
     font-family: var(--fonte-titulos);
     font-weight: normal;
-    font-size: 4em;
+    font-size: 3.5em;
     color: var(--cor2);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.397);
 }
@@ -253,43 +247,42 @@ picture {
     text-align: center;
 }
 
-.titulos {
-    background-color: var(--cor0);
-    font-family: var(--fonte-rodape);
-    color: black;
-    padding: 5px;
-    width: 240px;
-    margin: auto;
-    margin-top: 10px;
-    font-size: 1.1em;
-    border: 2px solid black;
-}
-
-.fundoTitulo {
-    background-color: var(--cor4);
-    margin: -5px -5px 0px -5px;
-    color: var(--cor0)
-}
-
-.champ {
-    background-color: var(--cor0);
-    margin: -0px -5px 0px -5px;
-    background-color: var(--cor0);
-}
-
-.copinha {
-    background-color: var(--cor2);
-    margin: 0px -5px -5px -5px;
-    color: white;
-    padding-bottom: 5px;
-}
-
 /* Area de configurações do Historico e decklist */
-#deckArea {
+.deckArea {
     font-family: var(--fonte-texto);
-    margin-top: 30px;
-    display: none;
+    margin: 10px 5px 5px 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    min-width: 330px;
+    max-width: 450px;
     text-align: center;
+    border-radius: 10px;
+    background-color: var(--cor0);
+}
+
+#player1 {
+    display: none;
+}
+
+#player2 {
+    display: none;
+}
+
+#player3 {
+    display: none;
+}
+
+#player4 {
+    display: none;
+}
+
+#player5 {
+    display: none;
+}
+
+#player6 {
+    display: none;
 }
 
 .description {
@@ -303,6 +296,7 @@ picture {
     width: 300px;
     margin: auto;
     margin-bottom: 10px;
+    padding-top: 10px;
     font-size: 2em;
     color: var(--cor2);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.397);
@@ -317,7 +311,6 @@ picture {
     width: 300px;
     padding: 10px;
     margin: auto;
-    margin-bottom: 20px;
     text-align: left;
 }
 
