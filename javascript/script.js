@@ -1,3 +1,5 @@
+//Função para quando clicar no botão "Checar Deck", exibir a lista de decks de cada jogador
+
 function btnClick() {
     let jaoDecks = document.querySelector("aside#jao-decks");
     let tilaDecks = document.querySelector("aside#tila-decks");
