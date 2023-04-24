@@ -37,7 +37,7 @@
     --fonte-rodape: "edition-card", serif;
     --fonte-obs: "normal-card", serif;
 
-    --cor0: #bb9d66;
+    --cor0: #e7c481;
     --cor1: #A65729;
     --cor2: #941e1e;
     --cor3: #400601;
@@ -86,7 +86,7 @@ tbody>tr:nth-child(even) {
 }
 
 tbody>tr:nth-child(odd) {
-    background-color: rgb(231, 228, 228);
+    background-color: rgb(240, 231, 231);
 }
 
 th,
@@ -96,7 +96,7 @@ td {
     border: 3px solid white;
 }
 
-img {
+td > img {
     width: 50px;
     display: block;
 }
