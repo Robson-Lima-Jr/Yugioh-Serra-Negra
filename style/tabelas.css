@@ -37,7 +37,7 @@
     --fonte-rodape: "edition-card", serif;
     --fonte-obs: "normal-card", serif;
 
-    --cor0: #e7c481;
+    --cor0: #ffdea0;
     --cor1: #A65729;
     --cor2: #941e1e;
     --cor3: #400601;
@@ -48,16 +48,20 @@ h2 {
     margin-bottom: 20px;
 }
 
-h3 {
-   font-family: var(--fonte-titulos);
-   font-size: 2.5em;
-   font-weight: normal;
-   text-align: center;
-   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.397);
+aside {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
+input {
+    padding: 6px;
+    font-size: 1.5em;
+    font-family: var(--fonte-titulos);
+    font-weight: normal;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.438);
+}
 
-main > article > p {
+main>article>p {
     text-align: center;
     margin-bottom: 20px;
 }
@@ -96,11 +100,31 @@ td {
     border: 3px solid white;
 }
 
-td > img {
+td>img {
     width: 50px;
     display: block;
 }
 
 .padTable {
     padding: 5px 5px;
+}
+
+#classDeck {
+    margin-right: 10px;
+    background-color: var(--cor3);
+    color: white;
+}
+
+#classPlayer {
+    background-color: white;
+    color: var(--cor3);
+}
+
+#classGeral {
+    display: none;
+}
+
+#classGeral>table>tbody>tr>td {
+    font-size: 1.7em;
+    font-weight: normal;
 }
