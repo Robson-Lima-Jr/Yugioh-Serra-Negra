@@ -37,7 +37,7 @@
     --fonte-rodape: "edition-card", serif;
     --fonte-obs: "normal-card", serif;
 
-    --cor0: #ffdea0;
+    --cor0: #bb9d66;
     --cor1: #A65729;
     --cor2: #941e1e;
     --cor3: #400601;
@@ -58,7 +58,7 @@ input {
     font-size: 1.5em;
     font-family: var(--fonte-titulos);
     font-weight: normal;
-    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.438);
+    box-shadow: 2px 2px 2.5px rgba(0, 0, 0, 0.438);
 }
 
 main>article>p {
@@ -86,16 +86,16 @@ thead>tr>th {
 
 
 tbody>tr:nth-child(even) {
-    background-color: var(--cor0);
+    background-color: #eecb8a;;
 }
 
 tbody>tr:nth-child(odd) {
-    background-color: rgb(240, 231, 231);
+    background-color: rgb(235, 229, 229);
 }
 
 th,
 td {
-    font-size: 1.3em;
+    font-size: 1.4em;
     text-align: center;
     border: 3px solid white;
 }
@@ -125,6 +125,6 @@ td>img {
 }
 
 #classGeral>table>tbody>tr>td {
-    font-size: 1.7em;
+    font-size: 1.4em;
     font-weight: normal;
 }
