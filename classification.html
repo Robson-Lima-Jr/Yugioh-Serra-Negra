@@ -24,150 +24,238 @@
         <a href="games.html" target="_self" rel="next">Partidas</a>
     </nav>
     <main>
-        <article>
+        <article id="botoes">
             <h2 class="h2class">Classificação</h2>
-            <h3>Fase Regular</h3>
-            <table>
-                <colgroup>
-                    <col>
-                    <col>
-                    <col class="fontDeck">
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th scope="col" class="padTable">POS</th>
-                        <th scope="col">ICO</th>
-                        <th scope="col">DECK</th>
-                        <th scope="col" class="padTable">P</th>
-                        <th scope="col" class="padTable">RD</th>
-                        <th scope="col" class="padTable">V</th>
-                        <th scope="col" class="padTable">E</th>
-                        <th scope="col" class="padTable">D</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1º</td>
-                        <td><img src="images/fah-decks/zircon-icon.jpg" alt="zircon"></td>
-                        <td class="padTable">Gem-Knight</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>2º</td>
-                        <td><img src="images/fah-decks/valkyrion-icon.jpg" alt="zircon"></td>
-                        <td>Magnet</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>3º</td>
-                        <td><img src="images/jao-decks/dino-icon.jpg" alt="dino"></td>
-                        <td>Dino</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>4º</td>
-                        <td><img src="images/jao-decks/gouki-icon.jpg" alt="gouki"></td>
-                        <td>Gouki</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>5º</td>
-                        <td><img src="images/flo-decks/blader-icon.jpg" alt="Buster"></td>
-                        <td>Buster Blader</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>6º</td>
-                        <td><img src="images/flo-decks/blue-icon.jpg" alt="blue-eyes"></td>
-                        <td>Blue-Eyes</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>7º</td>
-                        <td><img src="images/rob-decks/cyber-icon.jpg" alt="cyber"></td>
-                        <td>Cyber Dragon</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>8º</td>
-                        <td><img src="images/rob-decks/cyberdark-icon.jpg" alt="cyberdark"></td>
-                        <td>Cyberdark</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>9º</td>
-                        <td><img src="images/vi-decks/caveira-icon.jpg" alt="Skull Servant"></td>
-                        <td>Skull Servant</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>10º</td>
-                        <td><img src="images/vi-decks/eldlich-icon.jpg" alt="Eldlich"></td>
-                        <td>Eldlich</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>11º</td>
-                        <td><img src="images/feh-decks/sapo-icon.jpg" alt="Frog"></td>
-                        <td>Frogs</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>12º</td>
-                        <td><img src="images/feh-decks/burn-icon.jpg" alt="Burn"></td>
-                        <td>Burn</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                </tbody>
-            </table>
+            <aside>
+                <input type="button" value="Ranking por Deck" id="classDeck" onclick="rankDeck()">
+                <input type="button" value="Ranking por Player" id="classPlayer" onclick="rankPlayer()">
+            </aside>
+            <section id="classificacao">
+                <table>
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col class="fontDeck">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col" class="padTable">POS</th>
+                            <th scope="col">ICO</th>
+                            <th scope="col">DECK</th>
+                            <th scope="col" class="padTable">P</th>
+                            <th scope="col" class="padTable">RD</th>
+                            <th scope="col" class="padTable">V</th>
+                            <th scope="col" class="padTable">E</th>
+                            <th scope="col" class="padTable">D</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1º</td>
+                            <td><img src="images/fah-decks/zircon-icon.jpg" alt="zircon"></td>
+                            <td class="padTable">Gem-Knight</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>2º</td>
+                            <td><img src="images/fah-decks/valkyrion-icon.jpg" alt="zircon"></td>
+                            <td>Magnet</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>3º</td>
+                            <td><img src="images/jao-decks/dino-icon.jpg" alt="dino"></td>
+                            <td>Dino</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>4º</td>
+                            <td><img src="images/jao-decks/gouki-icon.jpg" alt="gouki"></td>
+                            <td>Gouki</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>5º</td>
+                            <td><img src="images/flo-decks/blader-icon.jpg" alt="Buster"></td>
+                            <td>Buster Blader</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>6º</td>
+                            <td><img src="images/flo-decks/blue-icon.jpg" alt="blue-eyes"></td>
+                            <td>Blue-Eyes</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>7º</td>
+                            <td><img src="images/rob-decks/cyber-icon.jpg" alt="cyber"></td>
+                            <td>Cyber Dragon</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>8º</td>
+                            <td><img src="images/rob-decks/cyberdark-icon.jpg" alt="cyberdark"></td>
+                            <td>Cyberdark</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>9º</td>
+                            <td><img src="images/vi-decks/caveira-icon.jpg" alt="Skull Servant"></td>
+                            <td>Skull Servant</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>10º</td>
+                            <td><img src="images/vi-decks/eldlich-icon.jpg" alt="Eldlich"></td>
+                            <td>Eldlich</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>11º</td>
+                            <td><img src="images/feh-decks/timelord-icon.jpg" alt="Timelord"></td>
+                            <td>Timelord</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>12º</td>
+                            <td><img src="images/feh-decks/burn-icon.jpg" alt="Burn"></td>
+                            <td>Burn</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="classGeral">
+                <table>
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col class="fontDeck">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col" class="padTable">POS</th>
+                            <th scope="col" class="padTable">PLAYER</th>
+                            <th scope="col" class="padTable">D1</th>
+                            <th scope="col" class="padTable">D2</th>
+                            <th scope="col" class="padTable">P</th>
+                            <th scope="col" class="padTable">V</th>
+                            <th scope="col" class="padTable">E</th>
+                            <th scope="col" class="padTable">D</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1º</td>
+                            <td>Fah</td>
+                            <td><img src="images/fah-decks/zircon-icon.jpg" alt="zircon"></td>
+                            <td><img src="images/fah-decks/valkyrion-icon.jpg" alt="Magnet"></td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>2º</td>
+                            <td>Jão</td>
+                            <td><img src="images/jao-decks/dino-icon.jpg" alt="dino"></td>
+                            <td><img src="images/jao-decks/gouki-icon.jpg" alt="gouki"></td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>3º</td>
+                            <td>Tila</td>
+                            <td><img src="images/flo-decks/blader-icon.jpg" alt="Blader"></td>
+                            <td><img src="images/flo-decks/blue-icon.jpg" alt="blue-eyes"></td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>4º</td>
+                            <td>Rob</td>
+                            <td><img src="images/rob-decks/cyber-icon.jpg" alt="cyber"></td>
+                            <td><img src="images/rob-decks/cyberdark-icon.jpg" alt="cyberdark"></td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>5º</td>
+                            <td>Vi</td>
+                            <td><img src="images/vi-decks/caveira-icon.jpg" alt="caveira"></td>
+                            <td><img src="images/vi-decks/eldlich-icon.jpg" alt="Eldlich"></td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>6º</td>
+                            <td>Feh</td>
+                            <td><img src="images/feh-decks/timelord-icon.jpg" alt="Timelord"></td>
+                            <td><img src="images/feh-decks/burn-icon.jpg" alt="Burn"></td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        </tbody>
+                </table>
+            </section>
             <p><strong>LEGENDA:</strong><br>
                 <strong>POS</strong> = Posição /
                 <strong>ICO</strong> = Icone /
@@ -181,13 +269,10 @@
         </article>
     </main>
     <footer>
-        <p><span class="footer-status">Yu-Gi-Oh! da Roça!</span> é um Torneio criado por <span
-                class="footer-status">Vi</span>, <span class="footer-status">Jão</span>, <span
-                class="footer-status">Rob</span>, <span class="footer-status">Tila</span>, <span
-                class="footer-status">Feh</span>, e <span class="footer-status">Fah.</span></p>
-        <p><span id="criado">Site criado e desenvolvido por Robson Lima Junior</span></p>
+        <p>Site criado e desenvolvido por <span id="criado">Robson Lima Junior</span></p>
         <p>Site sem fins lucrativos, apenas para informação do torneio e organização do mesmo.</p>
     </footer>
+    <script src="javascript/classification.js"></script>
 </body>
 
 </html>
