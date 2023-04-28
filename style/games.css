@@ -148,3 +148,53 @@ section > aside {
     min-width: 340px;
     max-width: 800px;
 }
+
+/*Pagina de Torneios Anteriores*/
+
+.h3Class {
+    font-family: var(--fonte-titulos);
+    font-weight: normal;
+    font-size: 2.5em;
+    color: var(--cor2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.397);
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+.h4Class {
+    font-family: var(--fonte-titulos);
+    font-weight: normal;
+    font-size: 2em;
+    color: var(--cor4);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.397);
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.champ {
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+
+}
+
+.premio {
+    display: block;
+}
+
+
+.premio > p {
+    display: inline-block;
+    padding-right: 10px;
+    vertical-align: middle;
+    font-family: var(--fonte-titulos);
+    color: var(--cor1);
+    font-size: 2em;
+}
+
+.premioImage {
+    width: 80px;
+    border-radius: 20px;
+}

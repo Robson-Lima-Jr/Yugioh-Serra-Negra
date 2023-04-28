@@ -87,32 +87,65 @@ nav a:hover {
 
 main {
     background-color: white;
-
     margin: auto;
     padding: 10px;
     min-width: 300px;
     max-width: 1000px;
-
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.192);
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
 }
 
 .h2class {
     font-family: var(--fonte-titulos);
     font-weight: normal;
-    font-size: 3.5em;
+    font-size: 3em;
     color: var(--cor2);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.397);
 }
 
+article {
+    padding-top: 15px;
+}
+
+#hisSec {
+    margin-bottom: 30px;
+}
+
+#btnHistory {
+    text-align: center;
+}
+
+#clickHistory {
+    padding: 6px;
+    font-size: 1.5em;
+    background-color: var(--cor3);
+    color: white;
+    font-family: var(--fonte-titulos);
+    font-weight: normal;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2.5px rgba(0, 0, 0, 0.438);
+}
+
+.historia {
+    line-height: 1.6em;
+    font-family: var(--fonte-texto);
+    font-size: 1.2em;
+    text-align: justify;
+    text-indent: 30px;
+    margin-bottom: 5px;
+}
+
+#principalArticle {
+    padding: 10px;
+}
+
 article ul {
     list-style-position: inside;
+    margin-bottom: 30px;
 }
 
 article li {
     padding: 5px 0px;
-    line-height: 1.2em;
+    line-height: 1.6em;
     font-family: var(--fonte-texto);
     font-size: 1.07em;
 }
@@ -123,6 +156,11 @@ article li {
     color: var(--cor2);
     padding: 0px 5px;
     font-weight: bold;
+}
+
+.obsText {
+    font-family: var(--fonte-rodape);
+    padding: 3px;
 }
 
 footer {
@@ -141,6 +179,12 @@ footer>p {
 
 footer span {
     padding-right: 2px;
+}
+
+a {
+    color: var(--cor0);
+    text-decoration: none;
+    font-size: 1.2em;
 }
 
 .footer-status:hover {
