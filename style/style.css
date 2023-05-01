@@ -296,7 +296,7 @@ picture {
     margin-bottom: 20px;
     padding-bottom: 15px;
     min-width: 330px;
-    max-width: 450px;
+    max-width: 600px;
     text-align: center;
     border-radius: 10px;
     background-color: var(--cor0);
@@ -355,6 +355,13 @@ picture {
     text-align: left;
 }
 
+.deckText>h2 {
+    font-family: var(--fonte-titulos);
+    font-weight: normal;
+    font-size: 2.5em;
+    color: var(--cor3);
+}
+
 .deckText>h3 {
     padding-bottom: 5px;
     font-family: var(--fonte-titulos);
@@ -364,6 +371,7 @@ picture {
 
 .deckText>p {
     padding-bottom: 5px;
-    line-height: 1.2em;
-    font-size: 1.05em;
+    line-height: 1.6em;
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
