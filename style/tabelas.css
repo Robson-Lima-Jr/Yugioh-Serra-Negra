@@ -74,7 +74,7 @@ table {
     border-collapse: collapse;
     font-family: var(--fonte-titulos);
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.445);
 }
 
@@ -131,4 +131,16 @@ td>img {
 #classGeral>table>tbody>tr>td {
     font-size: 1.4em;
     font-weight: normal;
+}
+
+#classFirst {
+    background-color: rgb(50, 50, 228);
+    width: 30px;
+    height: 30px;
+}
+
+#classPlayoffs {
+    background-color: rgb(50, 122, 50);
+    width: 30px;
+    height: 30px;
 }
