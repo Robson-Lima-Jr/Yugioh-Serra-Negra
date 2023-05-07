@@ -76,6 +76,7 @@ iframe {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.486);
 }
 
+
 .divFrame {
     margin: auto;
     text-align: center;
@@ -115,6 +116,21 @@ iframe {
 }
 
 #frameJogos {
-    width: 344px;
-    height: 3665px;
+    width: 343px;
+    height: 3661px;
+}
+
+.hallOfFame {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#frame2022 {
+    width: 326px;
+    height: 365px;
+}
+
+#frame2021 {
+    width: 345px;
+    height: 313px;
 }
