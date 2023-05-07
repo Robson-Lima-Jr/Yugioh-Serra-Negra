@@ -42,9 +42,6 @@
     --cor2: #941e1e;
     --cor3: #400601;
     --cor4: #130200;
-
-    --corTabela01: #eecb8a;
-    --corTabela02: rgb(235, 229, 229);
 }
 
 h2 {
@@ -65,72 +62,29 @@ input {
     box-shadow: 2px 2px 2.5px rgba(0, 0, 0, 0.438);
 }
 
+#classDeck {
+    color: white;
+    background-color: var(--cor3);
+}
+
 main>article>p {
     text-align: center;
     margin-bottom: 20px;
 }
 
-table {
-    border-collapse: collapse;
-    font-family: var(--fonte-titulos);
+iframe {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.486);
+}
+
+
+.divFrame {
     margin: auto;
-    margin-bottom: 30px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.445);
-}
-
-thead {
-    background-color: var(--cor3);
-    font-size: 1.4em;
-    color: white;
-}
-
-thead>tr>th {
-    font-weight: normal;
-}
-
-
-tbody>tr:nth-child(even) {
-    background-color: var(--corTabela01);
-}
-
-tbody>tr:nth-child(odd) {
-    background-color: var(--corTabela02);
-}
-
-th,
-td {
-    font-size: 1.4em;
     text-align: center;
-    border: 3px solid white;
 }
 
-td>img {
-    width: 50px;
-    display: block;
-}
-
-.padTable {
-    padding: 5px 5px;
-}
-
-#classDeck {
-    margin-right: 10px;
-    background-color: var(--cor3);
-    color: white;
-}
-
-#classPlayer {
-    background-color: white;
-    color: var(--cor3);
-}
-
-#classGeral {
-    display: none;
-}
-
-#classGeral>table>tbody>tr>td {
-    font-size: 1.4em;
-    font-weight: normal;
+#frameClassification {
+    width: 330px;
+    height: 653px;
 }
 
 #classFirst {
@@ -143,4 +97,40 @@ td>img {
     background-color: rgb(50, 122, 50);
     width: 30px;
     height: 30px;
+}
+
+#descricaoClassif {
+    font-family: var(--fonte-obs);
+    padding: 20px 0px 40px 0px;
+    margin: auto;
+}
+
+#classGeral {
+    display: none;
+    margin-bottom: 20px;
+}
+
+#frameGeral {
+    width: 331px;
+    height: 341px;
+}
+
+#frameJogos {
+    width: 343px;
+    height: 3661px;
+}
+
+.hallOfFame {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#frame2022 {
+    width: 326px;
+    height: 365px;
+}
+
+#frame2021 {
+    width: 345px;
+    height: 313px;
 }

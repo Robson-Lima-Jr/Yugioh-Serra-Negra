@@ -375,3 +375,16 @@ picture {
     font-size: 1.2em;
     margin-bottom: 10px;
 }
+
+/*Pagina de Torneios Anteriores*/
+
+.h3Class {
+    font-family: var(--fonte-titulos);
+    font-weight: normal;
+    font-size: 2.5em;
+    color: var(--cor2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.397);
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
