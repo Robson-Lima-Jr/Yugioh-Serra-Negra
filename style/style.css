@@ -382,7 +382,7 @@ picture {
     font-family: var(--fonte-titulos);
     font-weight: normal;
     font-size: 2.5em;
-    color: var(--cor2);
+    color: var(--cor3);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.397);
     text-align: center;
     padding: 10px;
