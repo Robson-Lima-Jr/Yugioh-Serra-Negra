@@ -327,7 +327,7 @@ picture {
 }
 
 .description {
-    margin: 40px 0px;
+    margin: 0px 0px;
     font-size: 1.4em;
     font-family: var(--fonte-texto);
     font-weight: normal;
