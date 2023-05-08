@@ -2,8 +2,6 @@
 
 Site em Construção 
 
-[Yu-Gi-Oh! da Roça](https://robson-lima-jr.github.io/Yugioh-Serra-Negra/)
-
 https://robson-lima-jr.github.io/Yugioh-Serra-Negra/
 
 **Site dedicado apenas a competição, com decks inscritos, Classificação, tabela de jogos e outros detalhes das competiçoes**
