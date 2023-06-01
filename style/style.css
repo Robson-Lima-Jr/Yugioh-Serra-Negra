@@ -25,10 +25,10 @@
     --fonte-obs: "normal-card", serif;
 
     --cor0: #d6b475;
-    --cor1: #9c1607;
-    --cor2: #4e0d06;
-    --cor3: #270804;
-    --cor4: #110301;
+    --cor1: #7e2016;
+    --cor2: #3b0a04;
+    --cor3: #220603;
+    --cor4: #130301;
 }
 
 * {
@@ -50,8 +50,12 @@ header {
     text-align: center;
 }
 
+header > h1 {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3), var(--cor4));
+}
+
 header>h1>img {
-    width: 70vw;
+    width: 350px;
 }
 
 header>h1 {
@@ -78,12 +82,12 @@ header>menu>ul {
 }
 
 header>menu>ul>li {
-    border-top: 2px solid var(--cor2);
+    border-top: 2px solid var(--cor0);
 }
 
 header>menu>ul>li>a {
     display: block;
-    background-color: var(--cor3);
+    background-color: var(--cor2);
     color: var(--cor0);
     text-decoration: none;
     font-family: var(--fonte-titulos);
@@ -140,8 +144,9 @@ footer {
     text-align: center;
     display: block;
     font-family: var(--fonte-titulos);
-    background-color: var(--cor3);
+    background-image: linear-gradient(to top, var(--cor1), var(--cor3), var(--cor4));
 }
+
 
 footer span {
     color: var(--cor0);
