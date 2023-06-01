@@ -24,354 +24,72 @@
     --fonte-texto: "effect-card", serif;
     --fonte-obs: "normal-card", serif;
 
-    --cor0: #bb9d66;
-    --cor1: #A65729;
-    --cor2: #941e1e;
-    --cor3: #400601;
-    --cor4: #130200;
+    --cor0: #d6b475;
+    --cor1: #d46d31;
+    --cor2: #4e0d06;
+    --cor3: #270804;
+    --cor4: #110301;
 }
 
 * {
     margin: 0px;
     padding: 0px;
+    font-family: var(--fonte-texto);
+    box-sizing: border-box;
 }
 
 body {
-    background-color: var(--cor0);
+    width: 100vw;
 }
 
 header {
-    height: 90px;
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3), var(--cor4));
-    padding-top: 20px;
+    background-color: var(--cor2);
+    text-align: center;
+    width: 100vw;
 }
 
 header>h1 {
-    text-align: center;
+    padding: 20px 0px 10px 0px;
 }
 
-nav {
-    text-align: center;
+header>h1>img {
+    width: 80vw;
+}
+
+#menuBurguer {
+    display: block;
+    padding: 2px;
+    font-size: 2em;
     background-color: var(--cor4);
-    padding: 6px 0px;
+    color: var(--cor0);
 }
 
-nav>a {
-    font: normal 1.1em var(--fonte-titulos);
-    font-weight: normal;
-    font-size: 2em;
+header>menu {
+    text-align: center;
+    list-style-type: none;
+    display: none;
+}
+
+header > menu > ul {
+    border-bottom: 2px solid var(--cor4);
+}
+
+header > menu > ul > li {
+    border-top: 2px solid var(--cor2);
+}
+
+header>menu>ul>li>a {
+    display: block;
+    background-color: var(--cor3);
     color: var(--cor0);
     text-decoration: none;
-    padding: 4px;
-}
-
-nav a:hover {
-    background-color: var(--cor0);
-    color: var(--cor3);
-    border-radius: 5px;
-    transition-duration: 0.5s;
-}
-
-main {
-    background-color: white;
-    margin: auto;
-    padding: 10px;
-    min-width: 300px;
-    max-width: 1000px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.192);
-}
-
-.h2class {
     font-family: var(--fonte-titulos);
+    font-size: 1.8em;
     font-weight: normal;
-    font-size: 3em;
-    color: var(--cor2);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.397);
-}
-
-article {
-    padding-top: 15px;
-}
-
-#hisSec {
-    margin-bottom: 30px;
-}
-
-#btnHistory {
-    text-align: center;
-}
-
-#clickHistory {
-    padding: 6px;
-    font-size: 1.5em;
-    background-color: var(--cor3);
-    color: white;
-    font-family: var(--fonte-titulos);
-    font-weight: normal;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2.5px rgba(0, 0, 0, 0.438);
-}
-
-.historia {
-    line-height: 1.6em;
-    font-family: var(--fonte-texto);
-    font-size: 1.2em;
-    text-align: justify;
-    text-indent: 30px;
-    margin-bottom: 5px;
-}
-
-#principalArticle {
-    padding: 10px;
-}
-
-article ul {
-    list-style-position: inside;
-    margin-bottom: 30px;
-}
-
-article li {
-    padding: 5px 0px;
-    line-height: 1.6em;
-    font-family: var(--fonte-texto);
-    font-size: 1.07em;
-}
-
-#banlist {
-    text-decoration: none;
-    background-color: var(--cor0);
-    color: var(--cor2);
-    padding: 0px 5px;
-    font-weight: bold;
-}
-
-.obsText {
-    font-family: var(--fonte-rodape);
     padding: 3px;
 }
 
-footer {
-    text-align: center;
-    font-family: var(--fonte-rodape);
-    font-weight: normal;
-    font-size: 0.8em;
-    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
-    color: white;
-}
-
-footer>p {
-    padding: 5px 0px;
-    line-height: 1.1em;
-}
-
-footer span {
-    padding-right: 2px;
-}
-
-a {
-    color: var(--cor0);
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-.footer-status:hover {
+header>menu>ul>li>a:hover {
     background-color: var(--cor0);
-    color: black;
-    padding-right: 2px;
-}
-
-#criado:hover {
-    background-color: var(--cor0);
-    color: black
-}
-
-/*CSS Exclusivos pagina Decks*/
-
-#deckNav>h3 {
-    font-family: var(--fonte-rodape);
-    padding-bottom: 1px;
-}
-
-#deckNav>h4 {
-    font-weight: normal;
-    font-family: var(--fonte-obs);
-    margin-bottom: 15px;
-}
-
-#deckNav label {
-    font-family: var(--fonte-texto);
-    font-weight: bold;
-    font-size: 20px;
-    padding-bottom: 10px;
-    margin: auto;
-    margin-right: 8px;
-}
-
-#deckNav p {
-    text-align: center;
-}
-
-#btn {
-    margin-top: 15px;
-    font-family: var(--fonte-titulos);
-    font-size: 2em;
-    padding: 3px;
-    background-color: var(--cor0);
-    color: var(--cor3);
-    border-radius: 10px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.349);
-}
-
-#btn:hover {
-    background-color: var(--cor3);
-    color: var(--cor0);
-}
-
-picture {
-    padding-right: 5px;
-}
-
-#deckIcons img {
-    border-radius: 20px;
-}
-
-#deckIcons {
-    margin-top: 10px;
-}
-
-#jao-decks {
-    padding: 10px;
-    display: none;
-    text-align: center;
-}
-
-#tila-decks {
-    padding: 10px;
-    display: none;
-    text-align: center;
-}
-
-#rob-decks {
-    padding: 10px;
-    display: none;
-    text-align: center;
-}
-
-#vi-decks {
-    padding: 10px;
-    display: none;
-    text-align: center;
-}
-
-#fah-decks {
-    padding: 10px;
-    display: none;
-    text-align: center;
-}
-
-#feh-decks {
-    padding: 10px;
-    display: none;
-    text-align: center;
-}
-
-/* Area de configurações do Historico e decklist */
-.deckArea {
-    font-family: var(--fonte-texto);
-    margin: 10px 5px 5px 10px;
-    margin: auto;
-    margin-bottom: 20px;
-    padding-bottom: 15px;
-    min-width: 330px;
-    max-width: 600px;
-    text-align: center;
-    border-radius: 10px;
-    background-color: var(--cor0);
-}
-
-#player1 {
-    display: none;
-}
-
-#player2 {
-    display: none;
-}
-
-#player3 {
-    display: none;
-}
-
-#player4 {
-    display: none;
-}
-
-#player5 {
-    display: none;
-}
-
-#player6 {
-    display: none;
-}
-
-.description {
-    margin: 0px 0px;
-    font-size: 1.4em;
-    font-family: var(--fonte-texto);
-    font-weight: normal;
-}
-
-.description h2 {
-    width: 300px;
-    margin: auto;
-    margin-bottom: 10px;
-    padding-top: 10px;
-    font-size: 2em;
-    color: var(--cor2);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.397);
-}
-
-.deckImage {
-    margin-top: 25px;
-    text-align: center;
-}
-
-.deckText {
-    width: 300px;
-    padding: 10px;
-    margin: auto;
-    text-align: left;
-}
-
-.deckText>h2 {
-    font-family: var(--fonte-titulos);
-    font-weight: normal;
-    font-size: 2.5em;
-    color: var(--cor3);
-}
-
-.deckText>h3 {
-    padding-bottom: 5px;
-    font-family: var(--fonte-titulos);
-    font-weight: normal;
-    font-size: 1.8em
-}
-
-.deckText>p {
-    padding-bottom: 5px;
-    line-height: 1.6em;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-/*Pagina de Torneios Anteriores*/
-
-.h3Class {
-    font-family: var(--fonte-titulos);
-    font-weight: normal;
-    font-size: 2.5em;
-    color: var(--cor3);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.397);
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 10px;
+    color: var(--cor4);
 }

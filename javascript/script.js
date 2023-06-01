@@ -1,5 +1,15 @@
-//Função para quando clicar no botão "Checar Deck", exibir a lista de decks de cada jogador
+//Função para abrir e fechar o menu no mobile
+function menuClick() {
+    let menuArea = document.querySelector("menu#menuArea");
 
+    if (menuArea.style.display == "block") {
+        menuArea.style.display = "none";
+    } else {
+        menuArea.style.display = "block";
+    }
+}
+
+//Função para quando clicar no botão "Checar Deck", exibir a lista de decks de cada jogador
 function btnClick() {
     let jaoDecks = document.querySelector("aside#jao-decks");
     let tilaDecks = document.querySelector("aside#tila-decks");
