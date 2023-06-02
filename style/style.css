@@ -52,16 +52,13 @@ header {
 
 header>h1 {
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor4));
-}
-
-header>h1>img {
-    width: 350px;
-}
-
-header>h1 {
     padding: 20px 0px 10px 0px;
 }
 
+
+header>h1>a>img {
+    width: 350px;
+}
 
 #menuBurguer {
     display: block;
@@ -169,7 +166,7 @@ footer>div>p>a {
 }
 
 /* Area de configuração: Classification.html */
-#mainClass {
+.mainClass {
     width: 95vw;
 }
 #buttonClassification {
@@ -227,6 +224,7 @@ td strong {
     display: block;
     width: 25px;
     height: 25px;
+    margin-top: 10px;
     margin-right: 5px;
     margin-bottom: 5px;
     background-color: #3232E4;
@@ -251,4 +249,34 @@ td strong {
 #legenda1 {
     display: block;
     margin: 10px;
+}
+
+/* CSS página de Games */
+
+#frameJogos {
+    width: 330px;
+    height: 4213px;
+    margin-top: 20px;
+}
+
+/* CSS página Torneios anteriores */
+
+.h3Class {
+    margin: 20px 0px;
+    text-align: center;
+    font-family: var(--fonte-titulos);
+    font-weight: normal;
+    font-size: 2em;
+    color: var(--cor3);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.445);
+}
+
+#frame2022 {
+    width: 329px;
+    height: 416px;
+}
+
+#frame2021 {
+    width: 327px;
+    height: 359px;
 }
