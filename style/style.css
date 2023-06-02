@@ -299,3 +299,33 @@ td strong {
 #semiLimited {
     width: 330px;
 }
+
+/* CSS pagina Deck */
+label > h3 {
+    display: inline;
+    margin-right: 10px;
+}
+#playerMobile { 
+    display: inline;
+    margin-bottom: 20px;
+    padding: 0px 10px 0px 10px;
+    background-color: var(--cor2);
+    color: var(--cor0);
+    text-align: center;
+    font-family: var(--fonte-titulos);
+    font-size: 1.4em;
+}
+
+#jao-decks {display: none;}
+
+#tila-decks {display: none;}
+
+#rob-decks {display: none;}
+
+#vi-decks {display: none;}
+
+#fah-decks {display: none;}
+
+#feh-decks {display: none;}
+
+.deckArea {display: none;}
