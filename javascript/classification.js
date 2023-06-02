@@ -7,18 +7,18 @@ function rankDeck() {
     baseClassificacao.style.display = "block";
     playerClassificacao.style.display = "none";
 
-    btnDeck.style.backgroundColor = "#400601";
+    btnDeck.style.backgroundColor = "#3b0a04";
     btnDeck.style.color = "white";
     btnPlayer.style.backgroundColor = "white";
-    btnPlayer.style.color = "#400601";
+    btnPlayer.style.color = "#3b0a04";
 }
 
 function rankPlayer() {
     playerClassificacao.style.display = "block";
     baseClassificacao.style.display = "none";
 
-    btnPlayer.style.backgroundColor = "#400601";
+    btnPlayer.style.backgroundColor = "#3b0a04";
     btnPlayer.style.color = "white";
     btnDeck.style.backgroundColor = "white";
-    btnDeck.style.color = "#400601";
+    btnDeck.style.color = "#3b0a04";
 }

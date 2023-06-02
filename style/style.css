@@ -50,8 +50,8 @@ header {
     text-align: center;
 }
 
-header > h1 {
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3), var(--cor4));
+header>h1 {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor4));
 }
 
 header>h1>img {
@@ -144,7 +144,7 @@ footer {
     text-align: center;
     display: block;
     font-family: var(--fonte-titulos);
-    background-image: linear-gradient(to top, var(--cor1), var(--cor3), var(--cor4));
+    background-image: linear-gradient(to top, var(--cor1), var(--cor4));
 }
 
 
@@ -157,13 +157,98 @@ footer span {
     padding-top: 5px;
 }
 
-div > p {
+div>p {
     padding: 0px 10px 5px 10px;
     color: white;
 }
 
-footer >div> p > a {
+footer>div>p>a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+/* Area de configuração: Classification.html */
+#mainClass {
+    width: 95vw;
+}
+#buttonClassification {
+    display: block;
+    text-align: center;
+    margin: 20px;
+}
+
+#classPlayer , #classDeck {
+    padding: 5px;
+    margin-right: 5px;
+    background-color: var(--cor2);
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.445);
+}
+
+.divFrame {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+#frameClassification {
+    width: 337px;
+    height: 675px;
+}
+
+#classGeral {
+    display: none;
+}
+
+#frameGeral {
+    width: 342px;
+    height: 332px;
+}
+
+
+table {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+td {
+    font-family: var(--fonte-obs);
+}
+
+td strong {
+    font-family: var(--fonte-obs);
+}
+
+#classFirst {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background-color: #3232E4;
+}
+
+#classPlayoffs {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    background-color: #327A32;
+}
+
+
+#legenda,
+#legenda>span>strong {
+    margin-top: 15px;
+    text-align: center;
+    font-family: var(--fonte-obs);
+}
+
+#legenda1 {
+    display: block;
+    margin: 10px;
 }
