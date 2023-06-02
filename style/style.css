@@ -280,3 +280,22 @@ td strong {
     width: 327px;
     height: 359px;
 }
+
+/* CSS para a página da Banlist */
+.banlistConfig {
+    text-align: center;
+}
+
+#forbidden {
+    width: 330px;
+    height: 1742px
+}
+
+#limited {
+    width: 330px;
+    height: 1225px;
+}
+
+#semiLimited {
+    width: 330px;
+}
