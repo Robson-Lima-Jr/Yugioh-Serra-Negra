@@ -34,10 +34,11 @@
         <article>
             <h2 class="h2class">Decks</h2>
             <section id="deckNav">
-                <label for="playerMobile">
-                    <h3>Selecione um Jogador:</h3>
-                </label>
-                <select name="players" id="playerMobile" onchange="changePlayer()">
+                <aside id="selectPlayerMobile">
+                    <label for="playerMobile">
+                        <h3>Selecione um Jogador:</h3>
+                    </label>
+                    <select name="players" id="playerMobile" onchange="changePlayer()">
                         <option selected disabled>---------</option>
                         <option value="jao">João Vitor</option>
                         <option value="tila">Flávio</option>
@@ -45,135 +46,143 @@
                         <option value="vi">Vinicius</option>
                         <option value="fah">Fabricio</option>
                         <option value="feh">Fernando</option>
-                </select>
-
-                <h4>Para detalhes do deck, clique na imagem</h4>
+                    </select>
+                </aside>
             </section>
             <section id="deckIcons">
                 <aside id="jao-decks">
                     <picture id="dino" onclick="dino_click()">
-                        <source media="(max-width: 400px)" srcset="images/jao-decks/dino-base-125.jpg" type="image/jpg">
-                        <img src="images/jao-decks/dino-base-250.jpg" alt="dinos" type="image/jpg">
+                        <source media="(max-width: 600px)" srcset="../images/jao-decks/dino-base-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/jao-decks/dino-base-250.jpg" alt="dinos" type="image/jpg">
                     </picture>
                     <picture id="gouki" onclick="gouki_click()">
-                        <source media="(max-width: 400px)" srcset="images/jao-decks/gouki-hover-125.jpg"
+                        <source media="(max-width: 600px)" srcset="../images/jao-decks/gouki-hover-125.jpg"
                             type="image/jpg">
-                        <img src="images/jao-decks/gouki-hover-250.jpg" alt="gouki" type="image/jpg">
+                        <img src="../images/jao-decks/gouki-hover-250.jpg" alt="gouki" type="image/jpg">
                     </picture>
                     <picture id="abc" onclick="abc_click()">
-                        <source media="(max-width: 400px)" srcset="images/jao-decks/abc-base-125.jpg" type="image/jpg">
-                        <img src="images/jao-decks/abc-base-250.jpg" alt="abc" type="image/jpg">
+                        <source media="(max-width: 600px)" srcset="../images/jao-decks/abc-base-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/jao-decks/abc-base-250.jpg" alt="abc" type="image/jpg">
                     </picture>
                     <picture id="rei" onclick="rei_click()">
-                        <source media="(max-width: 400px)" srcset="images/jao-decks/rei-base-125.jpg" type="image/jpg">
-                        <img src="images/jao-decks/rei-base-250.jpg" alt="abc" type="image/jpg">
+                        <source media="(max-width: 600px)" srcset="../images/jao-decks/rei-base-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/jao-decks/rei-base-250.jpg" alt="abc" type="image/jpg">
                     </picture>
                     <picture id="pescador" onclick="pescador_click()">
-                        <source media="(max-width: 400px)" srcset="images/jao-decks/pescador-base-125.jpg"
+                        <source media="(max-width: 600px)" srcset="../images/jao-decks/pescador-base-125.jpg"
                             type="image/jpg">
-                        <img src="images/jao-decks/pescador-base-250.jpg" alt="abc" type="image/jpg">
+                        <img src="../images/jao-decks/pescador-base-250.jpg" alt="abc" type="image/jpg">
                     </picture>
                 </aside>
                 <aside id="tila-decks">
                     <picture id="buster" onclick="buster_click()">
-                        <source media="(max-width: 400px)" srcset="images/flo-decks/blader-base-125.jpg"
+                        <source media="(max-width: 600px)" srcset="../images/flo-decks/blader-base-125.jpg"
                             type="image/jpg">
-                        <img src="images/flo-decks/blader-base-250.jpg" alt="buster" type="image/jpg">
+                        <img src="../images/flo-decks/blader-base-250.jpg" alt="buster" type="image/jpg">
                     </picture>
                     <picture id="blue" onclick="blue_click()">
-                        <source media="(max-width: 400px)" srcset="images/flo-decks/blue-base-125.jpg" type="image/jpg">
-                        <img src="images/flo-decks/blue-base-250.jpg" alt="Blue-eyes" type="image/jpg">
+                        <source media="(max-width: 600px)" srcset="../images/flo-decks/blue-base-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/flo-decks/blue-base-250.jpg" alt="Blue-eyes" type="image/jpg">
                     </picture>
                     <picture id="dark" onclick="dark_click()">
-                        <source media="(max-width: 400px)" srcset="images/flo-decks/dark-base-125.jpg"
+                        <source media="(max-width: 600px)" srcset="../images/flo-decks/dark-base-125.jpg"
                             alt="Dark Magician" type="image/jpg">
-                        <img src="images/flo-decks/dark-base-250.jpg" alt="Dark Magician" type="image/jpg">
+                        <img src="../images/flo-decks/dark-base-250.jpg" alt="Dark Magician" type="image/jpg">
                     </picture>
                 </aside>
                 <aside id="rob-decks">
                     <picture id="cyber" onclick="cyber_click()">
-                        <source media="(max-width: 400px)" srcset="images/rob-decks/cyber-base-125.jpg"
+                        <source media="(max-width: 600px)" srcset="../images/rob-decks/cyber-base-125.jpg"
                             type="image/jpg">
-                        <img src="images/rob-decks/cyber-base-250.jpg" alt="cyber" type="image/jpg">
+                        <img src="../images/rob-decks/cyber-base-250.jpg" alt="cyber" type="image/jpg">
                     </picture>
                     <picture id="cyberdark" onclick="cyberdark_click()">
-                        <source media="(max-width: 400px)" srcset="images/rob-decks/cyberdark-hover-125.jpg"
+                        <source media="(max-width: 600px)" srcset="../images/rob-decks/cyberdark-hover-125.jpg"
                             type="image/jpg">
-                        <img src="images/rob-decks/cyberdark-hover-250.jpg" alt="cyberdark" type="image/jpg">
+                        <img src="../images/rob-decks/cyberdark-hover-250.jpg" alt="cyberdark" type="image/jpg">
                     </picture>
                     <picture id="uria" onclick="uria_click()">
-                        <source media="(max-width: 400px)" srcset="images/rob-decks/uria-base-125.jpg" type="image/jpg">
-                        <img src="images/rob-decks/uria-base-250.jpg" alt="uria" type="image/jpg">
+                        <source media="(max-width: 600px)" srcset="../images/rob-decks/uria-base-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/rob-decks/uria-base-250.jpg" alt="uria" type="image/jpg">
                     </picture>
                     <picture id="dinomist" onclick="dinomist_click()">
-                        <source media="(max-width: 400px)" srcset="images/rob-decks/dinomist-hover-125.jpg"
+                        <source media="(max-width: 600px)" srcset="../images/rob-decks/dinomist-hover-125.jpg"
                             type="image/jpg">
-                        <img src="images/rob-decks/dinomist-hover-250.jpg" alt="dinomist" type="image/jpg">
+                        <img src="../images/rob-decks/dinomist-hover-250.jpg" alt="dinomist" type="image/jpg">
                     </picture>
                     <picture id="malefic" onclick="malefic_click()">
-                        <source media="(max-width: 400px)" srcset="images/rob-decks/malefic-hover-125.jpg"
+                        <source media="(max-width: 600px)" srcset="../images/rob-decks/malefic-hover-125.jpg"
                             type="image/jpg">
-                        <img src="images/rob-decks/malefic-hover-250.jpg" alt="malefic" type="image/jpg">
+                        <img src="../images/rob-decks/malefic-hover-250.jpg" alt="malefic" type="image/jpg">
                     </picture>
                 </aside>
                 <aside id="vi-decks">
                     <picture id="caveira" onclick="caveira_click()">
-                        <source media="(max-width: 400px)" srcset="images/vi-decks/caveira-hover-125.jpg"
+                        <source media="(max-width: 600px)" srcset="../images/vi-decks/caveira-hover-125.jpg"
                             type="image/jpg">
-                        <img src="images/vi-decks/caveira-hover-250.jpg" alt="caveira" type="image/jpg">
+                        <img src="../images/vi-decks/caveira-hover-250.jpg" alt="caveira" type="image/jpg">
                     </picture>
                     <picture id="eldlich" onclick="eldlich_click()">
-                        <source media="(max-width: 400px)" srcset="images/vi-decks/eldlich-base-125.jpg"
+                        <source media="(max-width: 600px)" srcset="../images/vi-decks/eldlich-base-125.jpg"
                             type="image/jpg">
-                        <img src="images/vi-decks/eldlich-base-250.jpg" alt="eldlich" type="image/jpg">
+                        <img src="../images/vi-decks/eldlich-base-250.jpg" alt="eldlich" type="image/jpg">
                     </picture>
                     <picture id="ed" onclick="ed_click()">
-                        <source media="(max-width: 400px)" srcset="images/vi-decks/ed-base-125.jpg" type="image/jpg">
-                        <img src="images/vi-decks/ed-base-250.jpg" alt="ed" type="image/jpg">
+                        <source media="(max-width: 600px)" srcset="../images/vi-decks/ed-base-125.jpg" type="image/jpg">
+                        <img src="../images/vi-decks/ed-base-250.jpg" alt="ed" type="image/jpg">
                     </picture>
                     <picture id="maju" onclick="maju_click()">
-                        <source media="(max-width: 400px)" srcset="images/vi-decks/maju-base-125.jpg" type="image/jpg">
-                        <img src="images/vi-decks/maju-base-250.jpg" alt="maju" type="image/jpg">
+                        <source media="(max-width: 600px)" srcset="../images/vi-decks/maju-base-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/vi-decks/maju-base-250.jpg" alt="maju" type="image/jpg">
                     </picture>
                     <picture id="exodia" onclick="exodia_click()">
-                        <source media="(max-width: 400px)" srcset="images/vi-decks/exodia-base-125.jpeg"
+                        <source media="(max-width: 600px)" srcset="../images/vi-decks/exodia-base-125.jpeg"
                             type="image/jpg">
-                        <img src="images/vi-decks/exodia-base-250.jpeg" alt="exodia" type="image/jpg">
+                        <img src="../images/vi-decks/exodia-base-250.jpeg" alt="exodia" type="image/jpg">
                     </picture>
                 </aside>
                 <aside id="fah-decks">
                     <picture id="zircon" onclick="zircon_click()">
-                        <source media="(max-width: 400px)" srcset="images/fah-decks/zircon-base-125.jpg"
+                        <source media="(max-width: 600px)" srcset="../images/fah-decks/zircon-base-125.jpg"
                             type="image/jpg">
-                        <img src="images/fah-decks/zircon-base-250.jpg" alt="zircon" type="image/jpg">
+                        <img src="../images/fah-decks/zircon-base-250.jpg" alt="zircon" type="image/jpg">
                     </picture>
                     <picture id="magnet" onclick="magnet_click()">
-                        <source media="(max-width: 400px)" srcset="images/fah-decks/valkyrion-125.jpg" type="image/jpg">
-                        <img src="images/fah-decks/valkyrion-250.jpg" alt="magnet" type="image/jpg">
+                        <source media="(max-width: 600px)" srcset="../images/fah-decks/valkyrion-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/fah-decks/valkyrion-250.jpg" alt="magnet" type="image/jpg">
                     </picture>
                 </aside>
                 </aside>
                 <aside id="feh-decks">
                     <picture id="timelord" onclick="timelord_click()">
-                        <source media="(max-width: 400px)" srcset="images/feh-decks/timelord-base-125.jpg"
+                        <source media="(max-width: 600px)" srcset="../images/feh-decks/timelord-base-125.jpg"
                             type="image/jpg">
-                        <img src="images/feh-decks/timelord-base-250.jpg" alt="timelord" type="image/jpg">
+                        <img src="../images/feh-decks/timelord-base-250.jpg" alt="timelord" type="image/jpg">
                     </picture>
                     <picture id="burn" onclick="burn_click()">
-                        <source media="(max-width: 400px)" srcset="images/feh-decks/burn-base-125.jpg" type="image/jpg">
-                        <img src="images/feh-decks/burn-base-250.jpg" alt="burn" type="image/jpg">
+                        <source media="(max-width: 600px)" srcset="../images/feh-decks/burn-base-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/feh-decks/burn-base-250.jpg" alt="burn" type="image/jpg">
                     </picture>
                     <picture id="sapo" onclick="sapo_click()">
-                        <source media="(max-width: 400px)" srcset="images/feh-decks/sapo-hover-125.jpg"
+                        <source media="(max-width: 600px)" srcset="../images/feh-decks/sapo-hover-125.jpg"
                             type="image/jpg">
-                        <img src="images/feh-decks/sapo-hover-250.jpg" alt="sapo" type="image/jpg">
+                        <img src="../images/feh-decks/sapo-hover-250.jpg" alt="sapo" type="image/jpg">
                     </picture>
                     <picture id="amazoness" onclick="amazoness_click()">
-                        <source media="(max-width: 400px)" srcset="images/feh-decks/amazoness-base-125.jpg"
+                        <source media="(max-width: 600px)" srcset="../images/feh-decks/amazoness-base-125.jpg"
                             type="image/jpg">
-                        <img src="images/feh-decks/amazoness-base-250.jpg" alt="amazoness" type="image/jpg">
+                        <img src="../images/feh-decks/amazoness-base-250.jpg" alt="amazoness" type="image/jpg">
                     </picture>
                 </aside>
+                <h4>Para detalhes do deck, clique na imagem</h4>
             </section>
         </article>
         <article class="deckArea" id="player1">
@@ -183,90 +192,43 @@
                     <p><strong>Títulos:</strong> 1 YuGiOh da Roça! (2022)</p>
                     <p><strong>Participações:</strong> 2022/2023</p>
                 </aside>
-                <h2>Deck-torneio 2023</h2>
                 <aside class="deckImage">
+                    <h2>Deck-torneio 2023</h2>
                     <picture>
                         <source media="(max-width: 580px)" srcset="images/jao-decks/deckDinoP.jpg">
                         <img src="images/jao-decks/deckDinoG.jpg" alt="dino-deck">
-                    </picture>
                 </aside>
                 <aside class="deckText">
                     <h2>Main Deck: 40 Cards</h2>
                     <br>
                     <h3>Monster:</h3>
-                    <p>
-                        2x Ultimate Conductor Tyranno <br>
-                        1x True King Lithosagym, the Disaster <br>
-                        1x Dogoran, the Mad Flame Kaiju <br>
-                        1x Overtex Qoatlus <br>
-                        1x Dinowrestler Pankratops <br>
-                        1x Giant Rex <br>
-                        1x Miscellaneousaurus <br>
-                        3x Souleating Oviraptor <br>
-                        1x Scrap Chimera <br>
-                        2x Scrap Raptor <br>
-                        1x Ghost Ogre & Snow Rabbit <br>
-                        3x Babycerasaurus <br>
-                        2x Petiteranodon <br>
-                        2x Animadorned Archosaur <br>
-                        1x Effect Veiler <br>
-                    </p>
+                    <p>1x Effect Veiler<br />2x Animadorned Archosaur<br />3x Babycerasaurus<br />2x
+                        Petiteranodon<br />1x Ghost Ogre & Snow Rabbit<br />1x Scrap Chimera<br />1x
+                        Miscellaneousaurus<br />3x Souleating Oviraptor<br />1x Giant Rex<br />2x Scrap Raptor<br />1x
+                        Overtex Qoatlus<br />1x Dinowrestler Pankratops<br />1x Dogoran, the Mad Flame Kaiju<br />1x
+                        True King Lithosagym, the Disaster<br />2x Ultimate Conductor Tyranno</p>
 
                     <h3>Spell:</h3>
-                    <p>
-                        1x Prohibition <br>
-                        3x Lost World <br>
-                        1x Mound of the Bound Creator <br>
-                        2x Double Evolution Pill <br>
-                        3x Fossil Dig <br>
-                        1x Raigeki <br>
-                        1x Called by the Grave <br>
-                        1x Twin Twisters <br>
+                    <p>1x Raigeki<br />3x Fossil Dig<br />2x Double Evolution Pill<br />1x Mound of the Bound
+                        Creator<br />3x Lost World<br />1x Prohibition<br />1x Twin Twisters<br />1x Called by the Grave
                     </p>
 
                     <h3>Trap:</h3>
-                    <p>
-                        1x Solemn Judgment <br>
-                        1x Solemn Strike <br>
-                        1x Lost Wind <br>
-                        1x Warning Point <br>
-                    </p>
+                    <p>1x Lost Wind<br />1x Warning Point<br />1x Solemn Judgment<br />1x Solemn Strike</p>
 
                     <h2>Extra:</h2>
-                    <p>
-                        1x Ruddy Rose Dragon <br>
-                        1x Red Dragon Archfiend <br>
-                        1x Dinowrestler Giga Spinosavate <br>
-                        1x Super Quantal Mech King Great Magnus <br>
-                        1x Evolzar Laggia <br>
-                        2x Evolzar Dolkka <br>
-                        1x Number 27: Dreadnought Dreadnoid <br>
-                        1x Number 41: Bagooska the Terribly Tired Tapir <br>
-                        1x Tornado Dragon <br>
-                        1x Castel, the Skyblaster Musketeer <br>
-                        1x Scrap Wyvern <br>
-                        1x Pentestag <br>
-                        1x Secure Gardna <br>
-                        1x Linkuriboh <br>
-                    </p>
+                    <p>1x Red Dragon Archfiend<br />1x Dinowrestler Giga Spinosavate<br />1x Ruddy Rose Dragon<br />1x
+                        Evolzar Laggia<br />2x Evolzar Dolkka<br />1x Castel, the Skyblaster Musketeer<br />1x Tornado
+                        Dragon<br />1x Number 27: Dreadnought Dreadnoid<br />1x Number 41: Bagooska the Terribly Tired
+                        Tapir<br />1x Super Quantal Mech King Great Magnus<br />1x Linkuriboh<br />1x Secure
+                        Gardna<br />1x Pentestag<br />1x Scrap Wyvern</p>
 
                     <h2>Side:</h2>
-                    <p>
-                        1x Prime Material Dragon <br>
-                        1x Tyranno Infinity <br>
-                        2x Droll & Lock Bird <br>
-                        1x Dark Ruler No More <br>
-                        1x Galaxy Cyclone <br>
-                        1x Harpie's Feather Duster <br>
-                        1x Monster Reborn <br>
-                        1x Burial from a Different Dimension <br>
-                        1x Anti-Spell Fragrance <br>
-                        1x Royal Decree <br>
-                        1x Breakthrough Skill <br>
-                        1x Heavy Storm Duster <br>
-                        1x Quaking Mirror Force <br>
-                        1x Secret Blast <br>
-                    </p>
+                    <p>2x Droll & Lock Bird<br />1x Tyranno Infinity<br />1x Prime Material Dragon<br />1x Monster
+                        Reborn<br />1x Galaxy Cyclone<br />1x Dark Ruler No More<br />1x Harpie's Feather Duster<br />1x
+                        Burial from a Different Dimension<br />1x Breakthrough Skill<br />1x Secret Blast<br />1x
+                        Quaking Mirror Force<br />1x Heavy Storm Duster<br />1x Royal Decree<br />1x Anti-Spell
+                        Fragrance</p>
                 </aside>
             </section>
             <section id="gouki-deck">
@@ -274,8 +236,8 @@
                     <h2>Gouki</h2>
                     <p><strong>Participações:</strong> 2023</p>
                 </aside>
-                <h2>Deck-torneio 2023</h2>
                 <aside class="deckImage">
+                    <h2>Deck-torneio 2023</h2>
                     <picture>
                         <source media="(max-width: 580px)" srcset="images/jao-decks/deckGoukiP.jpg">
                         <img src="images/jao-decks/deckGoukiG.jpg" alt="dino-deck">
@@ -285,78 +247,33 @@
                     <h2>Main Deck: 40 Cards</h2>
                     <br>
                     <h3>Monster:</h3>
-                    <p>
-                        1x Immortal Phoenix Gearfried <br>
-                        1x Gouki Moonsault <br>
-                        1x Gouki Riscorpio <br>
-                        1x Codebreaker Zero Day <br>
-                        3x Gouki Suprex <br>
-                        2x Gouki Twistcobra <br>
-                        1x Gouki Iron Claw <br>
-                        3x Gouki Headbatt <br>
-                        2x Gouki Guts <br>
-                        2x Fire Flint Lady <br>
-                        1x Droll & Lock Bird <br>
-                        1x Gouki Octostretch <br>
-                        2x Gouki Ringtrainer <br>
+                    <p>1x Droll & Lock Bird<br />1x Gouki Octostretch<br />2x Gouki Ringtrainer<br />2x Gouki
+                        Guts<br />2x Fire Flint Lady<br />3x Gouki Headbatt<br />1x Gouki Iron Claw<br />2x Gouki
+                        Twistcobra<br />3x Gouki Suprex<br />1x Codebreaker Zero Day<br />1x Gouki Riscorpio<br />1x
+                        Gouki Moonsault<br />1x Immortal Phoenix Gearfried</p>
                     </p>
 
                     <h3>Spell:</h3>
-                    <p>
-                        3x "Infernoble Arms - Durendal" <br>
-                        1x Living Fossil <br>
-                        1x Dark Ruler No More <br>
-                        1x Double Summon <br>
-                        1x Galaxy Cyclone <br>
-                        1x Gouki Finishing Move <br>
-                        3x Gouki Re-Match <br>
-                        1x Harpie's Feather Duster <br>
-                        1x Reinforcement of the Army <br>
-                    </p>
+                    <p>1x Harpie's Feather Duster<br />1x Reinforcement of the Army<br />1x Double Summon<br />1x Galaxy
+                        Cyclone<br />3x Gouki Re-Match<br />1x Gouki Finishing Move<br />1x Dark Ruler No More<br />1x
+                        Living Fossil<br />3x "Infernoble Arms - Durendal"</p>
 
                     <h3>Trap:</h3>
-                    <p>
-                        1x Imperial Iron Wall <br>
-                        1x Solemn Strike <br>
-                        1x Ultimate Providence <br>
-                        2x Expendable Dai <br>
-                        1x Ice Dragon's Prison <br>
-                    </p>
+                    <p>1x Ice Dragon's Prison<br />2x Expendable Dai<br />1x Imperial Iron Wall<br />1x Solemn
+                        Strike<br />1x Ultimate Providence</p>
 
                     <h2>Extra:</h2>
-                    <p>
-                        1x Gouki The Giant Ogre <br>
-                        1x Codebreaker Virus Berserker <br>
-                        1x Gouki The Master Ogre <br>
-                        2x Gouki The Powerload Ogre <br>
-                        1x Gouki The Great Ogre <br>
-                        1x Knightmare Gryphon <br>
-                        1x Gouki The Blade Ogre <br>
-                        1x Codebreaker Virus Swordsman <br>
-                        2x Gouki Thunder Ogre <br>
-                        1x Tri-gate Wizard <br>
-                        1x Isolde, Two Tales of the Noble Knights <br>
-                        2x Gouki Heel Ogre <br>
+                    <p>1x Isolde, Two Tales of the Noble Knights<br />2x Gouki Heel Ogre<br />1x Codebreaker Virus
+                        Swordsman<br />1x Gouki The Great Ogre<br />1x Tri-gate Wizard<br />2x Gouki Thunder
+                        Ogre<br />1x Gouki The Blade Ogre<br />1x Codebreaker Virus Berserker<br />1x Gouki The Master
+                        Ogre<br />1x Knightmare Gryphon<br />1x Gouki The Giant Ogre<br />2x Gouki The Powerload Ogre
                     </p>
 
                     <h2>Side:</h2>
-                    <p>
-                        1x Prime Material Dragon <br>
-                        1x Gouki Twistcobra <br>
-                        1x Junk Forward <br>
-                        1x Droll & Lock Bird <br>
-                        1x Gouki Octostretch <br>
-                        1x Gouki The Giant Ogre <br>
-                        1x Gouki Thunder Ogre <br>
-                        1x Knightmare Phoenix <br>
-                        1x Gouki Face Turn <br>
-                        1x Raigeki <br>
-                        1x Called by the Grave <br>
-                        1x Imperial Iron Wall <br>
-                        1x Dimensional Barrier <br>
-                        1x Heavy Storm Duster <br>
-                        1x Quaking Mirror Force <br>
-                    </p>
+                    <p>1x Knightmare Phoenix<br />1x Gouki Thunder Ogre<br />1x Gouki The Giant Ogre<br />1x Droll &amp;
+                        Lock Bird<br />1x Gouki Octostretch<br />1x Junk Forward<br />1x Gouki Twistcobra<br />1x Prime
+                        Material Dragon<br />1x Raigeki<br />1x Gouki Face Turn<br />1x Called by the Grave<br />1x
+                        Imperial Iron Wall</p>
                 </aside>
             </section>
             <section id="abc-deck">
@@ -389,8 +306,8 @@
                     <p><strong>Vice Campeão:</strong> 1 YuGiOh da Roça! (2022)</p>
                     <p><strong>Participações:</strong> 2022/2023</p>
                 </aside>
-                <h2>Deck-torneio 2023</h2>
                 <aside class="deckImage">
+                    <h2>Deck-torneio 2023</h2>
                     <picture>
                         <source media="(max-width: 580px)" srcset="images/flo-decks/deckBusterP.jpg">
                         <img src="images/flo-decks/deckBusterG.jpg" alt="Buster-deck">
@@ -473,8 +390,8 @@
                     <h2>Blue-Eyes</h2>
                     <p><strong>Participações:</strong> 2021/2022/2023</p>
                 </aside>
-                <h2>Deck-torneio 2023</h2>
                 <aside class="deckImage">
+                    <h2>Deck-torneio 2023</h2>
                     <picture>
                         <source media="(max-width: 580px)" srcset="images/flo-decks/deckBlueP.jpg">
                         <img src="images/flo-decks/deckBlueG.jpg" alt="Blue-deck">
@@ -580,12 +497,9 @@
                     <p><strong>3º Colocado:</strong> 2 YuGiOh da Roça! (2021/2022)</p>
                     <p><strong>Participações:</strong> 2021/2022/2023</p>
                 </aside>
-                <h2>Deck-torneio 2023</h2>
                 <aside class="deckImage">
-                    <picture>
-                        <source media="(max-width: 580px)" srcset="images/rob-decks/deckCyberP.jpg">
-                        <img src="images/rob-decks/deckCyberG.jpg" alt="Cyber-deck">
-                    </picture>
+                    <h2>Deck-torneio 2023</h2>
+                    <iframe src="../pages-iframe/test.html" frameborder="0" class="frameDeck"></iframe>
                 </aside>
                 <aside class="deckText">
                     <h2>Main Deck: 41 Cards</h2>
@@ -665,8 +579,8 @@
                     <p><strong>Copinha:</strong> 1 Titulo (2023)</p>
                     <p><strong>Participações:</strong> 2023</p>
                 </aside>
-                <h2>Deck-torneio 2023</h2>
                 <aside class="deckImage">
+                    <h2>Deck-torneio 2023</h2>
                     <picture>
                         <source media="(max-width: 580px)" srcset="images/rob-decks/deckCyberdarkP.jpg">
                         <img src="images/rob-decks/deckCyberdarkG.jpg" alt="Cyberdark-deck">
@@ -773,8 +687,8 @@
                     <p><strong>4º Colocado:</strong> 1 YuGiOh da Roça! (2022)</p>
                     <p><strong>Participações:</strong> 2021/2022/2023</p>
                 </aside>
-                <h2>Deck-torneio 2023</h2>
                 <aside class="deckImage">
+                    <h2>Deck-torneio 2023</h2>
                     <picture>
                         <source media="(max-width: 580px)" srcset="images/vi-decks/deckSkullP.jpg">
                         <img src="images/vi-decks/deckSkullG.jpg" alt="Caveira-deck">
@@ -862,8 +776,8 @@
                     <h2>Eldlich</h2>
                     <p><strong>Participações:</strong> 2023</p>
                 </aside>
-                <h2>Deck-torneio 2023</h2>
                 <aside class="deckImage">
+                    <h2>Deck-torneio 2023</h2>
                     <picture>
                         <source media="(max-width: 580px)" srcset="images/vi-decks/deckEldlichP.jpg">
                         <img src="images/vi-decks/deckEldlichG.jpg" alt="Eldlich-deck">
@@ -964,8 +878,8 @@
                     <h2>Gem-Knight</h2>
                     <p><strong>Participações:</strong> 2023</p>
                 </aside>
-                <h2>Deck-torneio 2023</h2>
                 <aside class="deckImage">
+                    <h2>Deck-torneio 2023</h2>
                     <picture>
                         <source media="(max-width: 580px)" srcset="images/fah-decks/deckGemP.jpg">
                         <img src="images/fah-decks/deckGemG.jpg" alt="Gem-deck">
@@ -1053,8 +967,8 @@
                     <h2>Magnet</h2>
                     <p><strong>Participações:</strong> 2023</p>
                 </aside>
-                <h2>Deck-torneio 2023</h2>
                 <aside class="deckImage">
+                    <h2>Deck-torneio 2023</h2>
                     <picture>
                         <source media="(max-width: 580px)" srcset="images/fah-decks/deckMagnetP.jpg">
                         <img src="images/fah-decks/deckMagnetG.jpg" alt="Magnet-deck">
@@ -1155,8 +1069,8 @@
                     <p><strong>4º Colocado:</strong> 1 YuGiOh da Roça! (2021)</p>
                     <p><strong>Participações:</strong> 2021/2022/2023</p>
                 </aside>
-                <h2>Deck-torneio 2023</h2>
                 <aside class="deckImage">
+                    <h2>Deck-torneio 2023</h2>
                     <picture>
                         <source media="(max-width: 400px)" srcset="images/jao-decks/dino-deck-p.png">
                         <img src="images/jao-decks/dino-deck-g.png" alt="dino-deck">
@@ -1210,8 +1124,8 @@
                     <h2>Timelord</h2>
                     <p><strong>Participações:</strong> 2022/2023</p>
                 </aside>
-                <h2>Deck-torneio 2023</h2>
                 <aside class="deckImage">
+                    <h2>Deck-torneio 2023</h2>
                     <picture>
                         <source media="(max-width: 400px)" srcset="images/jao-decks/dino-deck-p.png">
                         <img src="images/jao-decks/dino-deck-g.png" alt="dino-deck">

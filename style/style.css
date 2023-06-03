@@ -99,6 +99,7 @@ header>menu>ul>li>a:hover {
 }
 
 main {
+    min-height: 100vh;
     display: block;
     width: 90vw;
     margin: auto;
@@ -305,6 +306,11 @@ label > h3 {
     display: inline;
     margin-right: 10px;
 }
+
+#selectPlayerMobile {
+    text-align: center;
+}
+
 #playerMobile { 
     display: inline;
     margin-bottom: 20px;
@@ -329,3 +335,73 @@ label > h3 {
 #feh-decks {display: none;}
 
 .deckArea {display: none;}
+
+#deckIcons {
+    display: block;
+    text-align: center;
+}
+
+#deckIcons img {
+    border-radius: 20px;
+    margin-right: 5px;
+}
+
+#deckIcons h4 {
+    margin: 20px;
+}
+
+.deckArea {
+    background-color: var(--cor0);
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+.description {
+    background-color: var(--cor2);
+    border-radius: 20px 20px 0px 0px;
+    margin: -10px -10px 0px -10px;
+    padding: 15px 0px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.description > h2 {
+    color:var(--cor0);
+    font-family: var(--fonte-titulos);
+    font-weight: normal;
+    font-size: 3em;
+}
+
+.description > p {
+    color: white;
+}
+
+.description  strong {
+    color: var(--cor0);
+}
+
+.deckImage > h2{
+    color: var(--cor2);
+    font-family: var(--fonte-titulos);
+    font-weight: normal;
+    font-size: 3em;
+}
+
+
+.deckText > h2 , .deckText > h3{
+    color: var(--cor2);
+    font-size: 2.5em;
+    text-align: center;
+    font-family: var(--fonte-titulos);
+    font-weight: normal;
+}
+
+.deckText > p {
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+.frameDeck {
+    width: 320px;
+    height: 850px;
+}
