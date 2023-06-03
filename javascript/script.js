@@ -1,6 +1,17 @@
-//Função para quando clicar no botão "Checar Deck", exibir a lista de decks de cada jogador
+//Função para abrir e fechar o menu no mobile
+function menuClick() {
+    let menuArea = document.querySelector("menu#menuArea");
 
-function btnClick() {
+    if (menuArea.style.display == "block") {
+        menuArea.style.display = "none";
+    } else {
+        menuArea.style.display = "block";
+    }
+}
+
+//Função para quando clicar no botão "Checar Deck", exibir a lista de decks de cada jogador
+function changePlayer() {
+    let currentPosition = document.querySelector("select#playerMobile");
     let jaoDecks = document.querySelector("aside#jao-decks");
     let tilaDecks = document.querySelector("aside#tila-decks");
     let robDecks = document.querySelector("aside#rob-decks");
@@ -8,9 +19,7 @@ function btnClick() {
     let fahDecks = document.querySelector("aside#fah-decks");
     let fehDecks = document.querySelector("aside#feh-decks");
 
-    let playerList = document.getElementsByName("players");
-
-    if (playerList[0].checked) {
+    if (currentPosition.value === "jao") {
         jaoDecks.style.display = "block";
         tilaDecks.style.display = "none";
         robDecks.style.display = "none";
@@ -24,7 +33,7 @@ function btnClick() {
         viDeckList.style.display = "none";
         fahDeckList.style.display = "none";
         fehDeckList.style.display = "none";
-    } else if (playerList[1].checked) {
+    } else if (currentPosition.value === "tila") {
         tilaDecks.style.display = "block";
         jaoDecks.style.display = "none";
         robDecks.style.display = "none";
@@ -38,7 +47,7 @@ function btnClick() {
         viDeckList.style.display = "none";
         fahDeckList.style.display = "none";
         fehDeckList.style.display = "none";
-    } else if (playerList[2].checked) {
+    } else if (currentPosition.value === "rob") {
         robDecks.style.display = "block";
         jaoDecks.style.display = "none";
         tilaDecks.style.display = "none";
@@ -52,7 +61,7 @@ function btnClick() {
         viDeckList.style.display = "none";
         fahDeckList.style.display = "none";
         fehDeckList.style.display = "none";
-    } else if (playerList[3].checked) {
+    } else if (currentPosition.value === "vi") {
         viDecks.style.display = "block";
         jaoDecks.style.display = "none";
         tilaDecks.style.display = "none";
@@ -66,7 +75,7 @@ function btnClick() {
         viDeckList.style.display = "none";
         fahDeckList.style.display = "none";
         fehDeckList.style.display = "none";
-    } else if (playerList[4].checked) {
+    } else if (currentPosition.value === "fah") {
         fahDecks.style.display = "block";
         jaoDecks.style.display = "none";
         tilaDecks.style.display = "none";
@@ -80,7 +89,7 @@ function btnClick() {
         viDeckList.style.display = "none";
         fahDeckList.style.display = "none";
         fehDeckList.style.display = "none";
-    } else if (playerList[5].checked) {
+    } else if (currentPosition.value === "feh") {
         fehDecks.style.display = "block";
         jaoDecks.style.display = "none";
         tilaDecks.style.display = "none";

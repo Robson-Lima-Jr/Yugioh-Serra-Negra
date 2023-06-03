@@ -18,373 +18,429 @@
     font-weight: normal;
 }
 
-@font-face {
-    font-family: "type-card";
-    src: url("../fonts/Yu-Gi-Oh! ITC Stone Serif Small Caps Bold.otf") format("opentype"), url("../fonts/Yu-Gi-Oh! ITC Stone Serif Small Caps Bold.ttf") format("truetype");
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "edition-card";
-    src: url("../fonts/Stone Serif Semibold.otf") format("opentype"), url("../fonts/Stone Serif Semibold.ttf") format("truetype");
-    font-weight: normal;
-}
 
 :root {
     --fonte-titulos: "name-card", serif;
-    --fonte-menus: "type-card", serif;
     --fonte-texto: "effect-card", serif;
-    --fonte-rodape: "edition-card", serif;
     --fonte-obs: "normal-card", serif;
 
-    --cor0: #bb9d66;
-    --cor1: #A65729;
-    --cor2: #941e1e;
-    --cor3: #400601;
-    --cor4: #130200;
+    --cor0: #d6b475;
+    --cor1: #7e2016;
+    --cor2: #3b0a04;
+    --cor3: #220603;
+    --cor4: #130301;
 }
 
 * {
     margin: 0px;
     padding: 0px;
+    font-family: var(--fonte-texto);
+    box-sizing: border-box;
 }
 
+html,
 body {
+    width: 100vw;
     background-color: var(--cor0);
 }
 
+
 header {
-    height: 90px;
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3), var(--cor4));
-    padding-top: 20px;
+    background-color: var(--cor2);
+    text-align: center;
 }
 
 header>h1 {
-    text-align: center;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor4));
+    padding: 20px 0px 10px 0px;
 }
 
-nav {
-    text-align: center;
-    background-color: var(--cor4);
-    padding: 6px 0px;
+
+header>h1>a>img {
+    width: 350px;
 }
 
-nav>a {
-    font: normal 1.1em var(--fonte-titulos);
-    font-weight: normal;
+#menuBurguer {
+    display: block;
+    padding: 2px;
     font-size: 2em;
+    background-color: var(--cor4);
+    color: var(--cor0);
+}
+
+header>menu {
+    text-align: center;
+    list-style-type: none;
+    display: none;
+}
+
+header>menu>ul {
+    border-bottom: 2px solid var(--cor4);
+}
+
+header>menu>ul>li {
+    border-top: 2px solid var(--cor0);
+}
+
+header>menu>ul>li>a {
+    display: block;
+    background-color: var(--cor2);
     color: var(--cor0);
     text-decoration: none;
-    padding: 4px;
+    font-family: var(--fonte-titulos);
+    font-size: 1.8em;
+    font-weight: normal;
+    padding: 3px;
 }
 
-nav a:hover {
+header>menu>ul>li>a:hover {
     background-color: var(--cor0);
-    color: var(--cor3);
-    border-radius: 5px;
-    transition-duration: 0.5s;
+    color: var(--cor4);
 }
 
 main {
-    background-color: white;
+    min-height: 100vh;
+    display: block;
+    width: 90vw;
     margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 10px;
-    min-width: 300px;
-    max-width: 1000px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.192);
+
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.363);
 }
 
 .h2class {
+    color: var(--cor1);
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.514);
     font-family: var(--fonte-titulos);
     font-weight: normal;
     font-size: 3em;
-    color: var(--cor2);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.397);
 }
 
-article {
-    padding-top: 15px;
-}
-
-#hisSec {
-    margin-bottom: 30px;
-}
-
-#btnHistory {
-    text-align: center;
-}
-
-#clickHistory {
-    padding: 6px;
-    font-size: 1.5em;
-    background-color: var(--cor3);
-    color: white;
-    font-family: var(--fonte-titulos);
-    font-weight: normal;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2.5px rgba(0, 0, 0, 0.438);
-}
-
-.historia {
-    line-height: 1.6em;
-    font-family: var(--fonte-texto);
-    font-size: 1.2em;
+main>article>p {
     text-align: justify;
-    text-indent: 30px;
-    margin-bottom: 5px;
+    text-indent: 25px;
+    padding-bottom: 10px;
 }
 
-#principalArticle {
-    padding: 10px;
+strong {
+    color: var(--cor3);
 }
 
-article ul {
-    list-style-position: inside;
-    margin-bottom: 30px;
-}
-
-article li {
-    padding: 5px 0px;
-    line-height: 1.6em;
-    font-family: var(--fonte-texto);
-    font-size: 1.07em;
-}
-
-#banlist {
-    text-decoration: none;
-    background-color: var(--cor0);
-    color: var(--cor2);
-    padding: 0px 5px;
-    font-weight: bold;
-}
-
-.obsText {
-    font-family: var(--fonte-rodape);
-    padding: 3px;
+main li {
+    list-style-type: none;
+    text-align: justify;
+    padding-bottom: 10px;
 }
 
 footer {
+    width: 100vw;
     text-align: center;
-    font-family: var(--fonte-rodape);
-    font-weight: normal;
-    font-size: 0.8em;
-    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+    display: block;
+    font-family: var(--fonte-titulos);
+    background-image: linear-gradient(to top, var(--cor1), var(--cor4));
+}
+
+
+footer span {
+    color: var(--cor0);
+    font-weight: bold;
+}
+
+.footerTopP {
+    padding-top: 5px;
+}
+
+div>p {
+    padding: 0px 10px 5px 10px;
     color: white;
 }
 
-footer>p {
-    padding: 5px 0px;
-    line-height: 1.1em;
-}
-
-footer span {
-    padding-right: 2px;
-}
-
-a {
-    color: var(--cor0);
+footer>div>p>a {
+    color: white;
     text-decoration: none;
-    font-size: 1.2em;
-}
-
-.footer-status:hover {
-    background-color: var(--cor0);
-    color: black;
-    padding-right: 2px;
-}
-
-#criado:hover {
-    background-color: var(--cor0);
-    color: black
-}
-
-/*CSS Exclusivos pagina Decks*/
-
-#deckNav>h3 {
-    font-family: var(--fonte-rodape);
-    padding-bottom: 1px;
-}
-
-#deckNav>h4 {
-    font-weight: normal;
-    font-family: var(--fonte-obs);
-    margin-bottom: 15px;
-}
-
-#deckNav label {
-    font-family: var(--fonte-texto);
     font-weight: bold;
-    font-size: 20px;
-    padding-bottom: 10px;
-    margin: auto;
-    margin-right: 8px;
 }
 
-#deckNav p {
+/* Area de configuração: Classification.html */
+.mainClass {
+    width: 95vw;
+}
+
+#buttonClassification {
+    display: block;
+    text-align: center;
+    margin: 20px;
+}
+
+#classPlayer,
+#classDeck {
+    padding: 5px;
+    margin-right: 5px;
+    background-color: var(--cor2);
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.445);
+}
+
+.divFrame {
+    display: block;
+    margin: auto;
     text-align: center;
 }
 
-#btn {
+#frameClassification {
+    width: 337px;
+    height: 675px;
+}
+
+#classGeral {
+    display: none;
+}
+
+#frameGeral {
+    width: 342px;
+    height: 332px;
+}
+
+
+table {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+td {
+    font-family: var(--fonte-obs);
+}
+
+td strong {
+    font-family: var(--fonte-obs);
+}
+
+#classFirst {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background-color: #3232E4;
+}
+
+#classPlayoffs {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    background-color: #327A32;
+}
+
+
+#legenda,
+#legenda>span>strong {
     margin-top: 15px;
+    text-align: center;
+    font-family: var(--fonte-obs);
+}
+
+#legenda1 {
+    display: block;
+    margin: 10px;
+}
+
+/* CSS página de Games */
+
+#frameJogos {
+    width: 330px;
+    height: 4213px;
+    margin-top: 20px;
+}
+
+/* CSS página Torneios anteriores */
+
+.h3Class {
+    margin: 20px 0px;
+    text-align: center;
     font-family: var(--fonte-titulos);
+    font-weight: normal;
     font-size: 2em;
-    padding: 3px;
-    background-color: var(--cor0);
     color: var(--cor3);
-    border-radius: 10px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.349);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.445);
 }
 
-#btn:hover {
-    background-color: var(--cor3);
+#frame2022 {
+    width: 329px;
+    height: 416px;
+}
+
+#frame2021 {
+    width: 327px;
+    height: 359px;
+}
+
+/* CSS para a página da Banlist */
+.banlistConfig {
+    text-align: center;
+}
+
+#forbidden {
+    width: 330px;
+    height: 1742px
+}
+
+#limited {
+    width: 330px;
+    height: 1225px;
+}
+
+#semiLimited {
+    width: 330px;
+}
+
+/* CSS pagina Deck */
+label>h3 {
+    display: inline;
+    margin-right: 10px;
+}
+
+#selectPlayerMobile {
+    text-align: center;
+}
+
+#playerMobile {
+    display: inline;
+    margin-bottom: 20px;
+    padding: 0px 10px 0px 10px;
+    background-color: var(--cor2);
     color: var(--cor0);
+    text-align: center;
+    font-family: var(--fonte-titulos);
+    font-size: 1.4em;
 }
 
-picture {
-    padding-right: 5px;
+#jao-decks {
+    display: none;
+}
+
+#tila-decks {
+    display: none;
+}
+
+#rob-decks {
+    display: none;
+}
+
+#vi-decks {
+    display: none;
+}
+
+#fah-decks {
+    display: none;
+}
+
+#feh-decks {
+    display: none;
+}
+
+.deckArea {
+    display: none;
+}
+
+#deckIcons {
+    display: block;
+    text-align: center;
 }
 
 #deckIcons img {
     border-radius: 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
 }
 
-#deckIcons {
-    margin-top: 10px;
+#deckIcons h4 {
+    margin: 20px;
 }
 
-#jao-decks {
-    padding: 10px;
-    display: none;
-    text-align: center;
-}
-
-#tila-decks {
-    padding: 10px;
-    display: none;
-    text-align: center;
-}
-
-#rob-decks {
-    padding: 10px;
-    display: none;
-    text-align: center;
-}
-
-#vi-decks {
-    padding: 10px;
-    display: none;
-    text-align: center;
-}
-
-#fah-decks {
-    padding: 10px;
-    display: none;
-    text-align: center;
-}
-
-#feh-decks {
-    padding: 10px;
-    display: none;
-    text-align: center;
-}
-
-/* Area de configurações do Historico e decklist */
 .deckArea {
-    font-family: var(--fonte-texto);
-    margin: 10px 5px 5px 10px;
-    margin: auto;
-    margin-bottom: 20px;
-    padding-bottom: 15px;
-    min-width: 330px;
-    max-width: 600px;
-    text-align: center;
-    border-radius: 10px;
     background-color: var(--cor0);
-}
-
-#player1 {
-    display: none;
-}
-
-#player2 {
-    display: none;
-}
-
-#player3 {
-    display: none;
-}
-
-#player4 {
-    display: none;
-}
-
-#player5 {
-    display: none;
-}
-
-#player6 {
-    display: none;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
 }
 
 .description {
-    margin: 0px 0px;
-    font-size: 1.4em;
-    font-family: var(--fonte-texto);
-    font-weight: normal;
-}
-
-.description h2 {
-    width: 300px;
-    margin: auto;
+    background-color: var(--cor2);
+    border-radius: 20px 20px 0px 0px;
+    margin: -10px -10px 0px -10px;
+    padding: 15px 0px;
     margin-bottom: 10px;
-    padding-top: 10px;
-    font-size: 2em;
+    font-size: 1.2em;
+}
+
+.description>h2 {
+    color: var(--cor0);
+    font-family: var(--fonte-titulos);
+    font-weight: normal;
+    font-size: 3em;
+}
+
+.description>p {
+    color: white;
+}
+
+.description strong {
+    color: var(--cor0);
+}
+
+.deckImage>h2 {
     color: var(--cor2);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.397);
-}
-
-.deckImage {
-    margin-top: 25px;
-    text-align: center;
-}
-
-.deckText {
-    width: 300px;
-    padding: 10px;
-    margin: auto;
-    text-align: left;
-}
-
-.deckText>h2 {
     font-family: var(--fonte-titulos);
     font-weight: normal;
-    font-size: 2.5em;
-    color: var(--cor3);
+    font-size: 3em;
 }
 
+
+.deckText>h2,
 .deckText>h3 {
-    padding-bottom: 5px;
+    color: var(--cor2);
+    font-size: 2.5em;
+    text-align: center;
     font-family: var(--fonte-titulos);
     font-weight: normal;
-    font-size: 1.8em
 }
 
 .deckText>p {
-    padding-bottom: 5px;
-    line-height: 1.6em;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-/*Pagina de Torneios Anteriores*/
-
-.h3Class {
-    font-family: var(--fonte-titulos);
-    font-weight: normal;
-    font-size: 2.5em;
-    color: var(--cor3);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.397);
-    text-align: center;
     padding: 10px;
-    margin-bottom: 10px;
+    font-size: 1.1em;
 }
+
+.frameDeck {
+    width: 320px;
+    margin: 20px 0px;
+}
+
+#frameDino {height: 913px;}
+
+#frameGouki {height: 910px;}
+
+#frameBlader {height: 815px;}
+
+#frameBlue {height: 1080px;}
+
+#frameCyber {height: 912px;}
+
+#frameCyberdark {height: 812px;}
+
+#frameCaveira {height: 983px;}
+
+#frameEldlich {height: 813px;}
+
+#frameGema {height: 911px;}
+
+#frameMagnet {height: 983px;}

@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YuGiOh! da Roça! - Decks</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="../style/media.css">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a href="../index.html"><img src="../images/logoG.png" alt="Logo da Roça"></a>
+        </h1>
+        <span id="menuBurguer" class="material-symbols-outlined" onclick="menuClick()">menu</span>
+        <menu id="menuArea">
+            <ul>
+                <li><a href="../index.html" target="_self" rel="next">Página Principal</a></li>
+                <li><a href="classification.html" target="_self" rel="next">Classificação</a></li>
+                <li><a href="games.html" target="_self" rel="next">Partidas</a></li>
+                <li><a href="deck.html" target="_self" rel="next">Decks</a></li>
+                <li><a href="TorneiosAntigos.html">Torneios Anteriores</a></li>
+                <li><a href="banlist.html" target="_self" rel="next">Banlist</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main class="mainClass">
+        <article>
+            <h2 class="h2class">Decks</h2>
+            <section id="deckNav">
+                <aside id="selectPlayerMobile">
+                    <label for="playerMobile">
+                        <h3>Selecione um Jogador:</h3>
+                    </label>
+                    <select name="players" id="playerMobile" onchange="changePlayer()">
+                        <option selected disabled>---------</option>
+                        <option value="jao">João Vitor</option>
+                        <option value="tila">Flávio</option>
+                        <option value="rob">Robson</option>
+                        <option value="vi">Vinicius</option>
+                        <option value="fah">Fabricio</option>
+                        <option value="feh">Fernando</option>
+                    </select>
+                </aside>
+            </section>
+            <section id="deckIcons">
+                <aside id="jao-decks">
+                    <picture id="dino" onclick="dino_click()">
+                        <source media="(max-width: 600px)" srcset="../images/jao-decks/dino-base-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/jao-decks/dino-base-250.jpg" alt="dinos" type="image/jpg">
+                    </picture>
+                    <picture id="gouki" onclick="gouki_click()">
+                        <source media="(max-width: 600px)" srcset="../images/jao-decks/gouki-hover-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/jao-decks/gouki-hover-250.jpg" alt="gouki" type="image/jpg">
+                    </picture>
+                    <picture id="abc" onclick="abc_click()">
+                        <source media="(max-width: 600px)" srcset="../images/jao-decks/abc-base-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/jao-decks/abc-base-250.jpg" alt="abc" type="image/jpg">
+                    </picture>
+                    <picture id="rei" onclick="rei_click()">
+                        <source media="(max-width: 600px)" srcset="../images/jao-decks/rei-base-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/jao-decks/rei-base-250.jpg" alt="abc" type="image/jpg">
+                    </picture>
+                    <picture id="pescador" onclick="pescador_click()">
+                        <source media="(max-width: 600px)" srcset="../images/jao-decks/pescador-base-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/jao-decks/pescador-base-250.jpg" alt="abc" type="image/jpg">
+                    </picture>
+                </aside>
+                <aside id="tila-decks">
+                    <picture id="buster" onclick="buster_click()">
+                        <source media="(max-width: 600px)" srcset="../images/flo-decks/blader-base-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/flo-decks/blader-base-250.jpg" alt="buster" type="image/jpg">
+                    </picture>
+                    <picture id="blue" onclick="blue_click()">
+                        <source media="(max-width: 600px)" srcset="../images/flo-decks/blue-base-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/flo-decks/blue-base-250.jpg" alt="Blue-eyes" type="image/jpg">
+                    </picture>
+                    <picture id="dark" onclick="dark_click()">
+                        <source media="(max-width: 600px)" srcset="../images/flo-decks/dark-base-125.jpg"
+                            alt="Dark Magician" type="image/jpg">
+                        <img src="../images/flo-decks/dark-base-250.jpg" alt="Dark Magician" type="image/jpg">
+                    </picture>
+                </aside>
+                <aside id="rob-decks">
+                    <picture id="cyber" onclick="cyber_click()">
+                        <source media="(max-width: 600px)" srcset="../images/rob-decks/cyber-base-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/rob-decks/cyber-base-250.jpg" alt="cyber" type="image/jpg">
+                    </picture>
+                    <picture id="cyberdark" onclick="cyberdark_click()">
+                        <source media="(max-width: 600px)" srcset="../images/rob-decks/cyberdark-hover-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/rob-decks/cyberdark-hover-250.jpg" alt="cyberdark" type="image/jpg">
+                    </picture>
+                    <picture id="uria" onclick="uria_click()">
+                        <source media="(max-width: 600px)" srcset="../images/rob-decks/uria-base-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/rob-decks/uria-base-250.jpg" alt="uria" type="image/jpg">
+                    </picture>
+                    <picture id="dinomist" onclick="dinomist_click()">
+                        <source media="(max-width: 600px)" srcset="../images/rob-decks/dinomist-hover-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/rob-decks/dinomist-hover-250.jpg" alt="dinomist" type="image/jpg">
+                    </picture>
+                    <picture id="malefic" onclick="malefic_click()">
+                        <source media="(max-width: 600px)" srcset="../images/rob-decks/malefic-hover-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/rob-decks/malefic-hover-250.jpg" alt="malefic" type="image/jpg">
+                    </picture>
+                </aside>
+                <aside id="vi-decks">
+                    <picture id="caveira" onclick="caveira_click()">
+                        <source media="(max-width: 600px)" srcset="../images/vi-decks/caveira-hover-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/vi-decks/caveira-hover-250.jpg" alt="caveira" type="image/jpg">
+                    </picture>
+                    <picture id="eldlich" onclick="eldlich_click()">
+                        <source media="(max-width: 600px)" srcset="../images/vi-decks/eldlich-base-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/vi-decks/eldlich-base-250.jpg" alt="eldlich" type="image/jpg">
+                    </picture>
+                    <picture id="ed" onclick="ed_click()">
+                        <source media="(max-width: 600px)" srcset="../images/vi-decks/ed-base-125.jpg" type="image/jpg">
+                        <img src="../images/vi-decks/ed-base-250.jpg" alt="ed" type="image/jpg">
+                    </picture>
+                    <picture id="maju" onclick="maju_click()">
+                        <source media="(max-width: 600px)" srcset="../images/vi-decks/maju-base-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/vi-decks/maju-base-250.jpg" alt="maju" type="image/jpg">
+                    </picture>
+                    <picture id="exodia" onclick="exodia_click()">
+                        <source media="(max-width: 600px)" srcset="../images/vi-decks/exodia-base-125.jpeg"
+                            type="image/jpg">
+                        <img src="../images/vi-decks/exodia-base-250.jpeg" alt="exodia" type="image/jpg">
+                    </picture>
+                </aside>
+                <aside id="fah-decks">
+                    <picture id="zircon" onclick="zircon_click()">
+                        <source media="(max-width: 600px)" srcset="../images/fah-decks/zircon-base-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/fah-decks/zircon-base-250.jpg" alt="zircon" type="image/jpg">
+                    </picture>
+                    <picture id="magnet" onclick="magnet_click()">
+                        <source media="(max-width: 600px)" srcset="../images/fah-decks/valkyrion-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/fah-decks/valkyrion-250.jpg" alt="magnet" type="image/jpg">
+                    </picture>
+                </aside>
+                </aside>
+                <aside id="feh-decks">
+                    <picture id="timelord" onclick="timelord_click()">
+                        <source media="(max-width: 600px)" srcset="../images/feh-decks/timelord-base-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/feh-decks/timelord-base-250.jpg" alt="timelord" type="image/jpg">
+                    </picture>
+                    <picture id="burn" onclick="burn_click()">
+                        <source media="(max-width: 600px)" srcset="../images/feh-decks/burn-base-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/feh-decks/burn-base-250.jpg" alt="burn" type="image/jpg">
+                    </picture>
+                    <picture id="sapo" onclick="sapo_click()">
+                        <source media="(max-width: 600px)" srcset="../images/feh-decks/sapo-hover-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/feh-decks/sapo-hover-250.jpg" alt="sapo" type="image/jpg">
+                    </picture>
+                    <picture id="amazoness" onclick="amazoness_click()">
+                        <source media="(max-width: 600px)" srcset="../images/feh-decks/amazoness-base-125.jpg"
+                            type="image/jpg">
+                        <img src="../images/feh-decks/amazoness-base-250.jpg" alt="amazoness" type="image/jpg">
+                    </picture>
+                </aside>
+                <h4>Para detalhes do deck, clique na imagem</h4>
+            </section>
+        </article>
+        <article class="deckArea" id="player1">
+            <section id="dino-deck">
+                <aside class="description">
+                    <h2>Dino</h2>
+                    <p><strong>Títulos:</strong> 1 YuGiOh da Roça! (2022)</p>
+                    <p><strong>Participações:</strong> 2022/2023</p>
+                </aside>
+                <aside class="deckImage">
+                    <h2>Deck-torneio 2023</h2>
+                    <iframe src="../pages-iframe/deck_dino.html" frameborder="0" class="frameDeck"
+                        id="frameDino"></iframe>
+                </aside>
+                <aside class="deckText">
+                    <h2>Main Deck: 40 Cards</h2>
+                    <br>
+                    <h3>Monster:</h3>
+                    <p>1x Effect Veiler<br />2x Animadorned Archosaur<br />3x Babycerasaurus<br />2x
+                        Petiteranodon<br />1x Ghost Ogre & Snow Rabbit<br />1x Scrap Chimera<br />1x
+                        Miscellaneousaurus<br />3x Souleating Oviraptor<br />1x Giant Rex<br />2x Scrap Raptor<br />1x
+                        Overtex Qoatlus<br />1x Dinowrestler Pankratops<br />1x Dogoran, the Mad Flame Kaiju<br />1x
+                        True King Lithosagym, the Disaster<br />2x Ultimate Conductor Tyranno</p>
+
+                    <h3>Spell:</h3>
+                    <p>1x Raigeki<br />3x Fossil Dig<br />2x Double Evolution Pill<br />1x Mound of the Bound
+                        Creator<br />3x Lost World<br />1x Prohibition<br />1x Twin Twisters<br />1x Called by the Grave
+                    </p>
+
+                    <h3>Trap:</h3>
+                    <p>1x Lost Wind<br />1x Warning Point<br />1x Solemn Judgment<br />1x Solemn Strike</p>
+
+                    <h2>Extra:</h2>
+                    <p>1x Red Dragon Archfiend<br />1x Dinowrestler Giga Spinosavate<br />1x Ruddy Rose Dragon<br />1x
+                        Evolzar Laggia<br />2x Evolzar Dolkka<br />1x Castel, the Skyblaster Musketeer<br />1x Tornado
+                        Dragon<br />1x Number 27: Dreadnought Dreadnoid<br />1x Number 41: Bagooska the Terribly Tired
+                        Tapir<br />1x Super Quantal Mech King Great Magnus<br />1x Linkuriboh<br />1x Secure
+                        Gardna<br />1x Pentestag<br />1x Scrap Wyvern</p>
+
+                    <h2>Side:</h2>
+                    <p>2x Droll & Lock Bird<br />1x Tyranno Infinity<br />1x Prime Material Dragon<br />1x Monster
+                        Reborn<br />1x Galaxy Cyclone<br />1x Dark Ruler No More<br />1x Harpie's Feather Duster<br />1x
+                        Burial from a Different Dimension<br />1x Breakthrough Skill<br />1x Secret Blast<br />1x
+                        Quaking Mirror Force<br />1x Heavy Storm Duster<br />1x Royal Decree<br />1x Anti-Spell
+                        Fragrance</p>
+                </aside>
+            </section>
+            <section id="gouki-deck">
+                <aside class="description">
+                    <h2>Gouki</h2>
+                    <p><strong>Participações:</strong> 2023</p>
+                </aside>
+                <aside class="deckImage">
+                    <h2>Deck-torneio 2023</h2>
+                    <iframe src="../pages-iframe/deck_gouki.html" frameborder="0" class="frameDeck"
+                        id="frameGouki"></iframe>
+                </aside>
+                <aside class="deckText">
+                    <h2>Main Deck: 40 Cards</h2>
+                    <br>
+                    <h3>Monster:</h3>
+                    <p>1x Droll & Lock Bird<br />1x Gouki Octostretch<br />2x Gouki Ringtrainer<br />2x Gouki
+                        Guts<br />2x Fire Flint Lady<br />3x Gouki Headbatt<br />1x Gouki Iron Claw<br />2x Gouki
+                        Twistcobra<br />3x Gouki Suprex<br />1x Codebreaker Zero Day<br />1x Gouki Riscorpio<br />1x
+                        Gouki Moonsault<br />1x Immortal Phoenix Gearfried</p>
+                    </p>
+
+                    <h3>Spell:</h3>
+                    <p>1x Harpie's Feather Duster<br />1x Reinforcement of the Army<br />1x Double Summon<br />1x Galaxy
+                        Cyclone<br />3x Gouki Re-Match<br />1x Gouki Finishing Move<br />1x Dark Ruler No More<br />1x
+                        Living Fossil<br />3x "Infernoble Arms - Durendal"</p>
+
+                    <h3>Trap:</h3>
+                    <p>1x Ice Dragon's Prison<br />2x Expendable Dai<br />1x Imperial Iron Wall<br />1x Solemn
+                        Strike<br />1x Ultimate Providence</p>
+
+                    <h2>Extra:</h2>
+                    <p>1x Isolde, Two Tales of the Noble Knights<br />2x Gouki Heel Ogre<br />1x Codebreaker Virus
+                        Swordsman<br />1x Gouki The Great Ogre<br />1x Tri-gate Wizard<br />2x Gouki Thunder
+                        Ogre<br />1x Gouki The Blade Ogre<br />1x Codebreaker Virus Berserker<br />1x Gouki The Master
+                        Ogre<br />1x Knightmare Gryphon<br />1x Gouki The Giant Ogre<br />2x Gouki The Powerload Ogre
+                    </p>
+
+                    <h2>Side:</h2>
+                    <p>1x Knightmare Phoenix<br />1x Gouki Thunder Ogre<br />1x Gouki The Giant Ogre<br />1x Droll &amp;
+                        Lock Bird<br />1x Gouki Octostretch<br />1x Junk Forward<br />1x Gouki Twistcobra<br />1x Prime
+                        Material Dragon<br />1x Raigeki<br />1x Gouki Face Turn<br />1x Called by the Grave<br />1x
+                        Imperial Iron Wall</p>
+                </aside>
+            </section>
+            <section id="abc-deck">
+                <aside class="description">
+                    <h2>ABC</h2>
+                    <p><strong>Títulos:</strong> 1 YuGiOh da Roça! (2021)</p>
+                    <p><strong>Participações:</strong> 2021/2022</p>
+                </aside>
+                <h2>Deck não participará do Torneio 2023</h2>
+            </section>
+            <section id="rei-deck">
+                <aside class="description">
+                    <h2>S. Skull</h2>
+                    <p><strong>Participações:</strong> 2022</p>
+                </aside>
+                <h2>Deck não participará do Torneio 2023</h2>
+            </section>
+            <section id="pescador-deck">
+                <aside class="description">
+                    <h2>Fisherman</h2>
+                    <p><strong>Participações:</strong> 2021</p>
+                </aside>
+                <h2>Deck não participará do Torneio 2023</h2>
+            </section>
+        </article>
+        <article class="deckArea" id="player2">
+            <section id="buster-deck">
+                <aside class="description">
+                    <h2>Buster Blader</h2>
+                    <p><strong>Vice Campeão:</strong> 1 YuGiOh da Roça! (2022)</p>
+                    <p><strong>Participações:</strong> 2022/2023</p>
+                </aside>
+                <aside class="deckImage">
+                    <h2>Deck-torneio 2023</h2>
+                    <iframe src="../pages-iframe/deck_blader.html" frameborder="0" class="frameDeck" id="frameBlader"></iframe>
+                </aside>
+                <aside class="deckText">
+                    <h2>Main Deck: 42 Cards</h2>
+                    <br>
+                    <h3>Monster:</h3>
+                    <p>1x Dark Magician<br />1x Red-Eyes Black Dragon<br />1x Effect Veiler<br />1x Synkron
+                        Resonator<br />3x Buster Whelp of the Destruction Swordsman<br />3x Dragon Buster Destruction
+                        Sword<br />1x Versago the Destroyer<br />1x Ash Blossom &amp; Joyous Spring<br />1x Keeper of
+                        Dragon Magic<br />2x Fallen of Albaz<br />3x Buster Blader<br />1x Heavenly Zephyr - Miradora
+                    </p>
+
+                    <h3>Spell:</h3>
+                    <p>1x Card Destruction<br />2x Allure of Darkness<br />2x Red-Eyes Fusion<br />2x Branded
+                        Fusion<br />1x Destruction Swordsman Fusion<br />1x Called by the Grave</p>
+
+                    <h3>Trap:</h3>
+                    <p>2x Destruction Sword Flash<br />2x Destruction Sword Memories<br />3x Prologue of the Destruction
+                        Swordsman<br />2x Trap Trick<br />2x DNA Surgery<br />1x Magic Drain<br />2x Solemn Strike</p>
+
+                    <h2>Extra:</h2>
+                    <p>1x Red-Eyes Slash Dragon<br />3x Buster Blader, the Dragon Destroyer Swordsman<br />1x Red-Eyes
+                        Dark Dragoon<br />1x Albion the Branded Dragon<br />1x Lubellion the Searing Dragon<br />1x
+                        Stardust Spark Dragon<br />1x Scarlight Red Dragon Archfiend<br />3x Buster Dragon<br />2x Hot
+                        Red Dragon Archfiend Abyss<br />1x Protector Whelp of the Destruction Swordsman</p>
+
+                    <h2>Side:</h2>
+                    <p>1x Underworld Goddess of the Closed World<br />1x Synkron Resonator<br />1x Ghost Ogre & Snow
+                        Rabbit<br />1x Chaos Dragon Levianeer<br />1x Thunder King, the Lightningstrike Kaiju<br />1x
+                        Dark Hole<br />1x Monster Reborn<br />2x Mystical Space Typhoon<br />1x Book of Moon<br />1x
+                        Torrential Tribute<br />1x Destruction Sword Memories<br />2x Anti-Spell Fragrance<br />1x
+                        Rebirth Judgment</p>
+                </aside>
+            </section>
+            <section id="blue-deck">
+                <aside class="description">
+                    <h2>Blue-Eyes</h2>
+                    <p><strong>Participações:</strong> 2021/2022/2023</p>
+                </aside>
+                <aside class="deckImage">
+                    <h2>Deck-torneio 2023</h2>
+                    <iframe src="../pages-iframe/deck_blue.html" frameborder="0" class="frameDeck" id="frameBlue"></iframe>
+                </aside>
+                <aside class="deckText">
+                    <h2>Main Deck: 42 Cards</h2>
+                    <br>
+                    <h3>Monster:</h3>
+                    <p>3x Blue-Eyes White Dragon<br />1x Effect Veiler<br />2x Sage with Eyes of Blue<br />3x The White
+                        Stone of Ancients<br />1x Versago the Destroyer<br />1x Ash Blossom & Joyous Spring<br />1x
+                        Aleister the Invoker<br />1x Starliege Seyfert<br />2x Blue-Eyes Alternative White
+                        Dragon<br />1x Dragon Spirit of White<br />1x Galactic Spiral Dragon<br />2x Nebula
+                        Dragon<br />1x Blue-Eyes Abyss Dragon<br />1x Blue-Eyes Chaos MAX Dragon</p>
+
+                    <h3>Spell:</h3>
+                    <p>2x Trade-In<br />1x Dragon Shrine<br />2x The Melody of Awakening Dragon<br />1x
+                        Invocation<br />1x Magical Meltdown<br />1x Chaos Form<br />1x Vision with Eyes of Blue<br />1x
+                        Book of Moon<br />1x Twin Twisters<br />1x Called by the Grave<br />1x Successor Soul<br />1x
+                        Ultimate Fusion</p>
+                    <p>Trap:<br />2x Anti-Spell Fragrance<br />2x True Light<br />1x Magic Drain<br />1x Solemn
+                        Strike<br />1x Ultimate Providence</p>
+
+                    <h3>Trap:</h3>
+                    <p>2x Anti-Spell Fragrance<br />2x True Light<br />1x Magic Drain<br />1x Solemn Strike<br />1x
+                        Ultimate Providence</p>
+
+                    <h2>Extra:</h2>
+                    <p>1x Red-Eyes Dark Dragoon<br />1x Invoked Mechaba<br />1x Blue-Eyes Twin Burst Dragon<br />1x Neo
+                        Blue-Eyes Ultimate Dragon<br />1x Blue-Eyes Alternative Ultimate Dragon<br />1x Azure-Eyes
+                        Silver Dragon<br />1x Blue-Eyes Spirit Dragon<br />1x Vermillion Dragon Mech<br />1x Number 46:
+                        Dragluon<br />1x Number 62: Galaxy-Eyes Prime Photon Dragon<br />1x Galaxy-Eyes Full Armor
+                        Photon Dragon<br />1x Number 38: Hope Harbinger Dragon Titanic Galaxy<br />1x Galaxy-Eyes Cipher
+                        Dragon<br />1x Number 97: Draglubion<br />1x Galaxy-Eyes Cipher X Dragon</p>
+
+                    <h2>Side:</h2>
+                    <p>1x Maiden with Eyes of Blue<br />1x Morphing Jar<br />1x Starliege Seyfert<br />1x Galactic
+                        Spiral Dragon<br />1x Deep-Eyes White Dragon<br />1x Blue-Eyes Chaos Dragon<br />1x
+                        Trade-In<br />1x Galaxy Cyclone<br />1x Polymerization<br />2x Mystical Space Typhoon<br />1x
+                        Torrential Tribute<br />1x The Ultimate Creature of Destruction<br />1x Fiendish Chain<br />1x
+                        Solemn Strike</p>
+                </aside>
+            </section>
+            <section id="dark-deck">
+                <aside class="description">
+                    <h2>Dark Magician</h2>
+                    <p><strong>Vice Campeão:</strong> 1 YuGiOh da Roça! (2021)</p>
+                    <p><strong>Participações:</strong> 2021/2022</p>
+                </aside>
+                <h2>Deck não participará do Torneio 2023</h2>
+            </section>
+        </article>
+        <article class="deckArea" id="player3">
+            <section id="cyber-deck">
+                <aside class="description">
+                    <h2>Cyber Dragon</h2>
+                    <p><strong>3º Colocado:</strong> 2 YuGiOh da Roça! (2021/2022)</p>
+                    <p><strong>Participações:</strong> 2021/2022/2023</p>
+                </aside>
+                <aside class="deckImage">
+                    <h2>Deck-torneio 2023</h2>
+                    <iframe src="../pages-iframe/deck_cyber.html" frameborder="0" class="frameDeck" id="frameCyber"></iframe>
+                </aside>
+                <aside class="deckText">
+                    <h2>Main Deck: 41 Cards</h2>
+                    <br>
+                    <h3>Monster:</h3>
+                    <p>2x Effect Veiler<br />2x Cyber Dragon Herz<br />2x Cyber Dragon Nachster<br />3x Cyber Dragon
+                        Core<br />1x Honest<br />1x Electromagnetic Turtle<br />2x Cyber Dragon<br />2x Galaxy
+                        Soldier<br />1x Cyber Dragon<br />1x Cyber Eltanin<br />2x Jizukiru, the Star Destroying Kaiju
+                    </p>
+
+                    <h3>Spell:</h3>
+                    <p>1x Raigeki<br />1x Harpie's Feather Duster<br />1x Change of Heart<br />2x Machine
+                        Duplication<br />1x Overload Fusion<br />1x Cyber Repair Plant<br />1x Cyber Revsystem<br />3x
+                        Cyber Emergency<br />2x Lightning Storm<br />2x Clockwork Night<br />1x Super
+                        Polymerization<br />1x Called by the Grave<br />2x Cyberload Fusion</p>
+
+                    <h3>Trap:</h3>
+                    <p>2x Infinite Impermanence<br />1x Cybernetic Overflow</p>
+
+                    <h2>Extra:</h2>
+                    <p>2x Chimeratech Rampage Dragon<br />1x Cyber Twin Dragon<br />2x Chimeratech Fortress
+                        Dragon<br />1x Starving Venom Fusion Dragon<br />1x Cyber End Dragon<br />1x Chimeratech
+                        Megafleet Dragon<br />1x Cyber Eternity Dragon<br />1x Cyber Dragon Nova<br />2x Cyber Dragon
+                        Infinity<br />1x Salamangreat Almiraj<br />1x Cyber Dragon Sieger<br />1x Lyna the Light
+                        Charmer, Lustrous</p>
+
+                    <h2>Side:</h2>
+                    <p>1x Chimeratech Overdragon<br />1x Constellar Pleiades<br />1x Borrelsword Dragon<br />2x Ghost
+                        Belle & Haunted Mansion<br />2x Denko Sekka<br />1x Raigeki<br />1x Power Bond<br />2x Dark
+                        Ruler No More<br />2x Cosmic Cyclone<br />2x Royal Decree</p>
+                </aside>
+            </section>
+            <section id="cyberdark-deck">
+                <aside class="description">
+                    <h2>Cyberdark</h2>
+                    <p><strong>Copinha:</strong> 1 Titulo (2023)</p>
+                    <p><strong>Participações:</strong> 2023</p>
+                </aside>
+                <aside class="deckImage">
+                    <h2>Deck-torneio 2023</h2>
+                    <iframe src="../pages-iframe/deck_cyberdark.html" frameborder="0" class="frameDeck" id="frameCyberdark"></iframe>
+                </aside>
+                <aside class="deckText">
+                    <h2>Main Deck: 41 Cards</h2>
+                    <br>
+                    <h3>Monster:</h3>
+                    <p>1x Cyber Dragon Herz<br />1x Cyber Dragon Nachster<br />3x Cyber Dragon Core<br />2x Cyberdark
+                        Cannon<br />3x Cyberdark Claw<br />1x Attachment Cybern<br />1x Cyberdark Edge<br />1x Cyberdark
+                        Horn<br />1x Cyberdark Keel<br />2x Cyberdark Chimera<br />1x Cyber Dragon<br />1x Jizukiru, the
+                        Star Destroying Kaiju<br />1x Machina Ruinforce</p>
+
+                    <h3>Spell:</h3>
+                    <p>2x Raigeki<br />1x Harpie's Feather Duster<br />2x Power Bond<br />1x Overload Fusion<br />3x
+                        Cyber Emergency<br />3x Cybernetic Horizon<br />1x Foolish Burial<br />3x Cyberdark
+                        Realm<br />1x Called by the Grave<br />1x Cyber Eternal</p>
+
+                    <h3>Trap:</h3>
+                    <p>2x Infinite Impermanence<br />2x Cyberdark Invasion</p>
+
+                    <h2>Extra:</h2>
+                    <p>1x Elder Entity N'tss<br />1x Chimeratech Rampage Dragon<br />1x Predaplant
+                        Chimerafflesia<br />1x Cyberdark Dragon<br />1x Chimeratech Overdragon<br />1x Cyber End
+                        Dragon<br />2x Cyberdarkness Dragon<br />1x Chimeratech Megafleet Dragon<br />1x Cyber End
+                        Dragon<br />2x Cyberdark End Dragon<br />1x Gaiarmor Dragonshell<br />1x Cyber Dragon
+                        Sieger<br />1x Dharc the Dark Charmer, Gloomy</p>
+
+                    <h2>Side:</h2>
+                    <p>1x Chimeratech Fortress Dragon<br />1x Vahram, the Magistus Divinity Dragon<br />2x Droll &
+                        Lock Bird<br />2x Ghost Belle & Haunted Mansion<br />2x Denko Sekka<br />2x Dark Ruler No
+                        More<br />2x Lightning Storm<br />2x Royal Decree<br />1x Negate Attack</p>
+                </aside>
+            </section>
+            <section id="uria-deck">
+                <aside class="description">
+                    <h2>Uria</h2>
+                    <p><strong>Copinha:</strong> 1 Titulo (2022)</p>
+                    <p><strong>Participações:</strong> 2021/2022</p>
+                </aside>
+                <h2>Deck não participará do Torneio 2023</h2>
+            </section>
+            <section id="dinomist-deck">
+                <aside class="description">
+                    <h2>Dinomist</h2>
+                    <p><strong>Participações:</strong> 2022</p>
+                </aside>
+                <h2>Deck não participará do Torneio 2023</h2>
+            </section>
+            <section id="malefic-deck">
+                <aside class="description">
+                    <h2>Malefic</h2>
+                    <p><strong>Participações:</strong> Nenhuma</p>
+                </aside>
+                <h2>Deck não participará do Torneio 2023</h2>
+            </section>
+        </article>
+        <article class="deckArea" id="player4">
+            <section id="caveira-deck">
+                <aside class="description">
+                    <h2>Skull Servant</h2>
+                    <p><strong>4º Colocado:</strong> 1 YuGiOh da Roça! (2022)</p>
+                    <p><strong>Participações:</strong> 2021/2022/2023</p>
+                </aside>
+                <aside class="deckImage">
+                    <h2>Deck-torneio 2023</h2>
+                    <iframe src="../pages-iframe/deck_caveira.html" frameborder="0" class="frameDeck" id="frameCaveira"></iframe>
+                </aside>
+                <aside class="deckText">
+                    <h2>Main Deck: 50 Cards</h2>
+                    <br>
+                    <h3>Monster:</h3>
+                    <p>3x Skull Servant<br />3x King of the Skull Servants<br />2x Wightmare<br />3x Wightprince<br />1x
+                        Glow-Up Bloom<br />3x Wightbaking<br />3x The Lady in Wight<br />3x Uni-Zombie<br />1x
+                        Wightprincess<br />1x Mezuki<br />2x Shiranui Solitaire<br />1x Necroworld Banshee<br />1x
+                        Fallen of Albaz<br />2x Aluber the Jester of Despia<br />1x Destrudo the Lost Dragon's
+                        Frisson<br />1x Doomking Balerdroch<br />1x Alghoul Mazera</p>
+
+                    <h3>Spell:</h3>
+                    <p>1x Card Destruction<br />1x Instant Fusion<br />2x Allure of Darkness<br />1x One for One<br />1x
+                        Pot of Prosperity<br />2x Branded Fusion<br />1x Foolish Burial<br />2x Zombie World<br />2x
+                        Super Polymerization<br />2x Mask Change II</p>
+
+                    <h3>Trap:</h3>
+                    <p>3x Rivalry of Warlords</p>
+
+                    <h2>Extra:</h2>
+                    <p>1x Thousand-Eyes Restrict<br />1x Sea Monster of Theseus<br />1x Masked HERO Dark Law<br />1x
+                        Dragonecro Nethersoul Dragon<br />1x Predaplant Dragostapelia<br />1x Albion the Branded
+                        Dragon<br />1x Mirrorjade the Iceblade Dragon<br />1x Lubellion the Searing Dragon<br />1x
+                        Immortal Dragon<br />1x Black Rose Dragon<br />1x Beelze of the Diabolic Dragons<br />1x
+                        Linkuriboh<br />1x Relinquished Anima<br />1x Knightmare Phoenix<br />1x Vampire Sucker</p>
+
+                    <h2>Side:</h2>
+                    <p>1x Mudragon of the Swamp<br />1x Starving Venom Fusion Dragon<br />1x Jinzo<br />2x Radian, the
+                        Multidimensional Kaiju<br />2x Danger! Bigfoot!<br />1x Raigeki<br />1x Harpie's Feather
+                        Duster<br />1x Dark Ruler No More<br />2x Royal Decree<br />3x There Can Be Only One</p>
+                </aside>
+            </section>
+            <section id="eldlich-deck">
+                <aside class="description">
+                    <h2>Eldlich</h2>
+                    <p><strong>Participações:</strong> 2023</p>
+                </aside>
+                <aside class="deckImage">
+                    <h2>Deck-torneio 2023</h2>
+                    <iframe src="../pages-iframe/deck_eldlich.html" frameborder="0" class="frameDeck" id="frameEldlich"></iframe>
+                </aside>
+                <aside class="deckText">
+                    <h2>Main Deck: 43 Cards</h2>
+                    <br>
+                    <h3>Monster:</h3>
+                    <p>3x Ash Blossom & Joyous Spring<br />1x Destiny HERO - Celestial<br />1x Fallen of Albaz<br />1x
+                        Destiny HERO - Dasher<br />2x Eldlich the Golden Lord<br />2x Lord of the Heavenly Prison</p>
+
+                    <h3>Spell:</h3>
+                    <p>1x Card of Demise<br />3x Pot of Extravagance<br />2x Fusion Destiny<br />2x Branded
+                        Fusion<br />2x Cursed Eldland</p>
+
+                    <h3>Trap:</h3>
+                    <p>2x Torrential Tribute<br />2x Trap Trick<br />3x Eldlixir of Scarlet Sanguine<br />2x Dogmatika
+                        Punishment<br />2x Ice Dragon's Prison<br />3x Skill Drain<br />3x Conquistador of the Golden
+                        Land<br />2x Huaquero of the Golden Land<br />2x Solemn Judgment<br />2x Solemn Strike</p>
+
+                    <h2>Extra:</h2>
+                    <p>1x Elder Entity N'tss<br />1x The Last Warrior from Another Planet<br />1x Titaniklad the Ash
+                        Dragon<br />2x Albion the Branded Dragon<br />1x Destiny HERO - Destroyer Phoenix
+                        Enforcer<br />2x Mirrorjade the Iceblade Dragon<br />1x Lubellion the Searing Dragon<br />1x
+                        Constellar Pleiades<br />1x Number 38: Hope Harbinger Dragon Titanic Galaxy<br />1x
+                        Superdreadnought Rail Cannon Gustav Max<br />1x Divine Arsenal AA-ZEUS - Sky Thunder<br />1x
+                        Imduk the World Chalice Dragon<br />1x Knightmare Phoenix</p>
+
+                    <h2>Side:</h2>
+                    <p>2x Gadarla, the Mystery Dust Kaiju<br />1x The Winged Dragon of Ra - Sphere Mode<br />1x
+                        Jizukiru, the Star Destroying Kaiju<br />2x Interrupted Kaiju Slumber<br />1x Evenly
+                        Matched<br />2x Waking the Dragon<br />2x Anti-Spell Fragrance<br />2x Summon Limit<br />2x
+                        There Can Be Only One</p>
+                </aside>
+            </section>
+            <section id="ed-deck">
+                <aside class="description">
+                    <h2>Ed</h2>
+                    <p><strong>Participações:</strong> Nenhuma </p>
+                </aside>
+                <h2>Deck não participará do Torneio 2023</h2>
+            </section>
+            <section id="maju-deck">
+                <aside class="description">
+                    <h2>Gren Maju</h2>
+                    <p><strong>Participações:</strong> 2021/2022</p>
+                </aside>
+                <h2>Deck não participará do Torneio 2023</h2>
+            </section>
+            <section id="exodia-deck">
+                <aside class="description">
+                    <h2>Exodia</h2>
+                    <p><strong>Participações:</strong> 2022</p>
+                </aside>
+                <h2>Deck não participará do Torneio 2023</h2>
+            </section>
+        </article>
+        <article class="deckArea" id="player5">
+            <section id="zircon-deck">
+                <aside class="description">
+                    <h2>Gem-Knight</h2>
+                    <p><strong>Participações:</strong> 2023</p>
+                </aside>
+                <aside class="deckImage">
+                    <h2>Deck-torneio 2023</h2>
+                    <iframe src="../pages-iframe/deck_gema.html" frameborder="0" class="frameDeck" id="frameGema"></iframe>
+                </aside>
+                <aside class="deckText">
+                    <h2>Main Deck: 43 Cards</h2>
+                    <br>
+                    <h3>Monster:</h3>
+                    <p>3x Gem-Knight Lapis<br />1x Gem-Knight Garnet<br />2x Gem-Knight Tourmaline<br />3x Gem-Knight
+                        Lazuli<br />1x Crystal Rose<br />3x Adamancipator Researcher<br />1x Adamancipator
+                        Seeker<br />1x Brilliant Rose<br />3x Gem-Knight Obsidian<br />2x Ash Blossom &amp; Joyous
+                        Spring<br />1x Gem-Armadillo<br />3x Rescue Rabbit<br />1x Adamancipator Analyzer<br />1x
+                        Gem-Knight Quartz<br />1x Nibiru, the Primal Being</p>
+
+                    <h3>Spell:</h3>
+                    <p>1x Raigeki<br />1x Monster Reborn<br />3x Gem-Knight Fusion<br />2x Unexpected Dai<br />1x
+                        Adamancipator Signs<br />1x Foolish Burial<br />1x Harpie's Feather Duster<br />1x Scatter
+                        Fusion<br />1x Twin Twisters<br />1x Called by the Grave</p>
+
+                    <h3>Trap:</h3>
+                    <p>1x Lost Wind<br />1x Evenly Matched<br />1x Solemn Judgment</p>
+
+                    <h2>Extra:</h2>
+                    <p>2x Gem-Knight Lady Lapis Lazuli<br />1x Gem-Knight Ruby<br />1x Gem-Knight Prismaura<br />2x
+                        Gem-Knight Zirconia<br />1x Gem-Knight Lady Rose Diamond<br />1x Gem-Knight Master
+                        Diamond<br />1x Gem-Knight Lady Brilliant Diamond<br />1x Naturia Beast<br />1x Brionac, Dragon
+                        of the Ice Barrier<br />1x Naturia Barkion<br />1x Gallant Granite<br />2x Gem-Knight Phantom
+                        Quartz</p>
+
+                    <h2>Side:</h2>
+                    <p>1x Garden Rose Maiden<br />1x Adamancipator Risen - Raptite<br />1x Black Rose Dragon<br />1x
+                        Ruddy Rose Dragon<br />1x Castel, the Skyblaster Musketeer<br />1x Gigantes<br />1x Gadarla, the
+                        Mystery Dust Kaiju<br />1x Dark Ruler No More<br />1x Black Garden<br />1x Lost Wind<br />2x
+                        Royal Decree<br />2x Shadow-Imprisoning Mirror<br />1x Paradox Fusion</p>
+                </aside>
+            </section>
+            <section id="magnet-deck">
+                <aside class="description">
+                    <h2>Magnet</h2>
+                    <p><strong>Participações:</strong> 2023</p>
+                </aside>
+                <aside class="deckImage">
+                    <h2>Deck-torneio 2023</h2>
+                    <iframe src="../pages-iframe/deck_magnet.html" frameborder="0" class="frameDeck" id="frameMagnet"></iframe>
+                </aside>
+                <aside class="deckText">
+                    <h2>Main Deck: 45 Cards</h2>
+                    <br>
+                    <h3>Monster:</h3>
+                    <p>1x Doki Doki<br />3x Adamancipator Researcher<br />3x Adamancipator Seeker<br />1x Cartorhyn the
+                        Hidden Gem of the Seafront<br />1x King of the Swamp<br />2x Alpha The Electromagnet
+                        Warrior<br />2x Beta The Electromagnet Warrior<br />2x Gamma The Electromagnet Warrior<br />2x
+                        Ash Blossom & Joyous Spring<br />3x Koa'ki Meiru Guardian<br />2x Delta The Magnet
+                        Warrior<br />3x Adamancipator Analyzer<br />1x Adamancipator Crystal - Dragite<br />3x Epsilon
+                        The Magnet Warrior<br />1x Valkyrion the Magna Warrior<br />1x Berserkion the Electromagna
+                        Warrior<br />1x Nibiru, the Primal Being</p>
+
+                    <h3>Spell:</h3>
+                    <p>1x Polymerization<br />1x Raigeki<br />1x Monster Reborn<br />2x Adamancipator Signs<br />2x
+                        Magnet Induction<br />1x Harpie's Feather Duster<br />2x Magnetic Field<br />1x Called by the
+                        Grave</p>
+
+                    <h3>Trap:</h3>
+                    <p>1x Heavy Storm Duster<br />1x Evenly Matched</p>
+
+                    <h2>Extra:</h2>
+                    <p>1x Imperion Magnum the Superconductive Battlebot<br />1x Naturia Beast<br />1x Brionac, Dragon of
+                        the Ice Barrier<br />1x Naturia Barkion<br />1x Adamancipator Risen - Raptite<br />1x Crystal
+                        Wing Synchro Dragon<br />1x Adamancipator Risen - Dragite<br />1x Gorgonic Guardian<br />1x
+                        Gallant Granite<br />1x Missus Radiant<br />1x Knightmare Cerberus<br />1x Knightmare
+                        Phoenix<br />1x I:P Masquerena<br />1x Knightmare Unicorn<br />1x Borreload Dragon</p>
+
+                    <h2>Side:</h2>
+                    <p>1x Black Rose Dragon<br />1x Ruddy Rose Dragon<br />1x Ghost Ogre & Snow Rabbit<br />1x
+                        Gigantes<br />1x Berserkion the Electromagna Warrior<br />1x Gadarla, the Mystery Dust
+                        Kaiju<br />1x Dark Hole<br />1x Dark Ruler No More<br />1x Twin Twisters<br />1x Cosmic
+                        Cyclone<br />1x Lost Wind<br />2x Royal Decree<br />2x Shadow-Imprisoning Mirror</p>
+                </aside>
+            </section>
+        </article>
+        </article>
+        <article class="deckArea" id="player6">
+            <section id="sapo-deck">
+                <aside class="description">
+                    <h2>Frogs</h2>
+                    <p><strong>Participações:</strong> 2022</p>
+                </aside>
+                <h2>Deck não participará do Torneio 2023</h2>
+            </section>
+            <section id="burn-deck">
+                <aside class="description">
+                    <h2>Burn</h2>
+                    <p><strong>4º Colocado:</strong> 1 YuGiOh da Roça! (2021)</p>
+                    <p><strong>Participações:</strong> 2021/2022/2023</p>
+                </aside>
+                <aside class="deckImage">
+                    <h2>Deck-torneio 2023</h2>
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="images/jao-decks/dino-deck-p.png">
+                        <img src="images/jao-decks/dino-deck-g.png" alt="dino-deck">
+                    </picture>
+                </aside>
+                <aside class="deckText">
+                    <h3>Main:</h3>
+                    <p>3x Blue-Eyes White Dragon</p>
+                    <p>3x Gogiga Gagagigo</p>
+                    <p>3x Phantasm Spiral Dragon</p>
+                    <p>3x Spiral Serpent</p>
+                    <p>3x Cosmo Queen</p>
+                    <p>3x Tri-Horned Dragon</p>
+                    <p>3x Suppression Collider</p>
+                    <p>3x Dragon Core Hexer</p>
+                    <p>3x Dark Magician</p>
+                    <p>3x Elemental HERO Neos</p>
+                    <p>3x Gem-Knight Crystal</p>
+                    <p>3x Red-Eyes Black Dragon</p>
+                    <p>1x Serpent Night Dragon</p>
+                    <p>3x Gaia The Fierce Knight</p>
+
+                    <h3>Extra:</h3>
+                    <p>3x Dragon Master Knight</p>
+                    <p>3x Five-Headed Dragon</p>
+                    <p>3x Cyberdark End Dragon</p>
+                    <p>1x Quintet Magician</p>
+                    <p>2x Barbaroid, the Ultimate Battle Machine</p>
+                    <p>1x The First Darklord</p>
+                    <p>1x Rainbow Overdragon</p>
+                    <p>1x Armityle the Chaos Phantasm</p>
+
+                    <h3>Side:</h3>
+                    <p>3x Ryu-Ran</p>
+                    <p>3x Launcher Spider</p>
+                    <p>3x Slot Machine</p>
+                    <p>2x Stone Dragon</p>
+                    <p>3x Summoned Skull</p>
+                    <p>1x Wattaildragon</p>
+                </aside>
+            </section>
+            <section id="amazoness-deck">
+                <aside class="description">
+                    <h2>Amazoness</h2>
+                    <p><strong>Participações:</strong> 2021</p>
+                </aside>
+                <h2>Deck não participará do Torneio 2023</h2>
+            </section>
+            <section id="timelord-deck">
+                <aside class="description">
+                    <h2>Timelord</h2>
+                    <p><strong>Participações:</strong> 2022/2023</p>
+                </aside>
+                <aside class="deckImage">
+                    <h2>Deck-torneio 2023</h2>
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="images/jao-decks/dino-deck-p.png">
+                        <img src="images/jao-decks/dino-deck-g.png" alt="dino-deck">
+                    </picture>
+                </aside>
+                <aside class="deckText">
+                    <h3>Main:</h3>
+                    <p>3x Blue-Eyes White Dragon</p>
+                    <p>3x Gogiga Gagagigo</p>
+                    <p>3x Phantasm Spiral Dragon</p>
+                    <p>3x Spiral Serpent</p>
+                    <p>3x Cosmo Queen</p>
+                    <p>3x Tri-Horned Dragon</p>
+                    <p>3x Suppression Collider</p>
+                    <p>3x Dragon Core Hexer</p>
+                    <p>3x Dark Magician</p>
+                    <p>3x Elemental HERO Neos</p>
+                    <p>3x Gem-Knight Crystal</p>
+                    <p>3x Red-Eyes Black Dragon</p>
+                    <p>1x Serpent Night Dragon</p>
+                    <p>3x Gaia The Fierce Knight</p>
+
+                    <h3>Extra:</h3>
+                    <p>3x Dragon Master Knight</p>
+                    <p>3x Five-Headed Dragon</p>
+                    <p>3x Cyberdark End Dragon</p>
+                    <p>1x Quintet Magician</p>
+                    <p>2x Barbaroid, the Ultimate Battle Machine</p>
+                    <p>1x The First Darklord</p>
+                    <p>1x Rainbow Overdragon</p>
+                    <p>1x Armityle the Chaos Phantasm</p>
+
+                    <h3>Side:</h3>
+                    <p>3x Ryu-Ran</p>
+                    <p>3x Launcher Spider</p>
+                    <p>3x Slot Machine</p>
+                    <p>2x Stone Dragon</p>
+                    <p>3x Summoned Skull</p>
+                    <p>1x Wattaildragon</p>
+                </aside>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div>
+            <p class="footerTopP">Site criado e desenvolvido por <span>Robson Lima Junior</span></p>
+            <p>YuGiOh! da Roça! - <a href="https://www.youtube.com/@yugiohdaroca" target="_blank" rel="external">
+                    Youtube</a>
+            </p>
+            <p>Site sem fins lucrativos, apenas para informação do torneio e organização do mesmo.</p>
+        </div>
+    </footer>
+    <script src="../javascript/script.js"></script>
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
