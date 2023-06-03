@@ -170,13 +170,15 @@ footer>div>p>a {
 .mainClass {
     width: 95vw;
 }
+
 #buttonClassification {
     display: block;
     text-align: center;
     margin: 20px;
 }
 
-#classPlayer , #classDeck {
+#classPlayer,
+#classDeck {
     padding: 5px;
     margin-right: 5px;
     background-color: var(--cor2);
@@ -302,7 +304,7 @@ td strong {
 }
 
 /* CSS pagina Deck */
-label > h3 {
+label>h3 {
     display: inline;
     margin-right: 10px;
 }
@@ -311,7 +313,7 @@ label > h3 {
     text-align: center;
 }
 
-#playerMobile { 
+#playerMobile {
     display: inline;
     margin-bottom: 20px;
     padding: 0px 10px 0px 10px;
@@ -322,19 +324,33 @@ label > h3 {
     font-size: 1.4em;
 }
 
-#jao-decks {display: none;}
+#jao-decks {
+    display: none;
+}
 
-#tila-decks {display: none;}
+#tila-decks {
+    display: none;
+}
 
-#rob-decks {display: none;}
+#rob-decks {
+    display: none;
+}
 
-#vi-decks {display: none;}
+#vi-decks {
+    display: none;
+}
 
-#fah-decks {display: none;}
+#fah-decks {
+    display: none;
+}
 
-#feh-decks {display: none;}
+#feh-decks {
+    display: none;
+}
 
-.deckArea {display: none;}
+.deckArea {
+    display: none;
+}
 
 #deckIcons {
     display: block;
@@ -344,6 +360,7 @@ label > h3 {
 #deckIcons img {
     border-radius: 20px;
     margin-right: 5px;
+    margin-bottom: 5px;
 }
 
 #deckIcons h4 {
@@ -356,6 +373,7 @@ label > h3 {
     border-radius: 20px;
     text-align: center;
 }
+
 .description {
     background-color: var(--cor2);
     border-radius: 20px 20px 0px 0px;
@@ -365,22 +383,22 @@ label > h3 {
     font-size: 1.2em;
 }
 
-.description > h2 {
-    color:var(--cor0);
+.description>h2 {
+    color: var(--cor0);
     font-family: var(--fonte-titulos);
     font-weight: normal;
     font-size: 3em;
 }
 
-.description > p {
+.description>p {
     color: white;
 }
 
-.description  strong {
+.description strong {
     color: var(--cor0);
 }
 
-.deckImage > h2{
+.deckImage>h2 {
     color: var(--cor2);
     font-family: var(--fonte-titulos);
     font-weight: normal;
@@ -388,7 +406,8 @@ label > h3 {
 }
 
 
-.deckText > h2 , .deckText > h3{
+.deckText>h2,
+.deckText>h3 {
     color: var(--cor2);
     font-size: 2.5em;
     text-align: center;
@@ -396,12 +415,32 @@ label > h3 {
     font-weight: normal;
 }
 
-.deckText > p {
+.deckText>p {
     padding: 10px;
     font-size: 1.1em;
 }
 
 .frameDeck {
     width: 320px;
-    height: 850px;
+    margin: 20px 0px;
 }
+
+#frameDino {height: 913px;}
+
+#frameGouki {height: 910px;}
+
+#frameBlader {height: 815px;}
+
+#frameBlue {height: 1080px;}
+
+#frameCyber {height: 912px;}
+
+#frameCyberdark {height: 812px;}
+
+#frameCaveira {height: 983px;}
+
+#frameEldlich {height: 813px;}
+
+#frameGema {height: 911px;}
+
+#frameMagnet {height: 983px;}
