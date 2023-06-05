@@ -31,8 +31,9 @@
     }
 
     header>menu {
-        display: block;
+        display: inline;
     }
+
 
     header>menu>ul {
         background-color: var(--cor4);
