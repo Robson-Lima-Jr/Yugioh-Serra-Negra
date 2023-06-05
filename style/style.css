@@ -121,6 +121,11 @@ main {
     font-size: 3em;
 }
 
+.obsText {
+    font-family: var(--fonte-obs);
+    color: var(--cor1);
+}
+
 main>article>p {
     text-align: justify;
     text-indent: 25px;
