@@ -24,7 +24,7 @@
     --fonte-texto: "effect-card", serif;
     --fonte-obs: "normal-card", serif;
 
-    --cor0: #d6b475;
+    --cor0: #d6bd8d;
     --cor1: #7e2016;
     --cor2: #3b0a04;
     --cor3: #220603;
@@ -69,7 +69,6 @@ header>h1>a>img {
 }
 
 header>menu {
-    text-align: center;
     list-style-type: none;
     display: none;
 }
@@ -96,6 +95,7 @@ header>menu>ul>li>a {
 header>menu>ul>li>a:hover {
     background-color: var(--cor0);
     color: var(--cor4);
+    transition: 0.5s;
 }
 
 main {
@@ -368,6 +368,7 @@ label>h3 {
 }
 
 .deckArea {
+    margin: auto;
     background-color: var(--cor0);
     padding: 10px;
     border-radius: 20px;

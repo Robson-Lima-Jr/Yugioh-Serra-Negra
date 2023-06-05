@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+:root {
+    --fonte-titulos: "name-card", serif;
+    --fonte-texto: "effect-card", serif;
+    --fonte-obs: "normal-card", serif;
+
+    --cor0: #d6bd8d;
+    --cor1: #7e2016;
+    --cor2: #3b0a04;
+    --cor3: #220603;
+    --cor4: #130301;
+}
+
 /* Ajuste para barra de rolagem nao aparecer em disposivos menores que um celular */
 @media screen and (max-width: 768px) {
     ::-webkit-scrollbar {
@@ -9,7 +21,86 @@
 }
 
 @media screen and (min-width: 768px){
-    header>h1>img {
-        width: 45vw;
+
+    header>h1>a>img {
+        width: 450px;
+    }
+
+    #menuBurguer {
+        display: none;
+    }
+
+    header>menu {
+        display: block;
+    }
+
+    header>menu>ul {
+        background-color: var(--cor4);
+        text-align: left;
+        padding-left: 10px ;
+    }
+
+    header>menu>ul>li {
+        display: inline-block;
+        border-top: none;
+        margin-bottom: 3px;
+    }
+
+    header>menu>ul>li>a {
+        background-color: var(--cor4);
+        padding: 2px 8px;
+        border-radius: 5px;
+        font-size: 1.9em;
+    }
+
+    main {
+        width: 740px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .mainClass {
+        width: 740px;
+    }
+
+    .h2class {
+        font-size: 3.5em;
+        padding: 15px 0px;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    main > article > ul >li {
+        font-size: 1.2em;
+    }
+
+    .h3Class {
+        font-size: 2.5em;
+    }
+
+    .banlistConfig iframe {
+        zoom: 200%;
+    }
+
+    label > h3 , h4{
+        font-size: 1.7em;
+    }
+
+    #playerMobile {
+        font-size: 2em;
+    }
+
+    .deckArea {
+        width: 600px;
+    }
+
+    .deckArea iframe {
+        zoom: 130%;
+    }
+
+    .deckText>p {
+        font-size: 1.3em;
     }
 }

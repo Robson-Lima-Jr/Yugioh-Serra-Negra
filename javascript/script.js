@@ -1,3 +1,14 @@
+//Função para mudar o tipo de menu exibido quando a pagina tiver tamanhos diferentes
+function screenChange() {
+    let menuArea = document.querySelector("menu#menuArea");
+
+    if (window.innerWidth >= 768) {
+        menuArea.style.display = "block";
+    } else {
+        menuArea.style.display = "none";
+    }
+}
+
 //Função para abrir e fechar o menu no mobile
 function menuClick() {
     let menuArea = document.querySelector("menu#menuArea");
@@ -9,9 +20,10 @@ function menuClick() {
     }
 }
 
-//Função para quando clicar no botão "Checar Deck", exibir a lista de decks de cada jogador
+//Função para quando mudar a opção no select, abrir na tela os dados dos decks referentes ao nome
 function changePlayer() {
     let currentPosition = document.querySelector("select#playerMobile");
+
     let jaoDecks = document.querySelector("aside#jao-decks");
     let tilaDecks = document.querySelector("aside#tila-decks");
     let robDecks = document.querySelector("aside#rob-decks");

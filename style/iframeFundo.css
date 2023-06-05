@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
 img {
     width: 100vw;
 }
