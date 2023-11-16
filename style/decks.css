@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "yugi-card";
+    src: url("../fonts/Yu-Gi-Oh! Matrix Regular Small Caps 2.ttf") format("truetype");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+
+:root {
+    --fonte-titulos: "yugi-card", serif;
+    --fonte-texto: 'Roboto', sans-serif;
+
+    --cor0: #d6bd8d;
+    --cor1: #7e2016;
+    --cor2: #3b0a04;
+    --cor3: #220603;
+    --cor4: #130301;
+    --corTexto: rgb(46, 44, 44);
+}
+
+label h3 {
+    display: inline;
+    margin-right: 10px;
+}
+
+#selectPlayerMobile {
+    text-align: center;
+}
+
+#playerMobile {
+    display: inline;
+    margin-bottom: 20px;
+    padding: 0px 10px;
+    background-color: var(--cor2);
+    color: var(--cor0);
+    text-align: center;
+    font-family: var(--fonte-titulos);
+    font-size: 25px;
+}
+
+#jao-decks {
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#tila-decks {
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#rob-decks {
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#vi-decks {
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#fah-decks {
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#feh-decks {
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#deckIcons {
+    display: block;
+    text-align: center;
+}
+
+#deckIcons img {
+    border-radius: 20px;
+    margin: 5px 5px;
+}
+
+.deckArea {
+    display: none;
+}
+
+
+#deckIcons h4 {
+    margin: 20px;
+}
+
+.deckArea {
+    background-color: white;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+}
+
+.description>h2 {
+    color: var(--cor1);
+    font-family: var(--fonte-titulos);
+    font-weight: normal;
+    font-size: 3.5em;
+}
+
+.description>p {
+    color: var(--corTexto);
+    font-size: 1.4em;
+}
+
+.description strong {
+    color: var(--cor4);
+    font-size: 1.4em;
+}
+
+.deckImage>h2 {
+    color: var(--cor2);
+    font-family: var(--fonte-titulos);
+    font-weight: normal;
+    font-size: 3em;
+}
+
+
+.deckText>h2,
+.deckText>h3 {
+    color: var(--cor2);
+    font-size: 2.5em;
+    text-align: center;
+    font-family: var(--fonte-titulos);
+    font-weight: normal;
+}
+
+.deckText>p {
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+.frameDeck {
+    width: 320px;
+    margin: 20px 0px;
+}
+
+#frameDino {height: 913px;}
+
+#frameGouki {height: 910px;}
+
+#frameBlader {height: 815px;}
+
+#frameBlue {height: 1080px;}
+
+#frameCyber {height: 912px;}
+
+#frameCyberdark {height: 812px;}
+
+#frameCaveira {height: 983px;}
+
+#frameEldlich {height: 813px;}
+
+#frameGema {height: 911px;}
+
+#frameMagnet {height: 983px;}

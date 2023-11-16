@@ -1,9 +1,9 @@
 //Função para mudar o tipo de menu exibido quando a pagina tiver tamanhos diferentes
 function screenChange() {
-    let menuArea = document.querySelector("menu#menuArea");
+    let menuArea = document.querySelector("nav#menuArea");
 
     if (window.innerWidth >= 768) {
-        menuArea.style.display = "block";
+        menuArea.style.display = "flex";
     } else {
         menuArea.style.display = "none";
     }
@@ -11,12 +11,12 @@ function screenChange() {
 
 //Função para abrir e fechar o menu no mobile
 function menuClick() {
-    let menuArea = document.querySelector("menu#menuArea");
+    let menuArea = document.querySelector("nav#menuArea");
 
-    if (menuArea.style.display == "block") {
+    if (menuArea.style.display == "flex") {
         menuArea.style.display = "none";
     } else {
-        menuArea.style.display = "block";
+        menuArea.style.display = "flex";
     }
 }
 
@@ -24,15 +24,15 @@ function menuClick() {
 function changePlayer() {
     let currentPosition = document.querySelector("select#playerMobile");
 
-    let jaoDecks = document.querySelector("aside#jao-decks");
-    let tilaDecks = document.querySelector("aside#tila-decks");
-    let robDecks = document.querySelector("aside#rob-decks");
-    let viDecks = document.querySelector("aside#vi-decks");
-    let fahDecks = document.querySelector("aside#fah-decks");
-    let fehDecks = document.querySelector("aside#feh-decks");
+    let jaoDecks = document.querySelector("div#jao-decks");
+    let tilaDecks = document.querySelector("div#tila-decks");
+    let robDecks = document.querySelector("div#rob-decks");
+    let viDecks = document.querySelector("div#vi-decks");
+    let fahDecks = document.querySelector("div#fah-decks");
+    let fehDecks = document.querySelector("div#feh-decks");
 
     if (currentPosition.value === "jao") {
-        jaoDecks.style.display = "block";
+        jaoDecks.style.display = "flex";
         tilaDecks.style.display = "none";
         robDecks.style.display = "none";
         viDecks.style.display = "none";
@@ -46,7 +46,7 @@ function changePlayer() {
         fahDeckList.style.display = "none";
         fehDeckList.style.display = "none";
     } else if (currentPosition.value === "tila") {
-        tilaDecks.style.display = "block";
+        tilaDecks.style.display = "flex";
         jaoDecks.style.display = "none";
         robDecks.style.display = "none";
         viDecks.style.display = "none";
@@ -60,7 +60,7 @@ function changePlayer() {
         fahDeckList.style.display = "none";
         fehDeckList.style.display = "none";
     } else if (currentPosition.value === "rob") {
-        robDecks.style.display = "block";
+        robDecks.style.display = "flex";
         jaoDecks.style.display = "none";
         tilaDecks.style.display = "none";
         viDecks.style.display = "none";
@@ -74,7 +74,7 @@ function changePlayer() {
         fahDeckList.style.display = "none";
         fehDeckList.style.display = "none";
     } else if (currentPosition.value === "vi") {
-        viDecks.style.display = "block";
+        viDecks.style.display = "flex";
         jaoDecks.style.display = "none";
         tilaDecks.style.display = "none";
         robDecks.style.display = "none";
@@ -88,7 +88,7 @@ function changePlayer() {
         fahDeckList.style.display = "none";
         fehDeckList.style.display = "none";
     } else if (currentPosition.value === "fah") {
-        fahDecks.style.display = "block";
+        fahDecks.style.display = "flex";
         jaoDecks.style.display = "none";
         tilaDecks.style.display = "none";
         robDecks.style.display = "none";
@@ -102,7 +102,7 @@ function changePlayer() {
         fahDeckList.style.display = "none";
         fehDeckList.style.display = "none";
     } else if (currentPosition.value === "feh") {
-        fehDecks.style.display = "block";
+        fehDecks.style.display = "flex";
         jaoDecks.style.display = "none";
         tilaDecks.style.display = "none";
         robDecks.style.display = "none";

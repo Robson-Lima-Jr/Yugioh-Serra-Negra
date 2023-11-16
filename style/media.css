@@ -12,4 +12,73 @@
     --cor4: #130301;
 }
 
-/* Ajuste para barra de rolagem nao aparecer em disposivos menores que um celular */
+@media screen and (max-width: 425px) {
+    header .container-base{
+        flex-direction: column;
+    }
+
+    header .container-base nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-top: 10px;
+    }
+
+    header .menu-burguer {
+        display: flex;
+        font-size: 35px;
+        color: var(--cor0);
+    }
+
+    .champion-banner {
+        height: 300px;
+    }
+
+    .champion-banner h1 {
+        font-size: 35px;
+    }
+
+    .champion-banner h2 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    header .container-base{
+        flex-direction: column;
+    }
+
+    header .container-base nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-top: 10px;
+    }
+
+    header .menu-burguer {
+        display: flex;
+        font-size: 35px;
+        color: var(--cor0);
+    }
+
+    .champion-banner {
+        height: 350px;
+    }
+
+    .champion-banner h1 {
+        font-size: 45px;
+    }
+
+    .champion-banner h2 {
+        font-size: 40px;
+    }
+}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header .container-base{
+        flex-direction: column;
+    }
+}
