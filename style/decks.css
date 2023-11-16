@@ -31,7 +31,7 @@ label h3 {
 
 #playerMobile {
     display: inline;
-    margin-bottom: 20px;
+    margin: 20px 0px;
     padding: 0px 10px;
     background-color: var(--cor2);
     color: var(--cor0);

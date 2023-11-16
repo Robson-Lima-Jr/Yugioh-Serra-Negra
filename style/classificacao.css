@@ -59,27 +59,27 @@
     height: 332px;
 }
 
-.legenda-classificacao {
+.legenda-cor tbody{
+    width: 100%;
     display: flex;
-    align-items: center;
-    position: relative;
+    flex-direction: column;
+    gap: 5px;
 }
+
 
 #classFirst {
     width: 25px;
     height: 25px;
     background-color: #3232E4;
-    position: absolute;
-    left: 15px;
+
 }
 
 #classPlayoffs {
     width: 25px;
     height: 25px;
     background-color: #327A32;
-    position: absolute;
-    left: 15px;
 }
+
 
 #legenda {
     width: 100%;

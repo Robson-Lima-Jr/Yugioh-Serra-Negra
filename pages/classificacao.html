@@ -24,7 +24,7 @@
                 <a href="../index.html"><img src="../images/logoP.png" alt="logo"></a>
             </figure>
 
-            <span class="menu-burguer" class="material-symbols-outlined" onclick="menuClick()">menu</span>
+            <span class="material-symbols-outlined menu-burguer" onclick="menuClick()">menu</span>
 
             <nav id="menuArea">
                 <a href="../index.html" target="_self" rel="next">Home</a>
@@ -54,15 +54,24 @@
                                 id="frameClassification" frameborder="0" scrolling="no"></iframe>
                         </div>
 
-                        <div class="legenda-classificacao">
-                            <p id="classFirst"></p>
-                            <p>Classificado direto a <strong>Semi-Final</strong></p>
-                        </div>
+                        <table class="legenda-cor">
+                            <tbody>
+                                <tr>
+                                    <td id="classFirst"></td>
+                                    <td>Classificado direto a <strong>Semi-Final</strong></td>
+                                </tr>
 
-                        <div class="legenda-classificacao">
-                            <p id="classPlayoffs"></p>
-                            <p>Classificado para os <strong>Playoffs</strong></p>
-                        </div>
+                                <tr>
+                                    <td> </td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td id="classPlayoffs"></td>
+                                    <td>Classificado para os <strong>Playoffs</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </section>
 
                     <section id="classGeral">
