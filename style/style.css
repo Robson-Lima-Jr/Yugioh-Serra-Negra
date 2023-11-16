@@ -86,24 +86,32 @@ header .menu-burguer {
 /* Banner campeão */
 .champion-banner {
     width: 100%;
-    height: 60vh;
+    height: 350px;
     background: black url(../images/champion.png) no-repeat top center fixed;
     background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.champion-banner1 {
-    width: 100%;
-    height: 60vh;
-    background: black url(../images/1st\ champion.png) no-repeat top center fixed;
-    background-size: cover;
+.champion-banner h1 {
+    font-family: var(--fonte-titulos);
+    font-weight: bold;
+    color: white;
+    font-size: 50px;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.788);
 }
 
 /* article principal */
+
 .conteudo-principal {
     width: 100%;
     background-color: white;
     padding: 10px 0px;
     font-family: var(--fonte-texto);
+    padding: 0px 10px 40px;
 }
 
 h2 {
@@ -121,11 +129,11 @@ h2 {
     margin: 0px auto;
     margin-bottom: 10px;
     line-height: 25px;
-    text-align: justify;
 }
 
 .conteudo-principal p {
     text-indent: 20px;
+    padding: 0px 10px;
 }
 
 .conteudo-principal strong {
