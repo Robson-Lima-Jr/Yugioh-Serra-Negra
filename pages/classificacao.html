@@ -10,6 +10,7 @@
     <meta name="author" content="Robson Junior">
     <title>YuGiOh! da Roça! - Classificação</title>
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/classificacao.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -35,46 +36,54 @@
         </div>
     </header>
 
-    <main class="mainClass">
-        <article>
-            <h2 class="h2class">Classificação</h2>
-            <aside id="buttonClassification">
-                <input type="button" value="Ranking Decks" id="classDeck" onclick="rankDeck()">
-                <input type="button" value="Ranking Player" id="classPlayer" onclick="rankPlayer()">
-            </aside>
-            <section id="classificacao">
-                <div class="divFrame"><iframe
-                        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSWsScKbo8ohBHW6a982wspKRGTwwfeRYjqQhC94irS5UsPwqhN1HZZ6enDFumdkDSUQeK3eetUV4d_/pubhtml?gid=0&range=a1:i14&amp;single=true&amp;widget=false&amp;chrome=false&amp;headers=false"
-                        id="frameClassification" frameborder="0" scrolling="no"></iframe>
+    <main>
+        <div class="container-base">
+            <article class="conteudo-principal" id="class-pag">
+                <h2>Classificação</h2>
+
+                <div id="buttonClassification">
+                    <input type="button" value="Ranking Decks" id="classDeck" onclick="rankDeck()">
+                    <input type="button" value="Ranking Player" id="classPlayer" onclick="rankPlayer()">
                 </div>
-                <table>
-                    <tr>
-                        <td id="classFirst"></td>
-                        <td>Classificado direto a <strong>Semi-Final</strong></td>
-                    </tr>
-                    <tr>
-                        <td id="classPlayoffs"></td>
-                        <td>Classificado para os <strong>Playoffs</strong></td>
-                    </tr>
-                </table>
-            </section>
-            <section id="classGeral">
-                <div class="divFrame"><iframe
-                        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSWsScKbo8ohBHW6a982wspKRGTwwfeRYjqQhC94irS5UsPwqhN1HZZ6enDFumdkDSUQeK3eetUV4d_/pubhtml?gid=139998720&range=a1:j8&amp;single=true&amp;widget=false&amp;chrome=false&amp;headers=false"
-                        id="frameGeral" frameborder="0"></iframe></div>
-            </section>
-            <p id="legenda">
-                <span id="legenda1"><strong>Legenda:</strong></span>
-                <span><strong>PS</strong> = Posição /</span>
-                <span><strong>ICO</strong> = Icone /</span>
-                <span><strong>Deck</strong> /</span>
-                <span><strong>P</strong> = Pontos /</span>
-                <span><strong>R</strong> = Rodadas Disputadas /</span>
-                <span><strong>V</strong> = Vitórias /</span>
-                <span><strong>E</strong> = Empates /</span>
-                <span><strong>D</strong> = Derrotas</span>
-            </p>
-        </article>
+
+                <div class="container-classificacao">
+                    <section id="classificacao">
+                        <div class="divFrame"><iframe
+                                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSWsScKbo8ohBHW6a982wspKRGTwwfeRYjqQhC94irS5UsPwqhN1HZZ6enDFumdkDSUQeK3eetUV4d_/pubhtml?gid=0&range=a1:i14&amp;single=true&amp;widget=false&amp;chrome=false&amp;headers=false"
+                                id="frameClassification" frameborder="0" scrolling="no"></iframe>
+                        </div>
+
+                        <div class="legenda-classificacao">
+                            <p id="classFirst"></p>
+                            <p>Classificado direto a <strong>Semi-Final</strong></p>
+                        </div>
+
+                        <div class="legenda-classificacao">
+                            <p id="classPlayoffs"></p>
+                            <p>Classificado para os <strong>Playoffs</strong></p>
+                        </div>
+                    </section>
+
+                    <section id="classGeral">
+                        <div class="divFrame"><iframe
+                                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSWsScKbo8ohBHW6a982wspKRGTwwfeRYjqQhC94irS5UsPwqhN1HZZ6enDFumdkDSUQeK3eetUV4d_/pubhtml?gid=139998720&range=a1:j8&amp;single=true&amp;widget=false&amp;chrome=false&amp;headers=false"
+                                id="frameGeral" frameborder="0"></iframe></div>
+                    </section>
+                </div>
+
+                <div id="legenda">
+                    <span id="legenda1"><strong>Legenda:</strong></span>
+                    <span><strong>PS</strong> = Posição /</span>
+                    <span><strong>ICO</strong> = Icone /</span>
+                    <span><strong>Deck</strong> /</span>
+                    <span><strong>P</strong> = Pontos /</span>
+                    <span><strong>R</strong> = Rodadas Disputadas /</span>
+                    <span><strong>V</strong> = Vitórias /</span>
+                    <span><strong>E</strong> = Empates /</span>
+                    <span><strong>D</strong> = Derrotas</span>
+                </div>
+            </article>
+        </div>
     </main>
 
     <footer>

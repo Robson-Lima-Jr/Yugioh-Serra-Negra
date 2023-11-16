@@ -43,6 +43,7 @@ body {
 
 li {
     list-style-type: none;
+    padding: 0px 10px;
 }
 
 img {
@@ -113,14 +114,14 @@ header .menu-burguer {
 
 .conteudo-principal {
     width: 100%;
+    min-height: 100vh;
     background-color: white;
-    padding: 10px 0px;
+    padding: 0px 0px 20px;
     font-family: var(--fonte-texto);
-    padding: 0px 10px 40px;
 }
 
 h2 {
-    margin: 20px 0px;
+    padding: 20px 0px;
     color: var(--cor2);
     font-weight: normal;
     text-align: center;
@@ -149,7 +150,7 @@ h2 {
     color: #7e2016;
 }
 
-.conteudo-principal span {
+.conteudo-principal .span-base {
     text-decoration: underline;
     padding: 5px;
     font-family: var(--fonte-titulos);
@@ -158,6 +159,7 @@ h2 {
 }
 
 footer {
+    padding: 10px 0px;
     background-image: linear-gradient(to bottom, var(--cor4), var(--cor1));
     color: white;
     text-align: center;
@@ -171,4 +173,57 @@ footer a {
     color: var(--cor0);
     font-weight: bold;
     text-decoration: none;
+}
+
+/* página de partidas*/
+.divFrame {
+    display: flex;
+    justify-content: center;
+}
+
+#frameJogos {
+    margin-top: 20px;
+    width: 330px;
+    height: 4213px;
+}
+
+/* pagina campeôes */
+h3 {
+    margin: 20px 0px;
+    text-align: center;
+    font-family: var(--fonte-titulos);
+    font-weight: normal;
+    font-size: 2em;
+    color: var(--cor3);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.445);
+}
+
+#frame2022 {
+    width: 329px;
+    height: 416px;
+}
+
+#frame2021 {
+    width: 327px;
+    height: 359px;
+}
+
+/* Página banlist */
+.banlistConfig {
+   display: flex;
+   justify-content: center;
+}
+
+#forbidden {
+    width: 330px;
+    height: 1742px
+}
+
+#limited {
+    width: 330px;
+    height: 1225px;
+}
+
+#semiLimited {
+    width: 330px;
 }
