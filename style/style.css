@@ -29,9 +29,10 @@
 
 html,
 body {
-    width: 100vw;
+    width: 100%;
     background-color: var(--cor0);
     color: var(--corTexto);
+    scroll-behavior: smooth;
 }
 
 .container-base {
@@ -42,6 +43,10 @@ body {
 
 li {
     list-style-type: none;
+}
+
+img {
+    object-fit: cover;
 }
 
 /* Header */
@@ -87,7 +92,7 @@ header .menu-burguer {
 .champion-banner {
     width: 100%;
     height: 350px;
-    background: black url(../images/champion.png) no-repeat top center fixed;
+    background: black url(../images/champion.png) no-repeat top left fixed;
     background-size: cover;
 
     display: flex;
@@ -132,14 +137,15 @@ h2 {
 }
 
 .conteudo-principal p {
-    text-indent: 20px;
+    max-width: 900px;
     padding: 0px 10px;
+    text-align: justify;
 }
 
 .conteudo-principal strong {
     font-family: var(--fonte-titulos);
     font-weight: normal;
-    font-size: 22px;
+    font-size: 24px;
     color: #7e2016;
 }
 
@@ -158,5 +164,11 @@ footer {
 }
 
 footer p {
-    padding: 5px 0px;
+    line-height: 25px;
+}
+
+footer a {
+    color: var(--cor0);
+    font-weight: bold;
+    text-decoration: none;
 }
