@@ -1,6 +1,3 @@
-/* Gerais */
-@charset "UTF-8";
-
 @font-face {
     font-family: "yugi-card";
     src: url("../fonts/Yu-Gi-Oh! Matrix Regular Small Caps 2.ttf") format("truetype");
@@ -8,18 +5,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
 
-
-:root {
-    --fonte-titulos: "yugi-card", serif;
-    --fonte-texto: 'Roboto', sans-serif;
-
-    --cor0: #d6bd8d;
-    --cor1: #7e2016;
-    --cor2: #3b0a04;
-    --cor3: #220603;
-    --cor4: #130301;
-    --corTexto: rgb(46, 44, 44);
-}
 
 .conteudo-principal {
     padding: 10px;
@@ -35,7 +20,8 @@ table {
     padding: 5px 5px;
 }
 
-.banlist-table th, table td {
+.banlist-table th,
+table td {
     border: 3px solid white;
 }
 
@@ -44,29 +30,72 @@ table {
     justify-content: center;
 }
 
-.card-icon{
+.card-icon {
     display: block;
     max-width: 45px;
 }
 
-.name, .type, .restrict {
+.name,
+.type,
+.restrict {
     padding: 0px 10px;
     text-align: center;
     color: rgb(0, 0, 0);
 }
 
-.fusion-back .name, .fusion-back .type, .fusion-back .restrict {
+.name {
+    font-family: "yugi-card", serif;
+    font-size: 21px;
+}
+
+.type,
+.restrict {
+    font-family: 'Roboto', sans-serif;
+}
+
+.fusion-back .name,
+.fusion-back .type,
+.fusion-back .restrict,
+.link-back .name,
+.link-back .type,
+.link-back .restrict,
+.xyz-back .name,
+.xyz-back .type,
+.xyz-back .restrict,
+.trap-back .name,
+.trap-back .type,
+.trap-back .restrict {
     color: rgb(255, 255, 255);
 }
 
 .normal-back {
-    background-image: linear-gradient(to right, #d6bd8d, #d4a040 );
+    background-image: linear-gradient(to right, #d6bd8d, #d4a040);
 }
 
 .effect-back {
-    background-image: linear-gradient(to right, #b49181, #ca734a );
+    background-image: linear-gradient(to right, #b49181, #ca734a);
 }
 
 .fusion-back {
-    background-image: linear-gradient(to right, #9976b9, #611e9c );
+    background-image: linear-gradient(to right, #9976b9, #611e9c);
+}
+
+.link-back {
+    background-image: linear-gradient(to right, rgb(196, 85, 85), #006EAD);
+}
+
+.synchro-back {
+    background-image: linear-gradient(to right, rgb(245, 236, 236), #bcbfc0);
+}
+
+.xyz-back {
+    background-image: linear-gradient(to right, rgb(114, 112, 112), #323233);
+}
+
+.spell-back {
+    background-image: linear-gradient(to right, #9dd3c1, #15a072);
+}
+
+.trap-back {
+    background-image: linear-gradient(to right, #cc618f, #772c4d);
 }
