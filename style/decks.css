@@ -107,7 +107,7 @@ label h3 {
 .deck-describe {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .container-deck {
@@ -129,7 +129,7 @@ label h3 {
 
 .deckText {
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
 }
 
 .deckText h6 {
@@ -146,6 +146,7 @@ label h3 {
 }
 
 .deckText img {
+    margin-left: -10px;
     width: 40px;
 }
 
@@ -182,5 +183,10 @@ label h3 {
 
 .trap {
     background-image: linear-gradient(to right, #c2648d, #970f4a);
+    color: white;
+}
+
+.ritual {
+    background-image: linear-gradient(to right, #81919b, #12567e);
     color: white;
 }
