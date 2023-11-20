@@ -1,10 +1,6 @@
 @charset "UTF-8";
 
 :root {
-    --fonte-titulos: "name-card", serif;
-    --fonte-texto: "effect-card", serif;
-    --fonte-obs: "normal-card", serif;
-
     --cor0: #d6bd8d;
     --cor1: #7e2016;
     --cor2: #3b0a04;
@@ -13,7 +9,7 @@
 }
 
 @media screen and (max-width: 425px) {
-    header .container-base{
+    header .container-base {
         flex-direction: column;
     }
 
@@ -36,17 +32,29 @@
     }
 
     .champion-banner h1 {
-        font-size: 35px;
+        font-size: 2.5em;
     }
 
     .champion-banner h2 {
-        font-size: 35px;
+        font-size: 2em;
     }
 
+    h2 {
+        font-size: 2.2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    /* paginas deck */
+    .container-deck {
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
-    header .container-base{
+    header .container-base {
         flex-direction: column;
     }
 
@@ -69,16 +77,37 @@
     }
 
     .champion-banner h1 {
-        font-size: 45px;
+        font-size: 3em;
     }
 
     .champion-banner h2 {
-        font-size: 40px;
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2.2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    /* paginas deck */
+    .container-deck {
+        flex-wrap: wrap;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    header .container-base{
+    header .container-base {
         flex-direction: column;
+    }
+
+    .champion-banner h1 {
+        font-size: 4em;
+    }
+
+    .champion-banner h2 {
+        font-size: 3em;
     }
 }

@@ -1,16 +1,9 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: "yugi-card";
-    src: url("../fonts/Yu-Gi-Oh! Matrix Regular Small Caps 2.ttf") format("truetype");
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
 
 
 :root {
-    --fonte-titulos: "yugi-card", serif;
-    --fonte-texto: 'Roboto', sans-serif;
 
     --cor0: #d6bd8d;
     --cor1: #7e2016;
@@ -18,6 +11,12 @@
     --cor3: #220603;
     --cor4: #130301;
     --corTexto: rgb(46, 44, 44);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 label h3 {
@@ -36,7 +35,6 @@ label h3 {
     background-color: var(--cor2);
     color: var(--cor0);
     text-align: center;
-    font-family: var(--fonte-titulos);
     font-size: 25px;
 }
 
@@ -81,6 +79,12 @@ label h3 {
     text-align: center;
 }
 
+#deckIcons p{
+    text-align: center;
+    font-weight: 500;
+    margin: 15px auto;
+}
+
 #deckIcons img {
     border-radius: 20px;
     margin: 5px 5px;
@@ -88,55 +92,96 @@ label h3 {
 
 .deckArea {
     display: none;
-}
-
-
-#deckIcons h4 {
-    margin: 20px;
-}
-
-.deckArea {
     background-color: white;
 }
 
-.description {
+.deckArea h4 {
+    margin: 20px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 2em;
+    color: var(--cor1);
+    border-top: 2px solid var(--cor0);
+}
+
+.deck-describe {
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 
-.description>h2 {
-    color: var(--cor1);
-    font-family: var(--fonte-titulos);
-    font-weight: normal;
-    font-size: 50px;
+.container-deck {
+    width: 100%;
+    display: flex;
+    padding: 0px 5px;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
 }
 
-.description>p {
-    color: var(--corTexto);
-    font-family: var(--fonte-titulos);
-    font-size: 20px;
+.container-deck figure {
+    width: 100%;
 }
 
-.description strong {
-    color: var(--cor4);
-    font-size: 20px;
+.container-deck img {
+    width: 100%;
 }
 
-.deckImage>h2 {
-    color: var(--cor2);
-    font-family: var(--fonte-titulos);
-    font-weight: normal;
-    font-size: 25px;
+.deckText {
+    width: 100%;
+    max-width: 400px;
 }
 
-
-.deckText>h2,
-.deckText>h3 {
+.deckText h6 {
     text-align: center;
-    font-weight: normal;
+    padding: 10px;
+    font-size: 20px;
+
 }
 
-.deckText>p {
-    padding: 10px;
-    font-size: 1.1em;
+.deckText p {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.deckText img {
+    width: 40px;
+}
+
+.normal {
+    background-image: linear-gradient(to right, #FDE68A, #b99d2c);
+}
+
+.effect {
+    background-image: linear-gradient(to right, #e9b094, #f0651f);
+}
+
+.fusion {
+    background-image: linear-gradient(to right, #b2a3be, #743fa1);
+    color: white;
+}
+
+.sync {
+    background-image: linear-gradient(to right, #dbd8d8, #aaaaaa);
+}
+
+.xyz {
+    background-image: linear-gradient(to right, #747272, #1b1b1b);
+    color: white;
+}
+
+.link {
+    background-image: linear-gradient(to right, rgb(146, 43, 43), #006EAD);
+    color: white;
+}
+
+.spell {
+    background-image: linear-gradient(to right, #a3beb5, #139268);
+}
+
+.trap {
+    background-image: linear-gradient(to right, #c2648d, #970f4a);
+    color: white;
 }
