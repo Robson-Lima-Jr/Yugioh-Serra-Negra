@@ -1,452 +1,183 @@
+/* Gerais */
 @charset "UTF-8";
 
-@font-face {
-    font-family: "name-card";
-    src: url("../fonts/Yu-Gi-Oh! Matrix Regular Small Caps 2.ttf") format("truetype");
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "effect-card";
-    src: url("../fonts/Yu-Gi-Oh! Matrix Book.otf") format("opentype"), url("../fonts/Yu-Gi-Oh! Matrix Book.ttf") format("truetype");
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "normal-card";
-    src: url("../fonts/Yu-Gi-Oh! ITC Stone Serif LT Italic.otf") format("opentype"), url("../fonts/Yu-Gi-Oh! ITC Stone Serif LT Italic.ttf") format("truetype");
-    font-weight: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
 
 
 :root {
-    --fonte-titulos: "name-card", serif;
-    --fonte-texto: "effect-card", serif;
-    --fonte-obs: "normal-card", serif;
-
     --cor0: #d6bd8d;
     --cor1: #7e2016;
     --cor2: #3b0a04;
     --cor3: #220603;
     --cor4: #130301;
+    --corTexto: rgb(46, 44, 44);
 }
 
 * {
     margin: 0px;
     padding: 0px;
-    font-family: var(--fonte-texto);
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 html,
 body {
-    width: 100vw;
+    width: 100%;
     background-color: var(--cor0);
+    font-family: 'Roboto', sans-serif;;
+    color: var(--corTexto);
+    scroll-behavior: smooth;
 }
 
-
-header {
-    background-color: var(--cor2);
-    text-align: center;
+.container-base {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
-header>h1 {
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor4));
-    padding: 20px 0px 10px 0px;
-}
-
-
-header>h1>a>img {
-    width: 350px;
-}
-
-#menuBurguer {
-    display: block;
-    padding: 2px;
-    font-size: 2em;
-    background-color: var(--cor4);
-    color: var(--cor0);
-}
-
-header>menu {
+li {
+    font-size: 1.1em;
     list-style-type: none;
-    display: none;
+    padding: 0px 10px;
 }
 
-header>menu>ul {
-    border-bottom: 2px solid var(--cor4);
+img {
+    object-fit: cover;
 }
 
-header>menu>ul>li {
-    border-top: 2px solid var(--cor0);
+/* Header */
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor4));
+    padding: 10px;
 }
 
-header>menu>ul>li>a {
-    display: block;
-    background-color: var(--cor2);
-    color: var(--cor0);
+header .container-base {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container-base figure img {
+    width: 300px;
+}
+
+header .container-base nav {
+    display: flex;
+    gap: 15px;
+}
+
+header .container-base nav a {
+    color: white;
     text-decoration: none;
-    font-family: var(--fonte-titulos);
-    font-size: 1.8em;
     font-weight: normal;
-    padding: 3px;
+    font-size: 20px;
+    border-bottom: 2px solid transparent;
 }
 
-header>menu>ul>li>a:hover {
-    background-color: var(--cor0);
-    color: var(--cor4);
+header .container-base nav a:hover {
+    color: var(--cor0);
+    border-bottom: 2px solid var(--cor0);
     transition: 0.5s;
 }
 
-main {
+header .menu-burguer{
+    display: none;
+}
+
+/* Banner campeão */
+.champion-banner {
+    width: 100%;
+    height: 400px;
+    background: black url(../images/champion.png) no-repeat top left fixed;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.champion-banner h1 {
+    font-weight: bold;
+    color: white;
+    font-size: 5em;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.788);
+}
+
+.champion-banner h2 {
+    font-weight: bold;
+    color: white;
+    font-size: 4em;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.788);
+}
+
+/* article principal */
+
+.conteudo-principal {
+    width: 100%;
     min-height: 100vh;
-    display: block;
-    width: 90vw;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-
     background-color: white;
-    border-radius: 20px;
-    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.363);
+    padding: 0px 0px 20px;
+    font-family: var(--fonte-texto);
 }
 
-.h2class {
-    color: var(--cor1);
+h2 {
+    padding: 20px 0px;
+    color: var(--cor2);
+    font-weight: bold;
     text-align: center;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.514);
-    font-family: var(--fonte-titulos);
-    font-weight: normal;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
-.obsText {
-    font-family: var(--fonte-obs);
+.conteudo-principal p, .conteudo-principal li {
+    max-width: 900px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+
+.conteudo-principal p {
+    max-width: 900px;
+    padding: 0px 10px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.conteudo-principal strong {
+    font-weight: 500;
     color: var(--cor1);
 }
 
-main>article>p {
-    text-align: justify;
-    text-indent: 25px;
-    padding-bottom: 10px;
-}
-
-strong {
-    color: var(--cor3);
-}
-
-main li {
-    list-style-type: none;
-    text-align: justify;
-    padding-bottom: 10px;
+.conteudo-principal .span-base {
+    font-style: italic;
+    font-weight: bold;
 }
 
 footer {
-    width: 100vw;
+    padding: 10px 0px;
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor1));
+    color: white;
     text-align: center;
-    display: block;
-    font-family: var(--fonte-titulos);
-    background-image: linear-gradient(to top, var(--cor1), var(--cor4));
 }
 
+footer p {
+    padding: 5px 0px;
+}
 
-footer span {
+footer a {
     color: var(--cor0);
     font-weight: bold;
-}
-
-.footerTopP {
-    padding-top: 5px;
-}
-
-div>p {
-    padding: 0px 10px 5px 10px;
-    color: white;
-}
-
-footer>div>p>a {
-    color: white;
     text-decoration: none;
-    font-weight: bold;
 }
 
-/* Area de configuração: Classification.html */
-.mainClass {
-    width: 95vw;
-}
-
-#buttonClassification {
-    display: block;
-    text-align: center;
-    margin: 20px;
-}
-
-#classPlayer,
-#classDeck {
-    padding: 5px;
-    margin-right: 5px;
-    background-color: var(--cor2);
-    color: white;
-    font-size: 1.2em;
-    font-weight: bold;
-    border-radius: 10px;
-    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.445);
-}
-
+/* página de partidas*/
 .divFrame {
-    display: block;
-    margin: auto;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
-
-#frameClassification {
-    width: 337px;
-    height: 675px;
-}
-
-#classGeral {
-    display: none;
-}
-
-#frameGeral {
-    width: 342px;
-    height: 332px;
-}
-
-
-table {
-    margin: auto;
-    margin-bottom: 20px;
-}
-
-td {
-    font-family: var(--fonte-obs);
-}
-
-td strong {
-    font-family: var(--fonte-obs);
-}
-
-#classFirst {
-    display: block;
-    width: 25px;
-    height: 25px;
-    margin-top: 10px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    background-color: #3232E4;
-}
-
-#classPlayoffs {
-    display: block;
-    width: 25px;
-    height: 25px;
-    margin-right: 5px;
-    background-color: #327A32;
-}
-
-
-#legenda,
-#legenda>span>strong {
-    margin-top: 15px;
-    text-align: center;
-    font-family: var(--fonte-obs);
-}
-
-#legenda1 {
-    display: block;
-    margin: 10px;
-}
-
-/* CSS página de Games */
 
 #frameJogos {
+    margin-top: 20px;
     width: 330px;
     height: 4213px;
-    margin-top: 20px;
 }
-
-/* CSS página Torneios anteriores */
-
-.h3Class {
-    margin: 20px 0px;
-    text-align: center;
-    font-family: var(--fonte-titulos);
-    font-weight: normal;
-    font-size: 2em;
-    color: var(--cor3);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.445);
-}
-
-#frame2022 {
-    width: 329px;
-    height: 416px;
-}
-
-#frame2021 {
-    width: 327px;
-    height: 359px;
-}
-
-/* CSS para a página da Banlist */
-.banlistConfig {
-    text-align: center;
-}
-
-#forbidden {
-    width: 330px;
-    height: 1742px
-}
-
-#limited {
-    width: 330px;
-    height: 1225px;
-}
-
-#semiLimited {
-    width: 330px;
-}
-
-/* CSS pagina Deck */
-label>h3 {
-    display: inline;
-    margin-right: 10px;
-}
-
-#selectPlayerMobile {
-    text-align: center;
-}
-
-#playerMobile {
-    display: inline;
-    margin-bottom: 20px;
-    padding: 0px 10px 0px 10px;
-    background-color: var(--cor2);
-    color: var(--cor0);
-    text-align: center;
-    font-family: var(--fonte-titulos);
-    font-size: 1.4em;
-}
-
-#jao-decks {
-    display: none;
-}
-
-#tila-decks {
-    display: none;
-}
-
-#rob-decks {
-    display: none;
-}
-
-#vi-decks {
-    display: none;
-}
-
-#fah-decks {
-    display: none;
-}
-
-#feh-decks {
-    display: none;
-}
-
-.deckArea {
-    display: none;
-}
-
-#deckIcons {
-    display: block;
-    text-align: center;
-}
-
-#deckIcons img {
-    border-radius: 20px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-}
-
-#deckIcons h4 {
-    margin: 20px;
-}
-
-.deckArea {
-    margin: auto;
-    background-color: var(--cor0);
-    padding: 10px;
-    border-radius: 20px;
-    text-align: center;
-}
-
-.description {
-    background-color: var(--cor2);
-    border-radius: 20px 20px 0px 0px;
-    margin: -10px -10px 0px -10px;
-    padding: 15px 0px;
-    margin-bottom: 10px;
-    font-size: 1.2em;
-}
-
-.description>h2 {
-    color: var(--cor0);
-    font-family: var(--fonte-titulos);
-    font-weight: normal;
-    font-size: 3em;
-}
-
-.description>p {
-    color: white;
-}
-
-.description strong {
-    color: var(--cor0);
-}
-
-.deckImage>h2 {
-    color: var(--cor2);
-    font-family: var(--fonte-titulos);
-    font-weight: normal;
-    font-size: 3em;
-}
-
-
-.deckText>h2,
-.deckText>h3 {
-    color: var(--cor2);
-    font-size: 2.5em;
-    text-align: center;
-    font-family: var(--fonte-titulos);
-    font-weight: normal;
-}
-
-.deckText>p {
-    padding: 10px;
-    font-size: 1.1em;
-}
-
-.frameDeck {
-    width: 320px;
-    margin: 20px 0px;
-}
-
-#frameDino {height: 913px;}
-
-#frameGouki {height: 910px;}
-
-#frameBlader {height: 815px;}
-
-#frameBlue {height: 1080px;}
-
-#frameCyber {height: 912px;}
-
-#frameCyberdark {height: 812px;}
-
-#frameCaveira {height: 983px;}
-
-#frameEldlich {height: 813px;}
-
-#frameGema {height: 911px;}
-
-#frameMagnet {height: 983px;}

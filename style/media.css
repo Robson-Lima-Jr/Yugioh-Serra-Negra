@@ -1,10 +1,6 @@
 @charset "UTF-8";
 
 :root {
-    --fonte-titulos: "name-card", serif;
-    --fonte-texto: "effect-card", serif;
-    --fonte-obs: "normal-card", serif;
-
     --cor0: #d6bd8d;
     --cor1: #7e2016;
     --cor2: #3b0a04;
@@ -12,96 +8,124 @@
     --cor4: #130301;
 }
 
-/* Ajuste para barra de rolagem nao aparecer em disposivos menores que um celular */
-@media screen and (max-width: 768px) {
-    ::-webkit-scrollbar {
-        width: 0px;
-        height: 0px;
-    }
-}
-
-@media screen and (min-width: 768px){
-
-    header>h1>a>img {
-        width: 450px;
+@media screen and (max-width: 425px) {
+    header .container-base {
+        flex-direction: column;
     }
 
-    #menuBurguer {
+    header .container-base nav {
         display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-top: 10px;
     }
 
-    header>menu {
-        display: inline;
+    header .menu-burguer {
+        display: flex;
+        font-size: 35px;
+        color: var(--cor0);
     }
 
-
-    header>menu>ul {
-        background-color: var(--cor4);
-        text-align: left;
-        padding-left: 10px ;
+    .champion-banner {
+        height: 300px;
     }
 
-    header>menu>ul>li {
-        display: inline-block;
-        border-top: none;
-        margin-bottom: 3px;
-    }
-
-    header>menu>ul>li>a {
-        background-color: var(--cor4);
-        padding: 2px 8px;
-        border-radius: 5px;
-        font-size: 1.9em;
-    }
-
-    main {
-        width: 740px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .mainClass {
-        width: 740px;
-    }
-
-    .h2class {
-        font-size: 3.5em;
-        padding: 15px 0px;
-    }
-
-    p {
-        font-size: 1.2em;
-    }
-
-    main > article > ul >li {
-        font-size: 1.2em;
-    }
-
-    .h3Class {
+    .champion-banner h1 {
         font-size: 2.5em;
     }
 
-    .banlistConfig iframe {
-        zoom: 200%;
-    }
-
-    label > h3 , h4{
-        font-size: 1.7em;
-    }
-
-    #playerMobile {
+    .champion-banner h2 {
         font-size: 2em;
     }
 
-    .deckArea {
-        width: 600px;
+    h2 {
+        font-size: 2.2em;
     }
 
-    .deckArea iframe {
-        zoom: 130%;
+    h3 {
+        font-size: 1.5em;
     }
 
-    .deckText>p {
-        font-size: 1.3em;
+    footer {
+        font-size: 15px;
+    }
+
+    #deckIcons img {
+        width: 130px;
+    }
+
+    /* paginas deck */
+    .container-deck {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    header .container-base {
+        flex-direction: column;
+    }
+
+    header .container-base nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-top: 10px;
+    }
+
+    header .menu-burguer {
+        display: flex;
+        font-size: 35px;
+        color: var(--cor0);
+    }
+
+    .champion-banner {
+        height: 350px;
+    }
+
+    .champion-banner h1 {
+        font-size: 3em;
+    }
+
+    .champion-banner h2 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2.2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+
+    #deckIcons img {
+        width: 130px;
+    }
+
+    /* paginas deck */
+    .container-deck {
+        flex-wrap: wrap;
+    }
+
+    /* pagina resultados */
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header .container-base {
+        flex-direction: column;
+    }
+
+    .champion-banner h1 {
+        font-size: 4em;
+    }
+
+    .champion-banner h2 {
+        font-size: 3em;
     }
 }

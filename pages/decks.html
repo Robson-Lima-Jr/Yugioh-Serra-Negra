@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="YuGiOh da Roça! Vamos te mandar pro dominio dos caipiras!">
+    <meta name="keywords" content="YuGiOh, roça, campeonato">
+    <meta name="author" content="Robson Junior">
+    <title>YuGiOh! da Roça! - Decks</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/decks.css">
+    <link rel="stylesheet" href="../style/media.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body onresize="screenChange()">
+    <header>
+        <div class="container-base">
+            <figure>
+                <a href="../index.html"><img src="../images/logoP.png" alt="logo"></a>
+            </figure>
+
+            <span class="material-symbols-outlined menu-burguer" onclick="menuClick()">menu</span>
+
+            <nav id="menuArea">
+                <a href="../index.html" target="_self" rel="next">Home</a>
+                <a href="classificacao.html" target="_self" rel="next">Classificação</a>
+                <a href="partidas.html" target="_self" rel="next">Partidas</a>
+                <a href="decks.html" target="_self" rel="next">Decks</a>
+                <a href="resultados.html">Resultados</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-base">
+            <article class="conteudo-principal">
+                <h2>Decks</h2>
+
+                <section id="deckNav">
+                    <div id="selectPlayerMobile">
+                        <div class="select-player">
+                            <label for="playerMobile">
+                                <h3>Selecione um Jogador:</h3>
+                            </label>
+
+                            <select name="players" id="playerMobile" onchange="changePlayer()">
+                                <option selected disabled>---------</option>
+                                <option value="jao">João Vitor</option>
+                                <option value="tila">Flávio</option>
+                                <option value="rob">Robson</option>
+                                <option value="vi">Vinicius</option>
+                                <option value="fah">Fabricio</option>
+                                <option value="feh">Fernando</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="deckIcons">
+                    <div id="jao-decks">
+                        <figure id="jao1" onclick="jao1_click()">
+                            <img src="../images/jao-decks/dino-base-250.jpg" alt="dinos" type="image/jpg">
+                        </figure>
+                        <figure id="jao2" onclick="jao2_click()">
+                            <img src="../images/jao-decks/gouki-hover-250.jpg" alt="gouki" type="image/jpg">
+                        </figure>
+                    </div>
+
+                    <div id="tila-decks">
+                        <figure id="tila1" onclick="tila1_click()">
+                            <img src="../images/flo-decks/blader-base-250.jpg" alt="buster" type="image/jpg">
+                        </figure>
+                        <figure id="tila2" onclick="tila2_click()">
+                            <img src="../images/flo-decks/blue-base-250.jpg" alt="Blue-eyes" type="image/jpg">
+                        </figure>
+                    </div>
+
+                    <div id="rob-decks">
+                        <figure id="rob1" onclick="rob1_click()">
+                            <img src="../images/rob-decks/cyber-base-250.jpg" alt="cyber" type="image/jpg">
+                        </figure>
+                        <figure id="rob2" onclick="rob2_click()">
+                            <img src="../images/rob-decks/cyberdark-hover-250.jpg" alt="cyberdark" type="image/jpg">
+                        </figure>
+                    </div>
+
+                    <div id="vi-decks">
+                        <figure id="vi1" onclick="vi1_click()">
+                            <img src="../images/vi-decks/caveira-hover-250.jpg" alt="caveira" type="image/jpg">
+                        </figure>
+                        <figure id="vi2" onclick="vi2_click()">
+                            <img src="../images/vi-decks/eldlich-base-250.jpg" alt="eldlich" type="image/jpg">
+                        </figure>
+                    </div>
+
+                    <div id="fah-decks">
+                        <figure id="fah1" onclick="fah1_click()">
+                            <img src="../images/fah-decks/zircon-base-250.jpg" alt="zircon" type="image/jpg">
+                        </figure>
+                        <figure id="fah2" onclick="fah2_click()">
+                            <img src="../images/fah-decks/valkyrion-250.jpg" alt="magnet" type="image/jpg">
+                        </figure>
+                    </div>
+
+                    <div id="feh-decks">
+                        <figure id="feh1" onclick="feh1_click()">
+                            <img src="../images/feh-decks/timelord-base-250.jpg" alt="timelord" type="image/jpg">
+                        </figure>
+                        <figure id="feh2" onclick="feh2_click()">
+                            <img src="../images/feh-decks/burn-base-250.jpg" alt="burn" type="image/jpg">
+                        </figure>
+                    </div>
+
+                    <p>Para detalhes do deck, clique em uma das imagens</p>
+                </section>
+
+                <article class="deckArea" id="player1">
+
+                    <section id="jao-deck1">
+                        <h4>Dino</h4>
+                        <div class="deck-describe">
+                            <p>Main Deck: 40 Cards</p>
+                            <p>Extra Deck: 15 Cards</p>
+                            <p>Side Deck: 15 Cards</p>
+                        </div>
+
+                        <div class="container-deck">
+                            <div class="deckImage">
+                                <figure>
+                                    <img src="../images/jao-decks/dino-deck.png" alt="deck-list">
+                                </figure>
+                            </div>
+
+                            <div class="deckText">
+                                <h6>Monster:</h6>
+
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Effect
+                                    Veiler</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Animadorned Archosaur</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">3x
+                                    Babycerasaurus</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Petiteranodon</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Ghost Ogre
+                                    & Snow Rabbit</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Scrap
+                                    Chimera</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Miscellaneousaurus</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">3x
+                                    Souleating
+                                    Oviraptor</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Giant Rex
+                                </p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Scrap
+                                    Raptor</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Overtex
+                                    Qoatlus</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Dinowrestler Pankratops</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Dogoran,
+                                    the Mad Flame Kaiju</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    True King
+                                    Lithosagym, the Disaster</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Ultimate
+                                    Conductor Tyranno</p>
+
+                                <h6>Spell:</h6>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Raigeki</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">3x
+                                    Fossil Dig</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Double Evolution Pill</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Mound of the Bound Creator</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">3x
+                                    Lost World</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Prohibition</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Twin Twisters</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Called by the Grave</p>
+
+                                <h6>Trap:</h6>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x Lost
+                                    Wind</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Warning Point</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Solemn Judgment</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Solemn Strike</p>
+
+                                <h6>Extra:</h6>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">1x Red
+                                    Dragon Archfiend</p>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">1x
+                                    Dinowrestler Giga Spinosavate</p>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">1x Ruddy
+                                    Rose Dragon</p>
+                                <p class="xyz"><img src="../images/icons-table/xyz-icon.jpeg" alt="card-icone">1x
+                                    Evolzar Laggia</p>
+                                <p class="xyz"><img src="../images/icons-table/xyz-icon.jpeg" alt="card-icone">2x
+                                    Evolzar Dolkka</p>
+                                <p class="xyz"><img src="../images/icons-table/xyz-icon.jpeg" alt="card-icone">1x
+                                    Castel, the Skyblaster Musketeer</p>
+                                <p class="xyz"><img src="../images/icons-table/xyz-icon.jpeg" alt="card-icone">1x
+                                    Tornado Dragon</p>
+                                <p class="xyz"><img src="../images/icons-table/xyz-icon.jpeg" alt="card-icone">1x Number
+                                    27: Dreadnought Dreadnoid</p>
+                                <p class="xyz"><img src="../images/icons-table/xyz-icon.jpeg" alt="card-icone">1x Number
+                                    41: Bagooska the Terribly Tired Tapir</p>
+                                <p class="xyz"><img src="../images/icons-table/xyz-icon.jpeg" alt="card-icone">1x Super
+                                    Quantal Mech King Great Magnus</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Linkuriboh</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Secure Gardna</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Pentestag</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Scrap Wyvern</p>
+
+                                <h6>Side:</h6>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Droll & Lock Bird</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Tyranno Infinity</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Prime Material Dragon</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Monster Reborn</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Galaxy Cyclone</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Dark Ruler No More</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Harpie's Feather Duster</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Burial from a Different Dimension</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Breakthrough Skill</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Secret Blast</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Quaking Mirror Force</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Heavy Storm Duster</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Royal Decree</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Anti-Spell Fragrance</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="jao-deck2">
+                        <h4>Gouki</h4>
+                        <div class="deck-describe">
+                            <p>Main Deck: 40 Cards</p>
+                            <p>Extra Deck: 15 Cards</p>
+                            <p>Side Deck: 12 Cards</p>
+                        </div>
+
+                        <div class="container-deck">
+                            <div class="deckImage">
+                                <figure>
+                                    <img src="../images/jao-decks/gouki-deck.png" alt="deck-list">
+                                </figure>
+                            </div>
+
+                            <div class="deckText">
+                                <h6>Monster:</h6>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Droll & Lock Bird</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Gouki Octostretch</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Gouki Ringtrainer</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Gouki Guts</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Fire Flint Lady</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">3x
+                                    Gouki Headbatt</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Gouki Iron Claw</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Gouki Twistcobra</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">3x
+                                    Gouki Suprex</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Codebreaker Zero Day</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Gouki Riscorpio</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Gouki Moonsault</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Immortal Phoenix Gearfried</p>
+
+                                <h6>Spell:</h6>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Harpie's Feather Duster</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Reinforcement of the Army</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Double Summon</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Galaxy Cyclone</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">3x
+                                    Gouki Re-Match</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Gouki Finishing Move</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Dark Ruler No More</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Living Fossil</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">3x
+                                    "Infernoble Arms - Durendal"</p>
+
+                                <h6>Trap:</h6>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x Ice
+                                    Dragon's Prison</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x
+                                    Expendable Dai</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Imperial Iron Wall</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Solemn Strike</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Ultimate Providence</p>
+
+                                <h6>Extra:</h6>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Isolde, Two Tales of the Noble Knights</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">2x
+                                    Gouki Heel Ogre</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Codebreaker Virus Swordsman</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Gouki The Great Ogre</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Tri-gate Wizard</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">2x
+                                    Gouki Thunder Ogre</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Gouki The Blade Ogre</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Codebreaker Virus Berserker</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Gouki The Master Ogre</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Knightmare Gryphon</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">Gouki
+                                    The Giant Ogre</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">2x
+                                    Gouki The Powerload Ogre</p>
+
+                                <h6>Side:</h6>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Knightmare Phoenix</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Gouki Thunder Ogre</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Gouki The Giant Ogre</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Droll & Lock Bird
+                                </p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Gouki Octostretch
+                                </p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Junk Forward
+                                </p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Gouki Twistcobra
+                                </p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Prime Material Dragon</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Raigeki</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Gouki Face Turn</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Called by the Grave</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Imperial Iron Wall</p>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+
+                <article class="deckArea" id="player2">
+                    <section id="tila-deck1">
+                        <h4>Buster Blader</h4>
+
+                        <div class="deck-describe">
+                            <p>Main Deck: 42 Cards</p>
+                            <p>Extra Deck: 15 Cards</p>
+                            <p>Side Deck: 15 Cards</p>
+                        </div>
+
+                        <div class="container-deck">
+                            <div class="deckImage">
+                                <figure>
+                                    <img src="../images/flo-decks/blader-deck.png" alt="deck-list">
+                                </figure>
+                            </div>
+
+                            <div class="deckText">
+                                <h6>Monster:</h6>
+                                <p class="normal"><img src="../images/icons-table/normal-icon.jpeg" alt="card-icone">1x
+                                    Dark Magician</p>
+                                <p class="normal"><img src="../images/icons-table/normal-icon.jpeg" alt="card-icone">1x
+                                    Red-Eyes Black Dragon</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Effect Veiler</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Synkron Resonator</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">3x
+                                    Buster Whelp of the Destruction Swordsman</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">3x
+                                    Dragon Buster Destruction Sword</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Versago the Destroyer</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Ash Blossom & Joyous Spring</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Keeper of Dragon Magic</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Fallen of Albaz</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">3x
+                                    Buster Blader</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Heavenly Zephyr - Miradora</p>
+
+                                <h6>Spell:</h6>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Card Destruction</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Allure of Darkness</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Red-Eyes Fusion</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Branded Fusion</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Destruction Swordsman Fusion</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Called by the Grave</p>
+
+                                <h6>Trap:</h6>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x
+                                    Destruction Sword Flash</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x
+                                    Destruction Sword Flash</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">3x
+                                    Prologue of the Destruction Swordsman</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x Trap
+                                    Trick</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x DNA
+                                    Surgery</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Magic Drain</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x
+                                    Solemn Strike</p>
+
+                                <h6>Extra:</h6>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Red-Eyes Slash Dragon</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">3x
+                                    Buster Blader, the Dragon Destroyer Swordsman</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Red-Eyes Dark Dragoon</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Albion the Branded Dragon</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Lubellion the Searing Dragon</p>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">1x
+                                    Stardust Spark Dragon</p>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone"> 1x
+                                    Scarlight Red Dragon Archfiend</p>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">3x
+                                    Buster Dragon</p>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">2x Hot
+                                    Red Dragon Archfiend Abyss</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Protector Whelp of the Destruction Swordsman</p>
+
+                                <h6>Side:</h6>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Underworld Goddess of the Closed World</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Synkron Resonator</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Ghost Ogre & Snow Rabbit</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Chaos Dragon Levianeer</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Thunder King, the Lightningstrike Kaiju</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Dark Hole</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Monster Reborn</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Mystical Space Typhoon</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Book of Moon</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Torrential Tribute</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Destruction Sword Memories</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x
+                                    Anti-Spell Fragrance</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Rebirth Judgment</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="tila-deck2">
+                        <h4>Blue-Eyes</h4>
+                        <div class="deck-describe">
+                            <p>Main Deck: 42 Cards</p>
+                            <p>Extra Deck: 15 Cards</p>
+                            <p>Side Deck: 15 Cards</p>
+                        </div>
+
+                        <div class="container-deck">
+                            <div class="deckImage">
+                                <figure>
+                                    <img src="../images/flo-decks/blue-deck.png" alt="deck-list">
+                                </figure>
+                            </div>
+
+                            <div class="deckText">
+                                <h6>Monster:</h6>
+                                <p class="normal"><img src="../images/icons-table/normal-icon.jpeg" alt="card-icone">3x
+                                    Blue-Eyes White Dragon</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Effect Veiler</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Sage with Eyes of Blue</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">3x
+                                    The White Stone of Ancients</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Versago the Destroyer</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Ash Blossom & Joyous Spring</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Aleister the Invoker</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Starliege Seyfert</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Blue-Eyes Alternative White Dragon</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Dragon Spirit of White</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Galactic Spiral Dragon</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Nebula Dragon</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Blue-Eyes Abyss Dragon</p>
+                                <p class="ritual"><img src="../images/icons-table/ritual-icon.jpeg" alt="card-icone">1x
+                                    Blue-Eyes Chaos MAX Dragon</p>
+
+                                <h6>Spell:</h6>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Trade-In</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Dragon Shrine</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    The Melody of Awakening Dragon</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Invocation</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Magical Meltdown</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Chaos Form</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Vision with Eyes of Blue</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Book of Moon</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Twin Twisters</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Called by the Grave</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Successor Soul</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Ultimate Fusion</p>
+
+                                <h6>Trap:</h6>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x
+                                    Anti-Spell Fragrance</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x True
+                                    Light</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Magic Drain</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Solemn Strike</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Ultimate Providence</p>
+
+                                <h6>Extra:</h6>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Red-Eyes Dark Dragoon</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Invoked Mechaba</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Blue-Eyes Twin Burst Dragon</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Neo Blue-Eyes Ultimate Dragon</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Blue-Eyes Alternative Ultimate Dragon</p>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">1x
+                                    Azure-Eyes Silver Dragon</p>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">1x
+                                    Blue-Eyes Spirit Dragon</p>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">1x
+                                    Vermillion Dragon Mech</p>
+                                <p class="xyz"><img src="../images/icons-table/xyz-icon.jpeg" alt="card-icone">1x Number
+                                    46: Dragluon</p>
+                                <p class="xyz"><img src="../images/icons-table/xyz-icon.jpeg" alt="card-icone">1x Number
+                                    62: Galaxy-Eyes Prime Photon Dragon</p>
+                                <p class="xyz"><img src="../images/icons-table/xyz-icon.jpeg" alt="card-icone">1x
+                                    Galaxy-Eyes Full Armor Photon Dragon</p>
+                                <p class="xyz"><img src="../images/icons-table/xyz-icon.jpeg" alt="card-icone">1x Number
+                                    38: Hope Harbinger Dragon Titanic Galaxy</p>
+                                <p class="xyz"><img src="../images/icons-table/xyz-icon.jpeg" alt="card-icone">1x
+                                    Galaxy-Eyes Cipher Dragon</p>
+                                <p class="xyz"><img src="../images/icons-table/xyz-icon.jpeg" alt="card-icone">1x Number
+                                    97: Draglubion</p>
+                                <p class="xyz"><img src="../images/icons-table/xyz-icon.jpeg" alt="card-icone">1x
+                                    Galaxy-Eyes Cipher X Dragon</p>
+
+                                <h6>Side:</h6>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Maiden with Eyes of Blue</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Morphing Jar</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Starliege Seyfert</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Galactic Spiral Dragon</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Deep-Eyes White Dragon</p>
+                                <p class="ritual"><img src="../images/icons-table/ritual-icon.jpeg" alt="card-icone">1x
+                                    Blue-Eyes Chaos Dragon</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Trade-In</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Galaxy Cyclone</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Polymerization</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Mystical Space Typhoon</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Torrential Tribute</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x The
+                                    Ultimate Creature of Destruction</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Fiendish Chain</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Solemn Strike</p>
+                            </div>
+                    </section>
+                </article>
+
+                <article class="deckArea" id="player3">
+                    <section id="rob-deck1">
+                        <h4>Cyber Dragon</h4>
+                        <div class="deck-describe">
+                            <p>Main Deck: 41 Cards</p>
+                            <p>Extra Deck: 15 Cards</p>
+                            <p>Side Deck: 15 Cards</p>
+                        </div>
+
+                        <div class="container-deck">
+                            <div class="deckImage">
+                                <figure>
+                                    <img src="../images/rob-decks/cyber-dragon-deck.png" alt="deck-list">
+                                </figure>
+                            </div>
+
+                            <div class="deckText">
+                                <h6>Monster:</h6>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Effect Veiler</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Cyber Dragon Herz</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Cyber Dragon Nachster</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">3x
+                                    Cyber Dragon Core</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Honest</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Electromagnetic Turtle</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">3x
+                                    Cyber Dragon</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Galaxy Soldier</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Cyber Eltanin</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Jizukiru, the Star Destroying Kaiju</p>
+
+                                <h6>Spell:</h6>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Raigeki</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Harpie's Feather Duster</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Change of Heart</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Machine Duplication</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Overload Fusion</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Cyber Repair Plant</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Cyber Revsystem</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">3x
+                                    Cyber Emergency</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Lightning Storm</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Clockwork Night</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Super Polymerization</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Called by the Grave</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Cyberload Fusion</p>
+
+                                <h6>Trap:</h6>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x
+                                    Infinite Impermanence</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Cybernetic Overflow</p>
+
+                                <h6>Extra:</h6>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">2x
+                                    Chimeratech Rampage Dragon</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Cyber Twin Dragon</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">2x
+                                    Chimeratech Fortress Dragon</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Starving Venom Fusion Dragon</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Cyber End Dragon</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Chimeratech Megafleet Dragon</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Cyber Eternity Dragon</p>
+                                <p class="xyz"><img src="../images/icons-table/xyz-icon.jpeg" alt="card-icone">1x Cyber
+                                    Dragon Nova</p>
+                                <p class="xyz"><img src="../images/icons-table/xyz-icon.jpeg" alt="card-icone">2x Cyber
+                                    Dragon Infinity</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Salamangreat Almiraj</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Cyber Dragon Sieger</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x Lyna
+                                    the Light Charmer, Lustrous</p>
+
+                                <h6>Side:</h6>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Chimeratech Overdragon</p>
+                                <p class="xyz"><img src="../images/icons-table/xyz-icon.jpeg" alt="card-icone">1x
+                                    Constellar Pleiades</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Borrelsword Dragon</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Ghost Belle & Haunted Mansion</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Denko Sekka</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Raigeki</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Power Bond</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Dark Ruler No More</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Cosmic Cyclone</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x
+                                    Royal Decree</p>
+                            </div>
+                    </section>
+
+                    <section id="rob-deck2">
+                        <h4>Cyberdark</h4>
+                        <div class="deck-describe">
+                            <p>Main Deck: 41 Cards</p>
+                            <p>Extra Deck: 15 Cards</p>
+                            <p>Side Deck: 15 Cards</p>
+                        </div>
+
+                        <div class="container-deck">
+                            <div class="deckImage">
+                                <figure>
+                                    <img src="../images/rob-decks/cyberdark-deck.png" alt="deck-list">
+                                </figure>
+                            </div>
+
+                            <div class="deckText">
+                                <h6>Monster:</h6>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Cyber Dragon Herz</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Cyber Dragon Nachster</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">3x
+                                    Cyber Dragon Core</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Cyberdark Cannon</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">3x
+                                    Cyberdark Claw</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Attachment Cybern</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Cyberdark Edge</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Cyberdark Horn</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Cyberdark Keel</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Cyberdark Chimera</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Cyber Dragon</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Jizukiru, the Star Destroying Kaiju</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Machina Ruinforce</p>
+
+                                <h6>Spell:</h6>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Raigeki</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Harpie's Feather Duster</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Power Bond</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Overload Fusion</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">3x
+                                    Cyber Emergency</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">3x
+                                    Cybernetic Horizon</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Foolish Burial</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">3x
+                                    Cyberdark Realm</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Called by the Grave</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Cyber Eternal</p>
+
+                                <h6>Trap:</h6>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x
+                                    Infinite Impermanence</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x
+                                    Cyberdark Invasion</p>
+
+                                <h6>Extra:</h6>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Elder Entity N'tss</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Chimeratech Rampage Dragon</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Predaplant Chimerafflesia</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Cyberdark Dragon</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Chimeratech Overdragon</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">2x
+                                    Cyber End Dragon</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">2x
+                                    Cyberdarkness Dragon</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Chimeratech Megafleet Dragon</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">2x
+                                    Cyberdark End Dragon</p>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">1x
+                                    Gaiarmor Dragonshell</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Cyber Dragon Sieger</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Dharc the Dark Charmer, Gloomy</p>
+
+                                <h6>Side:</h6>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Chimeratech Fortress Dragon</p>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">1x
+                                    Vahram, the Magistus Divinity Dragon</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Droll & Lock Bird</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Ghost Belle & Haunted Mansion</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Denko Sekka</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Dark Ruler No More</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Lightning Storm</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x
+                                    Royal Decree</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Negate Attack</p>
+                            </div>
+                    </section>
+                </article>
+
+                <article class="deckArea" id="player4">
+                    <section id="vi-deck1">
+                        <h4>Skull Servant</h4>
+                        <div class="deck-describe">
+                            <p>Main Deck: 50 Cards</p>
+                            <p>Extra Deck: 15 Cards</p>
+                            <p>Side Deck: 15 Cards</p>
+                        </div>
+
+                        <div class="container-deck">
+                            <div class="deckImage">
+                                <figure>
+                                    <img src="../images/vi-decks/caveira-deck.png" alt="deck-list">
+                                </figure>
+                            </div>
+
+                            <div class="deckText">
+                                <h6>Monster:</h6>
+                                <p class="normal"><img src="../images/icons-table/normal-icon.jpeg" alt="card-icone">3x
+                                    Skull Servant</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">3x
+                                    King of the Skull Servants</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Wightmare</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">3x
+                                    Wightprince</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Glow-Up Bloom</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">3x
+                                    Wightbaking</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">3x
+                                    The Lady in Wight</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">3x
+                                    Uni-Zombie</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Wightprincess</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Mezuki</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Shiranui Solitaire</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Necroworld Banshee</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Fallen of Albaz</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Aluber the Jester of Despia</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Destrudo the Lost Dragon's Frisson</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Doomking Balerdroch</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Alghoul Mazera</p>
+
+                                <h6>Spell:</h6>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Card Destruction</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Instant Fusion</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Allure of Darkness</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    One for One</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Pot of Prosperity</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Branded Fusion</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Foolish Burial</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Zombie World</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Super Polymerization</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Mask Change II</p>
+
+                                <h6>Trap:</h6>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">3x
+                                    Rivalry of Warlords</p>
+
+                                <h6>Extra:</h6>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Thousand-Eyes Restrict</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Sea Monster of Theseus</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Masked HERO Dark Law</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Dragonecro Nethersoul Dragon</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Predaplant Dragostapelia</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Albion the Branded Dragon</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Mirrorjade the Iceblade Dragon</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Lubellion the Searing Dragon</p>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">1x
+                                    Immortal Dragon</p>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">1x Black
+                                    Rose Dragon</p>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">1x
+                                    Beelze of the Diabolic Dragons</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Linkuriboh</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Relinquished Anima</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Knightmare Phoenix</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Vampire Sucker</p>
+
+                                <h6>Side:</h6>
+
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Mudragon of the Swamp</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Starving Venom Fusion Dragon</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Jinzo</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Radian, the Multidimensional Kaiju</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Danger! Bigfoot!</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Raigeki</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Harpie's Feather Duster</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Dark Ruler No More</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x
+                                    Royal Decree</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">3x
+                                    There Can Be Only One</p>
+                            </div>
+                    </section>
+
+                    <section id="vi-deck2">
+                        <h4>Eldlich</h4>
+
+                        <div class="deck-describe">
+                            <p>Main Deck: 43 Cards</p>
+                            <p>Extra Deck: 15 Cards</p>
+                            <p>Side Deck: 15 Cards</p>
+                        </div>
+
+                        <div class="container-deck">
+                            <div class="deckImage">
+                                <figure>
+                                    <img src="../images/vi-decks/eldlich-deck.png" alt="deck-list">
+                                </figure>
+                            </div>
+
+                            <div class="deckText">
+                                <h6>Monster:</h6>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">3x
+                                    Ash Blossom & Joyous Spring</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Destiny HERO - Celestial</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Fallen of Albaz</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Destiny HERO - Dasher</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Eldlich the Golden Lord</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Lord of the Heavenly Prison</p>
+
+                                <h6>Spell:</h6>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Card of Demise</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">3x
+                                    Pot of Extravagance</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Fusion Destiny</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Branded Fusion</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Cursed Eldland</p>
+
+                                <h6>Trap:</h6>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x
+                                    Torrential Tribute</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x Trap
+                                    Trick</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">3x
+                                    Eldlixir of Scarlet Sanguine</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x
+                                    Dogmatika Punishment</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x Ice
+                                    Dragon's Prison</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">3x
+                                    Skill Drain</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">3x
+                                    Conquistador of the Golden Land</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x
+                                    Huaquero of the Golden Land</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x
+                                    Solemn Judgment</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x
+                                    Solemn Strike</p>
+
+                                <h6>Extra:</h6>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Elder Entity N'tss</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    The Last Warrior from Another Planet</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Titaniklad the Ash Dragon</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">2x
+                                    Albion the Branded Dragon</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Destiny HERO - Destroyer Phoenix Enforcer</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">2x
+                                    Mirrorjade the Iceblade Dragon</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Lubellion the Searing Dragon</p>
+                                <p class="xyz"><img src="../images/icons-table/xyz-icon.jpeg" alt="card-icone">1x
+                                    Constellar Pleiades</p>
+                                <p class="xyz"><img src="../images/icons-table/xyz-icon.jpeg" alt="card-icone">1x Number
+                                    38: Hope Harbinger Dragon Titanic Galaxy</p>
+                                <p class="xyz"><img src="../images/icons-table/xyz-icon.jpeg" alt="card-icone">1x
+                                    Superdreadnought Rail Cannon Gustav Max</p>
+                                <p class="xyz"><img src="../images/icons-table/xyz-icon.jpeg" alt="card-icone">1x Divine
+                                    Arsenal AA-ZEUS - Sky Thunder</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Imduk the World Chalice Dragon</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Knightmare Phoenix</p>
+
+                                <h6>Side:</h6>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Gadarla, the Mystery Dust Kaiju</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    The Winged Dragon of Ra - Sphere Mode</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Jizukiru, the Star Destroying Kaiju</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Interrupted Kaiju Slumber</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Evenly Matched</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x
+                                    Waking the Dragon</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x
+                                    Anti-Spell Fragrance</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x
+                                    Summon Limit</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x
+                                    There Can Be Only One</p>
+                            </div>
+                    </section>
+                </article>
+
+                <article class="deckArea" id="player5">
+                    <section id="fah-deck1">
+                        <h4>Gem-Knight</h4>
+                        <div class="deck-describe">
+                            <p>Main Deck: 43 Cards</p>
+                            <p>Extra Deck: 15 Cards</p>
+                            <p>Side Deck: 15 Cards</p>
+                        </div>
+
+                        <div class="container-deck">
+                            <div class="deckImage">
+                                <figure>
+                                    <img src="../images/fah-decks/gema-deck.png" alt="deck-list">
+                                </figure>
+                            </div>
+
+                            <div class="deckText">
+                                <h6>Monster:</h6>
+                                <p class="normal"><img src="../images/icons-table/normal-icon.jpeg" alt="card-icone">3x
+                                    Gem-Knight Lapis</p>
+                                <p class="normal"><img src="../images/icons-table/normal-icon.jpeg" alt="card-icone">1x
+                                    Gem-Knight Garnet</p>
+                                <p class="normal"><img src="../images/icons-table/normal-icon.jpeg" alt="card-icone">2x
+                                    Gem-Knight Tourmaline</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">3x
+                                    Gem-Knight Lazuli</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Crystal Rose</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">3x
+                                    Adamancipator Researcher</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Adamancipator Seeker</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Brilliant Rose</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">3x
+                                    Gem-Knight Obsidian</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Ash Blossom & Joyous Spring</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Gem-Armadillo</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">3x
+                                    Rescue Rabbit</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Adamancipator Analyzer</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Gem-Knight Quartz</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Nibiru, the Primal Being</p>
+
+                                <h6>Spell:</h6>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Raigeki</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Monster Reborn</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">3x
+                                    Gem-Knight Fusion</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Unexpected Dai</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Adamancipator Signs</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Foolish Burial</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Harpie's Feather Duster</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Scatter Fusion</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Twin Twisters</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Called by the Grave</p>
+
+                                <h6>Trap:</h6>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x Lost
+                                    Wind</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Evenly Matched</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Solemn Judgment</p>
+
+                                <h6>Extra:</h6>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">2x
+                                    Gem-Knight Lady Lapis Lazuli</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Gem-Knight Ruby</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Gem-Knight Prismaura</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">2x
+                                    Gem-Knight Zirconia</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Gem-Knight Lady Rose Diamond</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Gem-Knight Master Diamond</p>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Gem-Knight Lady Brilliant Diamond</p>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">1x
+                                    Naturia Beast</p>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">1x
+                                    Brionac, Dragon of the Ice Barrier</p>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">1x
+                                    Naturia Barkion</p>
+                                <p class="xyz"><img src="../images/icons-table/xyz-icon.jpeg" alt="card-icone">1x
+                                    Gallant Granite</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">2x
+                                    Gem-Knight Phantom Quartz</p>
+
+                                <h6>Side:</h6>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">1x
+                                    Garden Rose Maiden</p>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">1x
+                                    Adamancipator Risen - Raptite</p>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">1x Black
+                                    Rose Dragon</p>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">1x Ruddy
+                                    Rose Dragon</p>
+                                <p class="xyz"><img src="../images/icons-table/xyz-icon.jpeg" alt="card-icone">1x
+                                    Castel, the Skyblaster Musketeer</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Gigantes
+                                </p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Gadarla, the Mystery Dust Kaiju
+                                </p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Dark Ruler No More</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Black Garden</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x Lost
+                                    Wind</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x
+                                    Royal Decree</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x
+                                    Shadow-Imprisoning Mirror</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Paradox Fusion</p>
+                            </div>
+                    </section>
+
+                    <section id="fah-deck2">
+                        <h4>Magnet</h4>
+
+                        <div class="deck-describe">
+                            <p>Main Deck: 45 Cards</p>
+                            <p>Extra Deck: 15 Cards</p>
+                            <p>Side Deck: 15 Cards</p>
+                        </div>
+
+                        <div class="container-deck">
+                            <div class="deckImage">
+                                <figure>
+                                    <img src="../images/fah-decks/magnet-deck.png" alt="deck-list">
+                                </figure>
+                            </div>
+
+                            <div class="deckText">
+                                <h6>Monster:</h6>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Doki Doki</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">3x
+                                    Adamancipator Researcher</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">3x
+                                    Adamancipator Seeker</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Cartorhyn the Hidden Gem of the Seafront</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    King of the Swamp</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Alpha The Electromagnet Warrior</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Beta The Electromagnet Warrior</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Gamma The Electromagnet Warrior</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Ash Blossom & Joyous Spring</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">3x
+                                    Koa'ki Meiru Guardian</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">2x
+                                    Delta The Magnet Warrior</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">3x
+                                    Adamancipator Analyzer</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Adamancipator Crystal - Dragite</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">3x
+                                    Epsilon The Magnet Warrior</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Valkyrion the Magna Warrior</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Berserkion the Electromagna Warrior</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Nibiru, the Primal Being</p>
+
+                                <h6>Spell:</h6>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Polymerization</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Raigeki</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Monster Reborn</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Adamancipator Signs</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Magnet Induction</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Harpie's Feather Duster</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">2x
+                                    Magnetic Field</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Called by the Grave</p>
+
+                                <h6>Trap:</h6>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Heavy Storm Duster</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x
+                                    Evenly Matched</p>
+
+                                <h6>Extra:</h6>
+                                <p class="fusion"><img src="../images/icons-table/fusion-icon.jpeg" alt="card-icone">1x
+                                    Imperion Magnum the Superconductive Battlebot</p>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">1x
+                                    Naturia Beast</p>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">1x
+                                    Brionac, Dragon of the Ice Barrier</p>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">1x
+                                    Naturia Barkion</p>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">1x
+                                    Adamancipator Risen - Raptite</p>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">1x
+                                    Crystal Wing Synchro Dragon</p>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">1x
+                                    Adamancipator Risen - Dragite</p>
+                                <p class="xyz"><img src="../images/icons-table/xyz-icon.jpeg" alt="card-icone">1x
+                                    Gorgonic Guardian</p>
+                                <p class="xyz"><img src="../images/icons-table/xyz-icon.jpeg" alt="card-icone">1x
+                                    Gallant Granite</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Missus Radiant</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Knightmare Cerberus</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Knightmare Phoenix</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x I:P
+                                    Masquerena</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Knightmare Unicorn</p>
+                                <p class="link"><img src="../images/icons-table/link-icon.jpeg" alt="card-icone">1x
+                                    Borreload Dragon</p>
+
+                                <h6>Side:</h6>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">1x Black
+                                    Rose Dragon</p>
+                                <p class="sync"><img src="../images/icons-table/syn-icon.jpeg" alt="card-icone">1x Ruddy
+                                    Rose Dragon</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Ghost Ogre & Snow Rabbit</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Gigantes</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Berserkion the Electromagna Warrior</p>
+                                <p class="effect"><img src="../images/icons-table/effect-icon.jpeg" alt="card-icone">1x
+                                    Gadarla, the Mystery Dust Kaiju</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Dark Hole</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Dark Ruler No More</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Twin Twisters</p>
+                                <p class="spell"><img src="../images/icons-table/SPELL-icon.jpeg" alt="card-icone">1x
+                                    Cosmic Cyclone</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">1x Lost
+                                    Wind</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x
+                                    Royal Decree</p>
+                                <p class="trap"><img src="../images/icons-table/TRAP-icon.jpeg" alt="card-icone">2x
+                                    Shadow-Imprisoning Mirror</p>
+                            </div>
+                    </section>
+                </article>
+
+                <article class="deckArea" id="player6">
+                    <section id="feh-deck1">
+                        <h4>Timelord</h4>
+
+                        <div class="deck-describe">
+                            <p>Deck ainda não inscrito</p>
+                        </div>
+
+                        <div class="deckImage">
+                            <!-- deck ainda não inscrito -->
+                        </div>
+
+                        <div class="deckText">
+                        </div>
+                    </section>
+
+                    <section id="feh-deck2">
+                        <h4>Burn</h4>
+
+                        <div class="deck-describe">
+                            <p>Deck ainda não inscrito</p>
+                        </div>
+                        <div class="deckImage">
+                            <!-- deck ainda não inscrito -->
+                        </div>
+
+                        <div class="deckText">
+                        </div>
+                    </section>
+                </article>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-base">
+            <p>Site criado e desenvolvido por <a href="https://github.com/Robson-Lima-Jr">Robson Junior</a></p>
+            <p>YuGiOh! da Roça! - <a href="https://www.youtube.com/@yugiohdaroca" target="_blank" rel="external">
+                    Youtube</a>
+            </p>
+            <p>Site sem fins lucrativos, apenas para informação do torneio e organização do mesmo.</p>
+            <p><strong>Versão do Site:</strong> 3.1</p>
+        </div>
+    </footer>
+
+    <script src="../javascript/script.js"></script>
+</body>
+
+</html>
