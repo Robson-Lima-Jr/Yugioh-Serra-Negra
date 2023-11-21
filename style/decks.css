@@ -87,6 +87,7 @@ label h3 {
 }
 
 #deckIcons img {
+    width: 160px;
     border-radius: 20px;
     margin: 5px 5px;
 }

@@ -51,12 +51,14 @@
         font-size: 15px;
     }
 
+    #deckIcons img {
+        width: 130px;
+    }
+
     /* paginas deck */
     .container-deck {
         flex-wrap: wrap;
     }
-
-    /* pagina resultados */
 }
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
@@ -102,15 +104,16 @@
         font-size: 15px;
     }
 
+    #deckIcons img {
+        width: 130px;
+    }
+
     /* paginas deck */
     .container-deck {
         flex-wrap: wrap;
     }
 
     /* pagina resultados */
-    .all-decks figure {
-        width: 120px;
-    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
