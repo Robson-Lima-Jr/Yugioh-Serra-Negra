@@ -113,7 +113,7 @@ label h3 {
 .container-deck {
     width: 100%;
     display: flex;
-    padding: 0px 5px;
+    padding: 0px 10px;
     gap: 20px;
     align-items: flex-start;
     justify-content: center;
