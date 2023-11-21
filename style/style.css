@@ -77,6 +77,7 @@ header .container-base nav a {
 header .container-base nav a:hover {
     color: var(--cor0);
     border-bottom: 2px solid var(--cor0);
+    transition: 0.5s;
 }
 
 header .menu-burguer{
@@ -180,44 +181,4 @@ footer a {
     margin-top: 20px;
     width: 330px;
     height: 4213px;
-}
-
-/* pagina campeôes */
-h3 {
-    margin: 20px 0px;
-    text-align: center;
-    font-weight: normal;
-    font-size: 1.7em;
-    color: var(--cor3);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.445);
-}
-
-#frame2022 {
-    width: 329px;
-    height: 416px;
-}
-
-#frame2021 {
-    width: 327px;
-    height: 359px;
-}
-
-/* Página banlist */
-.banlistConfig {
-   display: flex;
-   justify-content: center;
-}
-
-#forbidden {
-    width: 330px;
-    height: 1742px
-}
-
-#limited {
-    width: 330px;
-    height: 1225px;
-}
-
-#semiLimited {
-    width: 330px;
 }
