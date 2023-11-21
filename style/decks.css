@@ -22,6 +22,7 @@
 label h3 {
     display: inline;
     margin-right: 10px;
+    color: var(--cor4)
 }
 
 #selectPlayerMobile {
